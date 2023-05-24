@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Technical Information" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.TRIOS" class="" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Available Analysis Functions</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="Menu Technical Reference.htm">Technical Information</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Available Analysis Functions</span>
+        </div>
+        <h1><a name="top"></a>Available Analysis Functions</h1>
+        <p>This topic covers the basic analysis functions in TRIOS&#160;software. The list of available functions varies based on the type of data obtained. For additional information, refer to <a href="Analyzing Data.htm">Basic Steps to Analyzing Data</a> Help topics.</p>
+        <h2>Performing an Analysis</h2>
+        <ol>
+            <li class="NumberedIndent" value="1" style="margin-top: 8px;">Click on the desired curve to analyze.</li>
+            <li class="NumberedIndent" value="2" style="margin-top: 8px;">Select the desired analysis from the <span>Analysis </span>&gt; <span>Function </span>menu.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Click <span>Analyze</span><img src="../image/icons/icon_analyze.png" style="vertical-align: middle;" />to execute the analysis. </li>
+        </ol>
+        <h2>Analysis Functions</h2>
+        <p>Click an analysis function below for more information. Once you have completed an analysis, refer to <a href="Analyzing Data.htm">Basic Steps for Analyzing Data</a> to edit the analysis and evaluate the impact on the calculated parameters.
+</p>
+        <p>&#160;</p>
+        <table style="margin-left: 0;margin-right: auto;">
+            <col style="width: 290px;" />
+            <tbody>
+                <tr MadCap:conditions="Primary.Rheology General,Primary.Thermal General">
+                    <td style="text-align: left;"><a href="Onset.htm">Onset point</a>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Primary.Rheology General,Primary.Thermal General">
+                    <td style="text-align: left;"><a href="#SignalMinMax" class="selected">Signal minimum/maximum</a>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Primary.Rheology General,Primary.Thermal General">
+                    <td style="text-align: left;"><a href="#SignalChange" class="selected">Signal change</a>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Primary.Thermal General,Primary.Rheology General">
+                    <td style="text-align: left;"><a href="#Curve" class="selected">Curve X and Y</a>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Primary.Rheology General,Primary.Thermal General">
+                    <td style="text-align: left;"><a href="StraightLine.htm">Straight line</a>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Primary.Rheology General,Primary.Thermal General">
+                    <td style="text-align: left;"><a href="Polynomial.htm">Polynomial</a>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Primary.Thermal General,Primary.Rheology General">
+                    <td style="text-align: left;"><a href="Area Under the Curve.htm">Area under the curve</a>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Primary.Rheology General,Primary.Thermal General">
+                    <td style="text-align: left;"><a href="#Running" class="selected">Running integral</a>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Primary.Rheology General,Primary.Thermal General">
+                    <td style="text-align: left;"><a href="#Integrat" class="selected">Peak Integration (general y vs x)</a>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Primary.Rheology General,Primary.Thermal General">
+                    <td style="text-align: left;"><a href="Onset.htm">Endset point</a>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Primary.Thermal General,Primary.Rheology General">
+                    <td style="text-align: left;"><a href="#Peak" class="selected">Peak height</a>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+                    <td style="text-align: left;"><a href="#Glass" class="selected">Glass transition</a>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+                    <td style="text-align: left;"><a href="#Integrat" class="selected">Peak integration (enthalpy)</a>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+                    <td style="text-align: left;"><a href="#Oxidatio" class="selected">Oxidation temperature</a>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+                    <td style="text-align: left;"><a href="#Oxidatio" class="selected">Oxidation time</a>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+                    <td style="text-align: left;"><a href="#Purity" class="selected">Purity analysis (ASTM E928)</a>
+                    </td>
+                </tr>
+                <tr MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+                    <td style="text-align: left;"><a href="#DSC" class="selected">DSC conversion calculation</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>____________________________________________________________________________________________________________________________________________________________________________________</p>
+        <h2 MadCap:conditions="Primary.Thermal General,Primary.Rheology General"><a name="Curve"></a>Curve X and Y</h2>
+        <p MadCap:conditions="Primary.Thermal General,Primary.Rheology General">Use the Curve X and Y analysis option to determine the axis value(s) at the selected data point on the curve. Marking the curve with this feature allows you to label a curve at any point.</p>
+        <p MadCap:conditions="Primary.Thermal General,Primary.Rheology General" class="pBacktoTop"><a href="#top" class="selected">Back to top</a>
+        </p>
+        <h2 MadCap:conditions="Primary.Rheology General,Primary.Thermal General"><a name="SignalMinMax"></a>Signal Min/Max</h2>
+        <p MadCap:conditions="Primary.Rheology General,Primary.Thermal General">Use the <span>Signal min</span> option to determine the minimum measured value between two selected points on a curve. Use the <span>Signal max</span> option to determine the maximum measured value between two selected points on a curve. See <a href="Analyzing Data.htm">Basic Steps to Analyzing Data</a> to select associated analysis options before beginning.
+</p>
+        <ul>
+            <li class="NoteIndent" MadCap:conditions="Primary.Rheology General,Primary.Thermal General" value="1">NOTE:  <span>Peak Max</span> and <span>Signal Max</span> analyses report the same result if the baseline is perfectly horizontal (the Y-axis values of the start and stop limits are the same).
+</li>
+        </ul>
+        <p MadCap:conditions="Primary.Rheology General,Primary.Thermal General" class="pBacktoTop"><a href="#top" class="selected">Back to top</a>
+        </p>
+        <h2 MadCap:conditions="Primary.Thermal General,Primary.Rheology General"><a name="SignalChange"></a>Signal Change
+</h2>
+        <p MadCap:conditions="Primary.Thermal General,Primary.Rheology General">Use the <span>Signal change</span> option to measured the change in the measured values between two defined points of data. A horizontal line is drawn from your selected start point to a vertical line drawn from your selected stop point. The difference between these points is reported.
+See <a href="Analyzing Data.htm#Using">Basic Steps to Analyzing Data</a> to select associated analysis options before beginning.</p>
+        <p MadCap:conditions="Primary.Thermal General,Primary.Rheology General" class="pBacktoTop"><a href="#top" class="selected">Back to top</a>
+        </p>
+        <h2 MadCap:conditions="Primary.Rheology General,Primary.Thermal General"><a name="Peak"></a>Peak Height
+</h2>
+        <p MadCap:conditions="Primary.Rheology General,Primary.Thermal General">Use the <span>Peak height</span> option to determine the  point of maximum deviation from a linear baseline drawn between two points on the curve. After you select the start and stop limits to define the baseline, the program calculates and reports the height of the peak. See <a href="Analyzing Data.htm#Using"><a href="Analyzing Data.htm#Using">Basic Steps to Analyzing Data</a></a> to select associated analysis options before beginning.
+</p>
+        <ol>
+            <li class="NoteIndent" style="margin-top: 8px;" MadCap:conditions="Primary.Rheology General,Primary.Thermal General" value="1">NOTE:  <span>Peak Max</span> and <span>Signal Max</span> analyses report the same result if the baseline is perfectly horizontal (the Y-axis values of the start and stop limits are the same).
+</li>
+        </ol>
+        <p MadCap:conditions="Primary.Rheology General,Primary.Thermal General" class="pBacktoTop"><a href="#top" class="selected">Back to top</a>
+        </p>
+        <h2 MadCap:conditions="Primary.DSC,Primary.Mercury DSC"><a name="Glass"></a>Glass Transition
+</h2>
+        <ul>
+            <li MadCap:conditions="Primary.DSC,Primary.Mercury DSC" class="VideoIndent" value="1">Click <a href="http://video.tainstruments.com/Pages/VideoPlayer.aspx?VideoID=165">here</a> to watch a TA&#160;Tech Tip on analyzing Glass Transitions and Melt Peaks in TRIOS. Note that this video was recorded using a Discovery DSC.</li>
+        </ul>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">Use the <span>Glass transition</span> analysis to calculate the onset, end, inflection, and signal change of a glass transition in the curve. For example, this analysis enables you to determine glass transition temperatures by DSC.
+</p>
+        <ul MadCap:conditions="Primary.Mercury DSC,Primary.DSC">
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1">Onset is calculated as the intersection of the first and second tangents.</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2">Inflection is the point on the curve between the first and third tangents with the steepest slope.</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="3">End is calculated as the intersection of the second and third tangents.
+</li>
+            <li class="NoteIndent" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="4">NOTE:  The <span>Glass transition</span> option is not available if the Y-axis scale is logarithmic. See <a href="Analyzing Data.htm#Using"><a href="Analyzing Data.htm#Using">Basic Steps to Analyzing Data</a></a> to select associated analysis options before beginning.
+</li>
+        </ul>
+        <ol MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+            <li class="NoteIndent" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1">NOTE:  <span>Peak Max</span> and <span>Signal Max</span> analyses report the same result if the baseline is perfectly horizontal (the Y-axis values of the start and stop limits are the same).
+</li>
+        </ol>
+        <h3 MadCap:conditions="Primary.DSC,Primary.Mercury DSC">Glass Transition Analysis Options
+</h3>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC" style="margin-top: 8px;"><span>Onset type</span>: Select between the following options:
+</p>
+        <ul MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1"><span>Tangent</span>: Uses the selected point to calculate a tangent line</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2"><span>Manual tangent</span>: Allows you to define the start and stop limits for the onset tangent line 
+</li>
+        </ul>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC" style="margin-top: 8px;"><span>Transition type</span>: Select between the following options:
+</p>
+        <ul MadCap:conditions="Primary.Mercury DSC,Primary.DSC">
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1"><span>Tangent</span>: Uses the selected point to calculate a tangent line </li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2"><span>Manual tangent</span>: Allows  you to define the start and stop limits for the inflection tangent line </li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="3"><span>Inflection</span>: Determines the inflection point between the onset and end limits  </li>
+        </ul>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC" style="margin-top: 8px;"><span>End type</span>: Select between the following options:
+</p>
+        <ul MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1"><span>Tangent</span>: Uses the selected point to calculate a tangent line</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2"><span>Manual tangent</span>: Allows you to define the start and stop limits for the onset tangent line 
+</li>
+        </ul>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC" style="margin-top: 8px;"><span>Midpoint type</span>: Select one of the following methods to be used in determining the midpoint in step transition analyses:
+</p>
+        <ul MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1"><span>None</span>: Results in no step transition midpoint calculation</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2"><span>Inflection</span>: Results in the use of the inflection point (the point of  data with the steepest slope) as the midpoint of the step transition</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="3"><span>Half height</span>: Defines the midpoint as the Y-axis value halfway between the calculated onset and calculated end of the step/glass transition region</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="4"><span>Half width</span>: Defines the midpoint as the X-axis value halfway between the calculated onset and calculated end of the step transition region</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="5"><span>Half extrapolated tangents</span>: Results in a line drawn midway between the calculated onset and end tangents, and the intersection of this line with the data is considered the midpoint</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="6"><span>Fictive temperature</span>: Defines the intersection point of two extrapolated baselines extending from the start point and end point of the absolute running integral of the glass or step transition being analyzed with respect to the current x-axis. This option is primarily used to disregard the effects of enthalpy recovery from the calculation.
+</li>
+        </ul>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC" style="margin-top: 8px;"><span>Change</span>: Selects how you want the step change (height) to be determined in step transition calculations. The step change is calculated as the change in the Y-axis value between the two designated  points. Choose from the following:
+</p>
+        <ul MadCap:conditions="Primary.Mercury DSC,Primary.DSC">
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1"><span>Start</span>: The step change will be computed using the specified start limit on the Y-axis.</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2"><span>Onset</span>: The step change will be computed using the calculated step transition onset point on the Y-axis.</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="3"><span>Midpoint</span>: The step change will be computed using the onset tangent or end tangent Y-axis value determined at the midpoint X-axis value.</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="4"><span>End</span>: The step change will be computed using the calculated step transition end point on the Y-axis.</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="5"><span>Stop</span>: The step change will be computed using the specified stop limit on the Y-axis.
+</li>
+        </ul>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC" class="pBacktoTop"><a href="#top" class="selected">Back to top</a>
+        </p>
+        <h2 MadCap:conditions="Primary.DSC,Primary.Mercury DSC"><a name="Step"></a>Step Transition</h2>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">Use the <span>Step transition</span> analysis to calculate the onset, end, inflection, and signal change of a step transition in the curve. For example, this analysis enables you to determine decomposition temperatures by TGA.
+</p>
+        <ul MadCap:conditions="Primary.Mercury DSC,Primary.DSC">
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1">Onset is calculated as the intersection of the first and second tangents. 
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2">Inflection is the point on the curve between the first and third tangents with the steepest slope. 
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="3">End is calculated as the intersection of the second and third tangents. 
+</li>
+        </ul>
+        <h3 MadCap:conditions="Primary.DSC,Primary.Mercury DSC">Step Transition Analysis Options </h3>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">&#160;</p>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC" style="margin-top: 8px;"><span>Onset type</span>: Select between the following options: 
+</p>
+        <ul MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1"><span>Tangent</span>: Uses the selected point to calculate a tangent line</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2"><span>Manual tangent</span>: Allows you to define the start and stop limits for the onset tangent line 
+</li>
+        </ul>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC" style="margin-top: 8px;"><span>Transition type</span>: Select between the following options: 
+</p>
+        <ul MadCap:conditions="Primary.Mercury DSC,Primary.DSC">
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1"><span>Tangent</span>: Uses the selected point to calculate a tangent line 
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2"><span>Manual tangent</span>: Allows you to define the start and stop limits for the inflection tangent line 
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="3"><span>Inflection</span>: Determines the inflection point between the onset and end limits 
+</li>
+        </ul>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC" style="margin-top: 8px;"><span>End type</span>: Select between the following options: 
+</p>
+        <ul MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1"><span>Tangent</span>: Uses the selected point to calculate a tangent line 
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2"><span>Manual tangent</span>: Allows you to define the start and stop limits for the onset tangent line 
+</li>
+        </ul>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC" style="margin-top: 8px;"><span>Midpoint type</span>: Select one of the following methods to be used in determining the midpoint in step transition analyses: 
+</p>
+        <ul MadCap:conditions="Primary.Mercury DSC,Primary.DSC">
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1"><span>None</span>: Results in no step transition midpoint calculation </li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2"><span>Inflection</span>: Results in the use of the inflection point (the point of data with the steepest slope) as the midpoint of the step transition 
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="3"><span>Half height</span>: Defines the midpoint as the Y-axis value halfway between the calculated onset and calculated end of the step/glass transition region </li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="4"><span>Half width</span>: Defines the midpoint as the X-axis value halfway between the calculated onset and calculated end of the step transition region 
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="5"><span>Half extrapolated tangents</span>: Results in a line drawn midway between the calculated onset and end tangents, and the intersection of this line with the data is considered the midpoint 
+</li>
+        </ul>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC" style="margin-top: 8px;"><span>Change</span>: Selects how you want the step change (height) to be determined in step transition calculations. The step change is calculated as the change in the Y-axis value between the two designated points. Choose from the following: 
+</p>
+        <ul MadCap:conditions="Primary.Mercury DSC,Primary.DSC">
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1"><span>Start</span>: The step change will be computed using the specified start limit on the Y-axis. 
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2"><span>Onset</span>: The step change will be computed using the calculated step transition onset point on the Y-axis. 
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="3"><span>Midpoint</span>: The step change will be computed using the onset tangent or end tangent Y-axis value determined at the midpoint X-axis value. 
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="4"><span>End</span>: The step change will be computed using the calculated step transition end point on the Y-axis. 
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="5"><span>Stop</span>: The step change will be computed using the specified stop limit on the Y-axis. </li>
+        </ul>
+        <p class="pBacktoTop" MadCap:conditions="Primary.Mercury DSC,Primary.DSC"><a href="#top" class="selected">Back to top</a>
+        </p>
+        <h2 MadCap:conditions="Primary.Thermal General,Primary.Rheology General"><a name="Integrat"></a>Peak
+Integration
+</h2>
+        <p MadCap:conditions="Primary.Thermal General,Primary.Rheology General">Use the <span>Peak Integration</span> options to calculate and report the following:
+</p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="1">Peak onset time or temperature</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="2">Peak maximum time or temperature
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="3">Peak area
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="4">Extrapolated peak</li>
+        </ul>
+        <p MadCap:conditions="Primary.Thermal General,Primary.Rheology General">The peak is integrated with respect to time between the designated start and stop baseline limits. You select type of baseline used from the <span>Analysis </span>option (see below).  See <a href="Analyzing Data.htm">Basic Steps to Analyzing Data</a> to select associated analysis options before beginning.
+</p>
+        <ul>
+            <li class="NoteIndent" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="1">NOTE:&#160;To perform an <span>Peak Integration</span> analysis with divided areas, see TRIOS&#160;software Help topic <a href="Peak Integration Partial.htm">Peak Integration – Divide Peak</a>.</li>
+        </ul>
+        <h3 MadCap:conditions="Primary.Thermal General,Primary.Rheology General">Peak Integration Analysis Options
+</h3>
+        <h4 MadCap:conditions="Primary.Thermal General,Primary.Rheology General">Baseline Type – Linear
+</h4>
+        <p MadCap:conditions="Primary.Thermal General,Primary.Rheology General"><span>Linear Type</span>
+        </p>
+        <ul>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="1"><span>Double point</span>: Baseline is determined by two limits that define the transition range on either side
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="2"><span>Horizontal (from left)</span>:&#160;Baseline is determine by a linear extrapolation from a point chosen on the left side of the peak
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="3"><span>Tangent (from left)</span>:&#160;Baseline is determine by a tangent line drawn from a point chosen on the left side of the peak
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="4"><span>Manual tangent (from left)</span>: Baseline is determine by a tangent line defined by two points chosen on the left side of the peak
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="5"><span>Horizontal (from right)</span>: Baseline is determine by a linear extrapolation from a point chosen on the right side of the peak
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="6"><span>Tangent (from right)</span>: Baseline is determine by a tangent line drawn from a point chosen on the right side of the peak
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="7"><span>Manual tangent (from right)</span>: Baseline is determine by a tangent line defined by two points chosen on the right of the peak</li>
+        </ul>
+        <p style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General"><span>Onset Type</span>
+        </p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="1"><span>Tangent</span>: Uses the selected point to calculate a tangent line 
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="2"><span>Manual tangent</span>: Allows you to define the start and stop limits for the inflection tangent line </li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="3"><span>Inflection</span>: Automatically calculates the onset line as the tangent to the curve at the inflection point (defined as the steepest 1/10 portion of the curve from peak start to peak max).
+
+</li>
+        </ul>
+        <h4 MadCap:conditions="Primary.Thermal General,Primary.Rheology General">Baseline Type – Sigmoidal 
+</h4>
+        <p MadCap:conditions="Primary.Thermal General,Primary.Rheology General">A sigmoidal baseline is an s-shaped line that changes in level and/or slope before or after a peak. It is used to compensate for the change in baseline that occurs during a transition; the baseline is adjusted for the fraction reacted (alpha) versus time. </p>
+        <p MadCap:conditions="Primary.Thermal General,Primary.Rheology General">A sigmoidal baseline initially is calculated as a straight line between the selected limits. It is then recalculated for each data point between the limits as the weighted average between the projected horizontal or tangent baselines at peak start and end. The weighting factors for a given point are:  (1) one minus alpha times the initial baseline and (2) alpha times the final baseline. The area is then recalculated with the new baseline. If the new area differs from the previous area by more than one percent, the area is recalculated and the sigmoidal curve shifted repeatedly until two consecutive calculations of the area differ by no more than one percent. If the baseline fails to converge within ten iterations, the calculation is aborted.
+
+</p>
+        <p MadCap:conditions="Primary.Thermal General,Primary.Rheology General"><span>Left/Right Limits</span>
+        </p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="1"><span>Horizontal</span>: To calculate a sigmoidal horizontal baseline, two lines are drawn between the selected limits, then a sigmoidal curve is drawn with its midpoint halfway between the horizontals. This baseline type is often used when a glass transition and cure overlap.
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="2"><span>Tangent</span>: To calculate a sigmoidal tangent baseline, two tangent lines are fit within the selected limits on each side of the transition. A sigmoidal curve then joins the tangent lines.
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="3"><span>Manual tangent</span>:  The baselines are determined by tangent lines defined by the two points chosen on each side of the peak.  A sigmoidal curve then joins the tangent lines.
+</li>
+        </ul>
+        <p style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General"><span>Onset Type</span>
+        </p>
+        <ul>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="1"><span>Tangent</span>: Uses the selected point to calculate a tangent line 
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="2"><span>Manual tangent</span>:&#160;Allows you to define the start and stop limits for the inflection tangent line 
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="3"><span>Inflection</span>: Automatically calculates the onset line as the line tangent to the curve at the inflection point (defined as the steepest 1/10 portion of the curve from peak start to peak max).
+</li>
+        </ul>
+        <p MadCap:conditions="Primary.Thermal General" class="pBacktoTop"><a href="#top" class="selected">Back to top</a>
+        </p>
+        <h3 MadCap:conditions="Primary.DSC,Primary.Mercury DSC">DSC Peak Integration
+</h3>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">The program uses the sample size to normalize the area under the peak and obtain the experimental heat in joules per gram. If the sample size is zero, the heat is expressed in joules. If the Y-axis heat units are calories/sec instead of watts, the area is reported in calories per gram (or millicalories if the sample size is zero). If you want the results reported in mJ, uncheck the <span>Normalized Area</span> option on the <span>Analysis Options</span> &gt; <span>Peak Integration</span> page.
+</p>
+        <h4 MadCap:conditions="Primary.DSC,Primary.Mercury DSC">Special Area Analysis</h4>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">Special area calculations can be performed on a Peak Integration (enthalpy) analysis:</p>
+        <ol>
+            <li MadCap:conditions="Primary.DSC,Primary.Mercury DSC" style="margin-top: 6px;" value="1">Perform the <span class="boolean">Peak Integration (enthalpy)</span> analysis.</li>
+            <li MadCap:conditions="Primary.DSC,Primary.Mercury DSC" style="margin-top: 6px;" value="2">Click <span class="boolean">Edit Analysis</span>. </li>
+            <li MadCap:conditions="Primary.DSC,Primary.Mercury DSC" style="margin-top: 6px;" value="3">Click the <span class="boolean">Parameters</span> tab.</li>
+        </ol>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+            <img src="../image/Other/special area analysis_838x196.png" style="padding-left: 40px;width: 838;height: 196;" />
+        </p>
+        <ol MadCap:continue="true">
+            <li MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="4">Select <span class="boolean">Special area calculation</span> and then choose <span class="boolean">Percent Cystallinity</span>, <span class="boolean">Percent Cure</span>, or <span class="boolean">Heat Per Mole</span>. Make adjustments to the Standard Heat/Heat Per Mole values, if necessary. </li>
+        </ol>
+        <ol MadCap:continue="true" MadCap:conditions="Primary.DSC">
+            <li MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="5">Click <span class="boolean">Accept</span>.</li>
+        </ol>
+        <h3>Peak Integration for Instruments
+Other than DSC</h3>
+        <p>The peak area is normalized for other instrument types only when the signal being integrated is normalized. </p>
+        <ul>
+            <li class="NoteIndent" value="1">NOTE:  For these instruments, the <span>Normalized Area</span> option has no effect.
+
+</li>
+        </ul>
+        <p>The peak onset is calculated as the intersection of the onset tangent line with the calculated baseline. The onset tangent line is fit to the current X-axis type, and can be selected in automatic mode (the default condition) or manual mode (selected using the <span>Analysis Options</span> &gt; <span>Peak Integration</span> page).</p>
+        <ul>
+            <li class="NoteIndent" value="1">NOTE:  The onset line and onset point are not displayed if the axis scaling is log.
+
+</li>
+            <li class="NoteIndent" value="2">NOTE:  Use caution when integrating peaks that have been rotated.  
+For more information, see <a href="Using Analysis Tools.htm#Curve">Using Analysis Tools</a>.
+
+</li>
+        </ul>
+        <p>If the measured data includes superheating or supercooling (temperature hysteresis of more than 0.25°C), the onset point is determined at the superheating or supercooling point. Superheating and supercooling are relevant only if the X-axis is temperature.
+</p>
+        <p>Use the <a href="Onset.htm">Onset point</a> analysis option to determine the temperature at which a change in the slope of the curve occurs (i.e., the onset point of a transition). The onset point is defined as the intersection of an initial tangent line with a final tangent line.
+</p>
+        <p class="pBacktoTop"><a href="#top" class="selected">Back to top</a>
+        </p>
+        <h2 MadCap:conditions="Primary.Mercury DSC,Primary.DSC"><a name="Oxidatio"></a>Oxidation Time/Temperature</h2>
+        <p MadCap:conditions="Primary.Mercury DSC,Primary.DSC">Use the <span>Oxidation time/temp</span> option to analyze DSC data from oxidation induction time (OIT) and oxidation temperature (OT) experiments.
+</p>
+        <ul MadCap:conditions="Primary.Mercury DSC,Primary.DSC">
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.Mercury DSC,Primary.DSC" value="1">Oxidation induction time (OIT) is a DSC test method that measures the time to oxidation onset of a sample held at an isothermal temperature and in an oxidizing atmosphere.
+
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Mercury DSC,Primary.DSC" value="2">Oxidation temperature (OT) is a DSC test method that measures the oxidation onset temperature of a temperature-programmed sample in an oxidizing atmosphere.</li>
+        </ul>
+        <h3 MadCap:conditions="Primary.Mercury DSC,Primary.DSC">Oxidation Time/Temperature Analysis Options
+</h3>
+        <p MadCap:conditions="Primary.Mercury DSC,Primary.DSC" style="margin-top: 8px;"><span>Onset Type</span>: Select between the following options:
+</p>
+        <ul MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Mercury DSC,Primary.DSC" value="1"><span>Tangent</span>: Uses the selected point to calculate a tangent line</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Mercury DSC,Primary.DSC" value="2"><span>Manual tangent</span>:&#160;Allows you to define the start and stop limits for the onset tangent line 
+</li>
+        </ul>
+        <p MadCap:conditions="Primary.Mercury DSC,Primary.DSC" style="margin-top: 8px;"><span>Transition type</span>: Select between the following options:
+</p>
+        <ul MadCap:conditions="Primary.Mercury DSC,Primary.DSC">
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Mercury DSC,Primary.DSC" value="1"><span>Tangent</span>: Uses the selected point to calculate a tangent line 
+</li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Mercury DSC,Primary.DSC" value="2"><span>Manual tangent</span>:&#160;Allows you to define the start and stop limits for the inflection tangent line </li>
+            <li class="bullet" style="margin-top: 8px;" MadCap:conditions="Primary.Mercury DSC,Primary.DSC" value="3"><span>Inflection</span>: Automatically calculates the onset line as the line tangent to the curve at the inflection point (defined as the steepest 1/10 portion of the curve from peak start to peak max).
+
+</li>
+        </ul>
+        <p MadCap:conditions="Primary.Mercury DSC,Primary.DSC"><b>See Also</b>
+        </p>
+        <p MadCap:conditions="Primary.Mercury DSC,Primary.DSC"><a href="Peak Integration Partial.htm">Peak Integration – Partial Areas</a>
+        </p>
+        <p class="pBacktoTop"><a href="#top" class="selected">Back to top</a>
+        </p>
+        <h2 MadCap:conditions="Primary.DSC,Primary.Mercury DSC"><a name="DSC"></a>DSC Conversion Calculation</h2>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">Use the DSC conversion calculation analysis option to generate the conversion data necessary for kinetics evaluation.</p>
+        <ol MadCap:conditions="Primary.Mercury DSC,Primary.DSC">
+            <li MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1">From the  <span class="boolean">Analysis</span> menu, select <span class="boolean">DSC conversion calculation</span>.</li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2">Click <span class="boolean">Analyze</span>. </li>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="3">Click <span class="boolean">Edit Analysis</span> and verify the desired selections:</li>
+        </ol>
+        <blockquote MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+            <ol style="list-style-type: lower-alpha;">
+                <li MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1">Parameters (same as standard <a href="#Peak" class="selected">Peak Integration</a> options) </li>
+            </ol>
+        </blockquote>
+        <p style="margin-top: 0.6em;margin-left: 80px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+            <img src="../image/DSC/Availavle Analysis Functions_DSC1.png" />
+        </p>
+        <blockquote MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+            <ol style="list-style-type: lower-alpha;" start="2">
+                <li MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2">Conversion: Select the desired Conversion limit</li>
+            </ol>
+            <blockquote>
+                <ul>
+                    <li MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1">Full – include entire data range</li>
+                </ul>
+                <p style="margin-top: 0.6em;margin-left: 40px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+                    <img src="../image/DSC/Available Analysis Functions_DSC2.png" />
+                </p>
+                <ul>
+                    <li MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1">Maximum conversion – only include specified conversion range</li>
+                </ul>
+                <p style="margin-top: 0.6em;margin-left: 40px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+                    <img src="../image/DSC/Available Analysis Functions_DSC3.png" />
+                </p>
+                <ul>
+                    <li MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1">From enthalpy – Allows you to enter the known heat of reaction and compensate for missing data either in the Reaction Start or Reaction Finish.</li>
+                </ul>
+                <p style="margin-top: 0.6em;margin-left: 40px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+                    <img src="../image/DSC/Available Analysis Functions_DSC4.png" />
+                </p>
+            </blockquote>
+        </blockquote>
+        <ol start="3" MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+            <li MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="3">Select the peak integration limits, and then click <span class="boolean">Accept</span>. A new document tab is generated with the conversion data.</li>
+        </ol>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC" class="pBacktoTop"><a href="#top" class="selected">Back to top</a>
+        </p>
+        <h2 MadCap:conditions="Primary.Thermal General,Primary.Rheology General"><a name="Running"></a>Running Integral</h2>
+        <p MadCap:conditions="Primary.Thermal General,Primary.Rheology General">Use the <span class="boolean">Running Integral</span> option when you want to determine the area under a peak or the ratio of different materials within a sample. For example, in TGA, this function is valuable for determining the relative amounts of evolved gases in a material. In DSC, it can be used to calculate the percent composition of polymer blends.</p>
+        <ul>
+            <li class="NoteIndent" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="1">NOTE: The <span class="boolean">Running Integral</span> option is not available if the Y4 axis is being used to graph a data signal.</li>
+            <li class="NoteIndent" MadCap:conditions="Primary.Thermal General,Primary.Rheology General" value="2">NOTE: You must use the Analyze/Integrate Peak/Running Integral analysis to obtain the correct peak area when integrating using any integrate peak option other than Linear. The more general Analyze/Running Integral analysis (described above) uses either a linear baseline or zero baseline (absolute integral) for integration, which will give a different running area than that reported by the Peak Integration analysis with a sigmoidal baseline.</li>
+        </ul>
+        <p MadCap:conditions="Primary.Thermal General,Primary.Rheology General" class="pBacktoTop"><a href="#top" class="selected">Back to top</a>
+        </p>
+        <h2 MadCap:conditions="Primary.DSC,Primary.Mercury DSC"><a name="Purity"></a>DSC Purity Analysis (ASTM E928)</h2>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC"><span class="boolean">Purity Analysis</span> can be used to calculate the absolute purity of a sample based on data obtained from the DSC (Differential Scanning Calorimeter) according to ASTM procedure E0928.* </p>
+        <ul>
+            <li class="NoteIndent" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1">NOTE: The DSC Purity Analysis is not recommended for analysis of SDT (DSC-TGA) data. The results will not be as expected.</li>
+        </ul>
+        <h3 MadCap:conditions="Primary.DSC,Primary.Mercury DSC">About Purity Analysis</h3>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">TRIOS uses the van't Hoff equation to calculate your sample's purity, performing a series of operations using the data file. First, there is an initial scan of the peak to find the baseline, peak area, and peak height, which are needed to calculate are segments. A second scan divides the peak into the number of partial area segments specified on the Purity Options - Partial Area page (25 is the default) to find the TS versus 1/F curve. The segments are equally spaced along the 1/F axis. The first segment starts when the peak height is the specified percent of the maximum height or the input value (10 percent is the default). The last segment ends at the specified maximum percent of the total peak area or the input value (50 percent is the default).</p>
+        <ul>
+            <li MadCap:conditions="Primary.DSC,Primary.Mercury DSC" class="NoteIndent" value="1">NOTE: If the curve does not contain enough points to allow the specified number of segments, the allocation continues until the maximum partial area percent of the total peak is reached.</li>
+        </ul>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">A correction is made at the end of each segment for the temperature difference between the sample and sample thermocouple (using the onset slope value entered in the analysis options).Then a nonlinear least squares technique is used to approximate the area correction for the TS versus 1/F curve. (This is done to linearize the usual curvature of the line, commonly attributed to undetected melting of the sample before peak start.) A least-squares fit to a straight line is used to calculate the slope and intercept of the TS versus the corrected 1/F curve. The corrected peak area is used to calculate the heat of fusion unless you have opted to used the uncorrected area, or have entered a known heat of fusion for the sample. Lastly, the van’t Hoff equation is used to calculate the impurity level and convert it to the purity.</p>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">&#160;</p>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">If you use this data analysis program to plot TS versus 1/F, it should result in a straight line with a slope of RT02 X/DHf (melting point depression) and an intercept of T0 (melting point of a pure sample). In actual practice, the plot of TS versus 1/F results in a curve. This curve is thought to be the result of "undetected melting." A correction value is added to the value of F so that a straight line results. The impurity level of your sample is calculated from the slope of the TS versus 1/F line. The heat of fusion is calculated using the total peak area.</p>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC"> </p>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">For additional information on purity analysis, see R.L. Blaine and C.K. Schoff, eds., <i>Determinations by Thermal Methods</i>, ASTM Special Technical Publication 838, Publication code 04-838000-40.</p>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">* For more information go to http://www.astm.org or write to ASTM, 100 Barr Harbor Drive, West Conshohocken, PA 19428-2959, (610) 832-9500.</p>
+        <h3 MadCap:conditions="Primary.DSC,Primary.Mercury DSC"><a name="Guidelines"></a>Guidelines for Data Collection</h3>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC"> Be sure to calibrate your DSC using indium at the heating rate to be used for subsequent sample analysis. Correct calibration of your DSC for cell constant and onset slope is extremely important. These calibration constants will affect the accuracy of your DSC Purity results.</p>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">Before performing Purity analysis, you will need to gather the data. To obtain the best results from the DSC Purity analysis, use the following optimum experimental conditions for purity determinations:</p>
+        <ul>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1"> Sample size = 1.7 mg</li>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2"> Heating rate = 0.5 °C/min</li>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="3"> Impurity level &lt; 2 mol%</li>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="4"> Data sampling interval = 1 sec/point</li>
+        </ul>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">Encapsulate the sample as tightly as possible to minimize gradients and/or sample movement.</p>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">Slight variations from the above values are acceptable; however, for the most accurate results, you need to maintain as many of these parameters, at the most optimum value possible, during data collection.</p>
+        <h3 MadCap:conditions="Primary.DSC,Primary.Mercury DSC">Basic Steps for Performing Purity Analysis</h3>
+        <ol>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1">Collect your data following the <a href="#Guidelines" class="selected">Guidelines for Data Collection</a>.</li>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2">Obtain calibration values for cell constant and slope at 0.5°C/min. Also obtain the molecular weight for the sample to be analyzed–if you don't know this value, use a molecular weight of 100 g/mol.</li>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="3">Locate and open the desired purity file.</li>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="4">Select <span class="boolean">Purity Analysis</span> from the drop-down menu on the Function toolbar.</li>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="5">Click <span class="boolean">Analyze</span>. Confirm the molecular weight (update if needed) and click <span class="boolean">OK</span>.</li>
+        </ol>
+        <p style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+            <img src="../image/DSC/purity_analyze.png" style="padding-left: 40px;" />
+        </p>
+        <ol MadCap:continue="true">
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="6">Click <span class="boolean">Edit Analysis</span> &gt; <span class="boolean">Purity</span> tab to set up the desired <a href="#PurityAnalysisOptions" class="selected">purity analysis options</a>.</li>
+        </ol>
+        <p style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+            <img src="../image/DSC/purity dialog_method a.png" style="padding-left: 40px;" />
+        </p>
+        <ol MadCap:continue="true">
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="7">Click <span class="boolean">Accept</span> to analyze the data.</li>
+        </ol>
+        <ul>
+            <li class="NoteIndent" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1">NOTE: When selecting peak integration limits, be sure to select the left (or leading) well below (usually about 5°C) the apparent onset to melting.</li>
+        </ul>
+        <h4 MadCap:conditions="Primary.DSC,Primary.Mercury DSC"><a name="PurityAnalysisOptions"></a>Purity Analysis Options</h4>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC"><span class="boolean">Method A: Partial Area</span>
+        </p>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">Select the <span class="boolean">Method A</span> option to set up the parameters for performing a partial area purity analysis.</p>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+            <img src="../image/DSC/purity dialog_method a.png" style="padding-left: 0px;" />
+        </p>
+        <ol>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1">Enter the <span class="boolean">Number of partial areas</span>(the default value is 25). The number of partial areas is computed by the program and used in the purity calculations. The reciprocals of these partial areas are spaced approximately equal.</li>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2">Enter the <span class="boolean">Starting partial area fraction</span> (fraction of peak maximum) as a decimal (the default is 0.10 [10 percent]). The first partial area begins at the left edge of the peak range, and extends to the point where the signal is a specified fraction of the peak height below the baseline.</li>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="3">Enter the <span class="boolean">Ending partial area fraction</span> (fraction of peak area) as a decimal (the default is 0.50 [50 percent of the total area]). The last partial area ends when it exceeds or equals this fraction of the total peak area.</li>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="4">Select <span class="boolean">Constrain area correction (c)</span>. Enter the upper and lower limits of the area correction factor as the Constraints on area correction factor. The "missing area" correction factor must fall within the specified range (0.0 &lt; Factor &lt; 0.2 is the default). You can force the correction to a specific value by setting the lower and upper limits of the range to the same value; however, it is more often used to force the correction to remain below a selected value (the upper limit value).<br /><br />If the correction factor selected by the program is equal to the upper limit, the amount may be inadequate to obtain a good fit to the straight line, and DSC Purity obtained may be incorrect. Check the fit (using the RMS deviation value in the Results Report). If necessary, you can reanalyze the data with a larger maximum area correction factor. A small RMS deviation indicates a good fit to the straight line.</li>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="5">Click <span class="boolean">Accept</span> to apply these parameters.</li>
+        </ol>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">&#160;</p>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC"><span class="boolean">Method B: Peak Height</span>
+        </p>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">Select the Method B option to set up parameters for performing a peak height purity analysis.</p>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC">
+            <img src="../image/DSC/purity dialog_method b.png" />
+        </p>
+        <ol>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="1">Enter the <span class="boolean">Number of partial areas</span>(the default value is 25). The number of partial areas is computed by the program and used in the purity calculations. The reciprocals of these partial areas are spaced approximately equal.</li>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="2">Enter the <span class="boolean">Starting peak height</span> as a decimal (the default value is 0.10 [10 percent]).</li>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="3">Enter the <span class="boolean">Ending peak height</span> as a decimal (the default value is 0.90 [90 percent]).</li>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" value="4">Click <span class="boolean">Accept</span> to apply these parameters.</li>
+        </ol>
+        <p MadCap:conditions="Primary.DSC,Primary.Mercury DSC" class="pBacktoTop"><a href="#top" class="selected">Back to top</a>
+        </p>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

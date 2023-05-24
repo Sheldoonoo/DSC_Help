@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Discovery DSC|Running Discovery DSC Experiments" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.Thermal General" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Stopping a Discovery Experiment</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/TableStyles/InThisTopic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><span class="MCBreadcrumbsSelf">Using the Discovery DSC</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Running Discovery DSC Experiments</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Stopping an Experiment and/or Run Sequence</span>
+        </div>
+        <h1><a name="top"></a>Discovery Instrument: Stopping an Experiment and/or Run Sequence</h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../Resources/TableStyles/InThisTopic.css');margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+            <caption>In this topic </caption>
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Stopp" class="tablenavigationbody selected">Stopping an Experiment</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowEnd_ColEnd"><a href="#Stopping" class="tablenavigationbody selected">Stopping the Autosampler&#160;Sequence</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>When an experiment is in progress, you can stop the experiment and/or sequence.</p>
+        <h2><a name="Stopp"></a> 
+
+Stopping an&#160;Experiment</h2>
+        <p>There are several ways to halt an experiment and save the data:  </p>
+        <ul>
+            <li class="bullet" value="1">From the <span class="boolean">Experiment</span> tab (Discovery TGA shown):</li>
+        </ul>
+        <p>
+            <img src="../image/Other/Thermal Start Exp.png" style="padding-left: 40px;" />
+        </p>
+        <ul MadCap:conditions="Primary.DSC,Primary.TGA">
+            <li class="bullet" value="2">From the instrument user interface (select the <span class="boolean">Stop</span> button on the instrument user interface, or press the <span class="boolean">Stop</span> button on the instrument keypad):</li>
+        </ul>
+        <p MadCap:conditions="Primary.TGA,Primary.DSC">
+            <img src="../image/Other/Thermal touch screen Start Exp.png" class="imgIndent" />
+        </p>
+        <p>After pressing <span>Stop</span>, the End of Test conditions activate. The end of test temperature conditions are defined within the <span>Advanced </span>setting of the experiment.  The other end of test/sequence conditions are defined through the Discovery <span>Options</span>. For more information on the Discovery Options, see <MadCap:conditionalText MadCap:conditions="Primary.DSC,Primary.TGA"><a href="../DSC Topics/Configuring the Instrument_DSC.htm">Configuring Instrument Options</a></MadCap:conditionalText>.</p>
+        <h2><a name="Stopping"></a>Stopping the Autosampler Sequence</h2>
+        <p>When an Autosampler sequence is in progress, the following stop options are available through TRIOS software only, and not through the  <MadCap:conditionalText MadCap:conditions="Primary.DSC,Primary.TGA">user interface or keypad.</MadCap:conditionalText></p>
+        <p MadCap:conditions="Primary.DSC,Primary.TGA">
+            <img src="../image/Other/Thermal stop autosampler.png" />
+        </p>
+        <ul>
+            <li class="bullet" value="1"><span>Stop Immediately</span>: Select this Autosampler stop option to immediately halt the active run or action (e.g., air cool) and terminate the sequence.</li>
+            <li class="bullet" value="2"><span>Stop After&#160;Current Run</span>: Select this Autosampler stop option to halt the sequence upon the conclusion of the current run.</li>
+        </ul>
+        <p MadCap:conditions="Primary.DSC,Primary.TGA">Select <span>Go to Next</span> to immediately halt the current run and continue to the next run in the sequence.</p>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

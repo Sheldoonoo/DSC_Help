@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" class="" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Setting Up a Modulated DSC® Heat Only Procedure</title>
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/InThisTopic.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <h1 style="text-align: left;"><a name="top"></a>Setting Up a Modulated DSC<sup>®</sup> Heat Only Procedure</h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../../Resources/TableStyles/InThisTopic.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+            <caption>In this topic</caption>
+            <col style="width: 98px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Test" class="tablenavigationbody selected">Test setup</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowEnd_ColEnd"><a href="#Advanced" class="tablenavigationbody selected">Advanced</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Three variables are adjusted to obtain the desired MDSC<sup>®</sup> temperature profile—the underlying heating, modulation period, and temperature amplitude of modulation.  When studying melting  events, it is beneficial to adjust these variables so that the minimum instantaneous heating rate achieved is 0°C/minute (isothermal).  By not cooling the material at any time during the modulation, the possibility for "artificially" affecting any observed crystallization phenomena is eliminated.  More importantly, when the instantaneous heating rate is zero, there is no heat flow associated with heat capacity and, therefore, any heat flow observed at the top of the raw modulated heat flow signal must be the result of kinetic phenomena.
+
+</p>
+        <h2><a name="Test"></a>Test Setup</h2>
+        <p MadCap:conditions="Primary.DSC">To select this test,  click <span class="boolean">Experiments</span> &gt; <span class="boolean">Design View</span> in the File Manager. In the <span class="boolean">Procedure</span> window, select <span class="boolean">Modulated</span> from the <span class="boolean">Mode</span> drop-down list (shown below).</p>
+        <p>
+            <img src="../../image/DSC/modulated mode.png" MadCap:conditions="Primary.DSC" />
+        </p>
+        <p>Choose the following parameters after selecting the MDSC Heat Only procedure:</p>
+        <ol>
+            <li class="NumberedIndent" value="1"><span>Modulation period</span>:  Use a modulation period of 40 seconds. Longer periods (60 seconds) are recommended for polymer samples greater than 15 mg.</li>
+            <li class="NumberedIndent" value="2"><span>Ramp rate</span>:  Select an underlying heating rate of 5°C/minute or less, if required to get a minimum of four modulation cycles over the width of the melting peak (measure at half-height).
+
+</li>
+            <li class="NumberedIndent" value="3"><span>Start </span>and <span>Final temperature</span>:  The starting and final temperatures should be set to cover a wide enough temperature range to observe all the events of interest.  As in conventional DSC, the maximum range is –180 to 725°C, but may be reduced depending on the type of sample pan and cooling accessory used.
+ The higher temperature should be low enough to prevent the onset of decomposition.</li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Advanced"></a>Advanced</h2>
+        <p>The <span>Advanced </span>menu contains additional experimental conditions that can be modified to optimize testing for specific situations. For most experiments, the system default values shown are recommended.</p>
+        <p>
+            <img src="../../image/DSC/advanced menu.png" />
+        </p>
+        <ol>
+            <li class="NumberedIndent" value="1"><span>Load Window</span> (applicable for Autosampler instruments only): This parameter is used to specify temperature range used to load the sample for the specified run.  The experiment will not start until this condition is met.
+Select between the following options:
+</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" value="1">Check the <span>Use Standby Temperature</span> option to use the standby temperature (as defined on the <a href="../Setting the Temperature.htm"><span>General </span>Control panel</a>).</li>
+            <li class="SubBulletIndent" value="2">Uncheck this option to define a specific temperature range for load.
+</li>
+        </ul>
+        <ol>
+            <li class="NumberedIndent" value="2"><span>End of Test</span> options:</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" value="1">	For DSC Autosamplers:  Check <span>Discard pan in waste bin at end of test</span> to have the Autosampler arm place the pan in the waste bin at the end of the run. If this is not selected, the arm will return the pan to its previous position on the sample tray at the end of the run.
+</li>
+            <li class="SubBulletIndent" value="2"><span>Use Standby Temperature</span>: This parameter is used to specify the temperature used to load the sample for the specified run. </li>
+            <li class="SubBulletIndent2" value="3">Check this option to use the standby temperature (as defined on the <a href="../Setting the Temperature.htm"><span>General </span>Control panel</a>). </li>
+            <li class="SubBulletIndent2" value="4">Uncheck this option to define a specific temperature range for unload.
+ 
+If needed, enter the delay time that the instrument will wait after reaching the unload temperature range before unloading the sample. A delay time of 2 minutes (120 S) should be used when an experiment ends with the cell at subambient temperature. This allows time for the cell lids and cover to warm in order to prevent moisture from condensing on cold components.</li>
+        </ul>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

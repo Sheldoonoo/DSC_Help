@@ -1,0 +1,13 @@
+var xmlSkinData = "";
+xmlSkinData += '<?xml version=\"1.0\" encoding=\"utf-8\"?>';
+xmlSkinData += '<CatapultSkin Version=\"1\" Comment=\"Silver theme skin\" Anchors=\"Width,Height\" Width=\"800px\" Height=\"600px\" Top=\"0px\" Left=\"0px\" Bottom=\"0px\" Right=\"0px\" Tabs=\"TOC,Search,Favorites\" DefaultTab=\"TOC\" UseBrowserDefaultSize=\"True\" UseDefaultBrowserSetup=\"True\" Title=\"TRIOS Online Help\" AutoSyncTOC=\"True\">';
+xmlSkinData += '    <Index BinaryStorage=\"True\" />';
+xmlSkinData += '    <HtmlHelpOptions ShowMenuBar=\"False\" TopmostWindowStyle=\"False\" Buttons=\"Hide,Locate,Back,Forward,Stop,Refresh,Home,Font,Print\" EnableButtonCaptions=\"True\" NavigationPaneWidth=\"0\" />';
+xmlSkinData += '    <Stylesheet Link=\"Stylesheet.xml\">';
+xmlSkinData += '    </Stylesheet>';
+xmlSkinData += '    <WebHelpOptions NavigationPaneWidth=\"350\" />';
+xmlSkinData += '    <Toolbar EnableCustomLayout=\"true\" Buttons=\"ToggleNavigationPane|AddTopicToFavorites|Print|Separator|Back|Forward|Stop|SelectBrowseSequence|Refresh|Home\">';
+xmlSkinData += '        <Script />';
+xmlSkinData += '    </Toolbar>';
+xmlSkinData += '</CatapultSkin>';
+CMCXmlParser._FilePathToXmlStringMap.Add('Skin', xmlSkinData);

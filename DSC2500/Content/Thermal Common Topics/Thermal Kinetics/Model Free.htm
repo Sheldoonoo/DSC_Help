@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" conditions="Primary.DSC" MadCap:conditions="Primary.Thermal General" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Thermal Kinetics - Model Free</title>
+        <link href="../../Resources/TableStyles/InThisTopic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="../../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="top"></a>Model-Free Kinetics</h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../../Resources/TableStyles/InThisTopic.css');margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+            <caption>In this topic</caption>
+            <col style="width: 215px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Editing" class="tablenavigationbody selected">Editing Table Parameters</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Copying" class="tablenavigationbody selected">Copying Parameters</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowEnd_ColEnd"><a href="#Customiz" class="tablenavigationbody selected">Customizing Table View</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Overview</h2>
+        <p>The rate of a chemical reaction depends on the temperature and on the proportion of unreacted substance (or the conversion of the reaction, α). The Arrhenius equation (activation energy) is generally used for the temperature dependence. The effect of conversion is, however, more difficult to describe. Nth order kinetics applies a simple model, whereby the initial rate of an isothermally performed reaction corresponds to the rate constants at this temperature. The rate decreases uniformly towards zero during the course of the reaction. The activation energy is considered to be constant. In practice, the function of  is complex and the activation energy depends on the conversion. This is especially the case with solid state reactions, heterogeneous reactions (e.g. liberation of gas), or with parallel reactions.</p>
+        <p>Model-Free Kinetics (MFK) is based on the realization that the function of  and the activation energy indeed depend on the reaction conversion, but that they are always the same at a particular conversion (isoconversion method), independent of the heating rate used. Because of this, they can be calculated from several measurements at different heating rates. The main application of kinetic investigations is for the accurate prediction of the reaction conversion at (almost) any isothermal temperature or heating rate. Without using any assumptions on the reaction model, the MFK approach calculates the activation energy of a chemical reaction as a function of the degree of  . Using this information, alpha can be calculated as a function of time for various isothermal temperatures. This differs from other methods, where assumptions on the model of a chemical reaction have to be made. Especially when these models change during a reaction, large discrepancies between theory and experiment can arise.</p>
+        <p>The cornerstone of the model-free approach to kinetic analysis is the use of the isoconversion principle. It states that at a constant extent of conversion the reaction rate is only a function of the temperature.</p>
+        <p>
+            <img src="../../image/math/kinetics_model-free_1.png" />
+        </p>
+        <p>The isoconversional methods make use of multiple heating programs (i.e., different heating rates or/and temperatures) because this is practically the only way to obtain data on the variation of the rate at a constant extent of conversion. Because the derivative of f(α) in Eq. (1) is zero, the isoconversional methods allow the  value to be determined without choosing the reaction model that eliminates the respective uncertainty. This isoconversional method describes the process kinetics by using multiple single step kinetic equations each of which is associated with a certain extent of conversion.</p>
+        <p>The most popular isoconversional methods are the methods of Flynn and Wall, and Ozawa currently used in our TGA Decomposition Kinetics package. In this approach, the following equation model is employed:</p>
+        <p>
+            <img src="../../image/math/kinetics_model-free_2.png" />
+        </p>
+        <p>Where:</p>
+        <p>ß= heating rate</p>
+        <p>E<span style="vertical-align: sub; font-weight: normal; color: #000000;">α</span>= Activation Energy</p>
+        <p>If a process under study obeys single step kinetics, the kinetic models of these methods yield a series of parallel lines that have the same slope. As a result the E<span style="vertical-align: sub; font-weight: normal; color: #000000;">α</span> values do not vary with α. If the process involves multiple steps of different activation energies, the dependencies of <i>ln</i>(ß) vs. 1/Tα can still be approximated by straight lines whose slope, however, changes systematically with α so that E<span style="vertical-align: sub; font-weight: normal; color: #000000;">α</span> demonstrates a systematic variation with α. The Flynn and Wall and Ozawa methods introduce some systematic error in  E<span style="vertical-align: sub; font-weight: normal; color: #000000;">α</span> when the value varies with α. This error is eliminated in the MFK isoconversional method. According to this method, for a set of n experiments carried out at different arbitrary heating programs, <i>Ti(t)</i> the E<span style="vertical-align: sub; font-weight: normal; color: #000000;">α</span> value is determined as the value that minimizes the function:</p>
+        <p>
+            <img src="../../image/math/kinetics_model-free_3.png" />
+        </p>
+        <p>where</p>
+        <p>
+            <img src="../../image/math/kinetics_model-free_4.png" />
+        </p>
+        <p>The systematic error is eliminated by carrying out the integral in Equation (4) over small time intervals. In Equation (4) α varies from Δα to 1–Δα with a step Δα which is usually taken to be 0.02.</p>
+        <p>One of the primary goals in performing kinetic evaluations of thermal analysis data is to generate predictive models. The predictive equations resulting from the MFK analysis are as follows:</p>
+        <p>
+            <img src="../../image/math/kinetics_model-free_5.png" />
+        </p>
+        <p>Equation (5) can be modified to employ arbitrary heating program data for predicting isothermal kinetics as follows:</p>
+        <p>
+            <img src="../../image/math/kinetics_model-free_6.png" />
+        </p>
+        <p>Predictions made by Equations (5) and/or (6) can be called "model-free predictions" because they do not require knowledge of the reaction model (or the preexponential factor). It has been experimentally demonstrated that the model-free equations give rise to reliable predictions, as kinetic predictions based on fitting single heating rate data fail.</p>
+        <h2>Experimental</h2>
+        <p>Most reactions are investigated with the DSC. TGA can also be used if you expect a change of weight proportional to the course of the reaction. In a preliminary experiment, the substance of interest is measured at relatively high heating rates, e.g. 10 or 20°C/min in order to quickly estimate the initial and final temperatures as well as the heating rates for the subsequent measurements. Once the transition range is determined, three or more samples are prepared and analyzed at different heating rates (e.g. 2, 5, 10 and 20°C/min.) In the DSC experiment, the peaks are integrated across the entire conversion range. Once all experiments are integrated, the software can perform the relevant calculations.</p>
+        <h2>Analysis</h2>
+        <p>The calculated output values are similar to those produced by other kinetic methods, with the exception that the classical “kinetic triplet” (A, E, and f(<span style="vertical-align: super; font-weight: normal; color: #000000;">α</span>)) is not necessarily determined. The most practical use of MFK is to create predictive plots based on the equations shown above. As such, the typical predictive indices and corresponding graphs should be compiled. These are detailed below.</p>
+        <p>Perform the experiments as outline above. Once the experiments are complete, it is necessary to analyze the data using <span class="boolean">DSC Conversion Calculation</span> prior to generating the kinetics.</p>
+        <ul>
+            <li class="NoteIndent" value="1">NOTE: Contact TA Instruments Sales to acquire the Kinetics key.</li>
+        </ul>
+        <ol>
+            <li style="margin-top: 8px;" value="1">From the <span class="boolean">Graph</span> &gt; <span class="boolean">Analysis</span> menu, select <span class="boolean">DSC conversion calculation</span> from the Function toolbar.</li>
+            <li style="margin-top: 8px;" value="2">Select the peak integration limits, and then click <span class="boolean">Analyze</span>. New document tabs are generated with the conversion data.</li>
+            <li style="margin-top: 8px;" value="3">Repeat for each experiment file.</li>
+            <li style="margin-top: 8px;" value="4">Once all the files are analyzed, select the associated files from the File Manager. Then, from the right-click pop-up menu, select <span class="boolean">Transformations...</span> &gt; <span class="boolean">Model Free Kinetics....</span></li>
+        </ol>
+        <p>
+            <img src="../../image/Other/transformations_model free kinetics.png" style="padding-left: 40px;" />
+        </p>
+        <ol MadCap:continue="true">
+            <li value="5">A Model Free Kinetics Analysis options window displays. Choose the desired options and click <span class="boolean">OK</span>.</li>
+        </ol>
+        <p>
+            <img src="../../image/Other/model free kinetics dialog.png" style="padding-left: 40px;" />
+        </p>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

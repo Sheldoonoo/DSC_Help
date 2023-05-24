@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.Thermal General" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Thermal Kinetics - ASTM 1641 (Flynn/Wall Method)</title>
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/InThisTopic.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <h1><a name="top"></a>Thermal Stability Kinetics – ASTM E1641 (Flynn/Wall Method)</h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../../Resources/TableStyles/InThisTopic.css');margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+            <caption>In this topic</caption>
+            <col style="width: 138px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Editing" class="tablenavigationbody selected">Overview</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Copying" class="tablenavigationbody selected">Experimental</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowEnd_ColEnd"><a href="#Customiz" class="tablenavigationbody selected">Analysis</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Overview</h2>
+        <p>ASTM Procedure E1641 is based on a kinetics approach originally developed by Flynn and Wall [1], which requires three or more determinations at different linear heating rates, usually between 0.5 and 50°C/minute. This approach assumes the basic Arrhenius equation:</p>
+        <p>
+            <img src="../../image/Other/Flynn Wall eq1_205x33.png" style="width: 205;height: 33;" />
+        </p>
+        <p>Where:</p>
+        <p>α= fraction of decomposition</p>
+        <p>t = time (seconds)</p>
+        <p>Z = pre-exponential factor (1/seconds)</p>
+        <p>Eα=activation energy (J/mole)</p>
+        <p>R = gas constant (8.314 J/mole K)</p>
+        <p>n = reaction order (dimensionless)</p>
+        <p>Flynn and Wall rearranged this equation to get the following equation:</p>
+        <p>
+            <img src="../../image/Other/Flynn Wall eq2_192x40.png" style="width: 192;height: 40;" />
+        </p>
+        <p>Where:</p>
+        <p>b = adjustable parameter (refer to ASTM E1641) [2]</p>
+        <p>ß = heating rate (°C/minute)</p>
+        <p>T = temperature of weight loss (°C)</p>
+        <p>Using a point of equivalent weight loss (decomposition) which is beyond any initial weight loss due to volatiles evolution, a plot of ln b vs 1/T is constructed. The slope of this straight line plot is then used to calculate activation energy (Eα), and the pre-exponential factor (Z) is calculated by the interactive method of Zsako and Zsako [3].</p>
+        <h2>Experimental</h2>
+        <p>In a preliminary TGA experiment, the substance of interest is measured at several different rates through its decomposition region. The resultant weight loss curves are then converted to conversion plots using the TGA Conversion function, and the data are collected into a single set of data at a specific conversion using the TGA Conversion set function, using a minimum of three different heating rates.  This data can then be analyzed using the Flynn Wall Isoconversion model.</p>
+        <h2>Analysis</h2>
+        <p>Perform the experiments as outlined above. Once the experiments are complete, it is necessary to analyze the data using <span class="boolean">TGA Conversion Calculation</span> prior to generating the kinetics.</p>
+        <ul>
+            <li class="NoteIndent" value="1">NOTE: Contact TA Instruments Sales to acquire the Kinetics key.</li>
+        </ul>
+        <ol>
+            <li style="margin-top: 8px;" value="1">From the <span class="boolean">Graph</span> &gt; <span class="boolean">Analysis</span> menu select <span class="boolean">TGA Conversion Calculation</span>. Click <span class="boolean">Analyze</span>.</li>
+            <li style="margin-top: 8px;" value="2">Click <span class="boolean">Edit Analysis</span>. In the <span class="boolean">Conversion</span> tab, select the <span class="boolean">Conversion limit</span> for Kinetics Conversion:<ul><li style="margin-top: 8px;" value="1"> <span class="boolean">Full</span></li><li style="margin-top: 8px;" value="2"><span class="boolean">Maximum conversion</span></li><li style="margin-top: 8px;" value="3"><span class="boolean">From enthalpy</span></li></ul></li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li style="margin-top: 8px;" value="3">Click <span class="boolean">Accept</span>. </li>
+            <li style="margin-top: 8px;" value="4">Repeat steps 1 and 2 for each experiment file.</li>
+            <li style="margin-top: 8px;" value="5">From this data, a plot of log  vs. 1000/T can be constructed to determine the various kinetic parameters as defined in Equations 1 and 2, as well as other kinetic analyses.To construct this plot, select the associated analyzed files from the File Manager. Then, from the right-click pop-up menu, select <span class="boolean">Transformations...</span> &gt; <span class="boolean">TGA Conversion Set...</span></li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li style="margin-top: 8px;" value="6">A Generate TGA IsoConversion Analysis Set dialog displays. Set the Conversion level and click <span class="boolean">OK</span>.</li>
+        </ol>
+        <p style="margin-top: 8px;" />
+        <ul>
+            <li class="NoteIndent" value="1">The kinetics calculations in this analysis use the ASTM method E1641 for conversion at the peak temperature. This method is based on the variation of the temperature at constant conversion with the heating rate. The peak temperature is used as the point of constant conversion for each file analyzed.</li>
+        </ul>
+        <ol start="6">
+            <li style="margin-top: 8px;" value="6">A new Kinetics document displays the kinetics data.</li>
+            <li style="margin-top: 8px;" value="7">From the Analysis menu, select <span class="boolean">Flynn Wall isoconversion</span> and click <span class="boolean">Analyze</span>.</li>
+            <li style="margin-top: 8px;" value="8">Click <span class="boolean">Edit Analysis</span> and verify the Analysis Settings.</li>
+            <li style="margin-top: 8px;" value="9">Click <span class="boolean">Accept</span>. The analysis results and fit are displayed on the curve.</li>
+            <li style="margin-top: 8px;" value="10">From this analysis document you can obtain conversion and rate constants plots.<ol style="list-style-type: lower-alpha;"><li style="margin-top: 8px;" value="1">From the File Manager, select the Kinetics Analysis Set document.</li><li style="margin-top: 8px;" value="2">Right-click and select <span class="boolean">Transformations...</span> &gt; <span class="boolean">Kinetics Conversion...</span> or <span class="boolean">Kinetics Rate Constants...</span> for configuration of the following plots. (Note that these options only appear after analyzing the kinetics set as described above)</li></ol><p style="margin-top: 8px;"><img src="../../image/Other/Transformations_Kinetics Conversion_Rate Constants.png" style="padding-left: 40px;" /></p></li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h3>Kinetics Conversion Plots</h3>
+        <p>
+            <img src="../../image/Other/kinetics conversion dialog.png" />
+        </p>
+        <ol>
+            <li style="margin-top: 8px;" value="1">In the Conversion Type drop-down menu, select either <span class="boolean">Isothermal</span> or <span class="boolean">IsoConversion</span>.</li>
+            <li style="margin-top: 8px;" value="2">Select either a single temperature point or temperature range for selection above.</li>
+            <li style="margin-top: 8px;" value="3">Enter in the associated temperature value.</li>
+            <li style="margin-top: 8px;" value="4">Select <span class="boolean">Show Options</span> to specify the number of points for each curve as well as the data spacing (log or linear).</li>
+        </ol>
+        <h3>Kinetics Rate Constants Plot</h3>
+        <p>
+            <img src="../../image/Other/Kinetics Rate Constant Constants dialog.png" />
+        </p>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Enter in the desired temperature range.</li>
+            <li style="margin-top: 8px;" value="2">Select <span class="boolean">Show Options</span> to specify the number of points for each curve.</li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2>References</h2>
+        <p>[1] Flynn and Wall, Polymer Lett., 19, 323 (1966).</p>
+        <p>[2] ASTM E1641-13, Standard Test Method for Decomposition Kinetics by Thermogravimetry Using the Ozawa/Flynn/Wall Method, ASTM International, West Conshohocken, PA, 2013, www.astm.org</p>
+        <p>[3] Zsako and Zsako, J. Therm. Anal., 19, 33 (1980).</p>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

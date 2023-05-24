@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Discovery DSC|Calibrating the Discovery DSC" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.DSC" class="" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Calibrating Enthalpy (Cell Constant) and Temperature</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/TableStyles/InThisTopic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><span class="MCBreadcrumbsSelf">Using the Discovery DSC</span><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="DSC Calibration Overview.htm">Calibrating the Discovery DSC</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Calibrating Enthalpy (Cell Constant) and Temperature</span>
+        </div>
+        <h1><a name="top"></a>Calibrating Enthalpy (Cell Constant) and Temperature</h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../Resources/TableStyles/InThisTopic.css');margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+            <caption>In this topic</caption>
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Overview" class="tablenavigationbody selected">Overview</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Collecti" class="tablenavigationbody selected">Collecting Enthalpy (Cell Constant) and Temperature Calibration Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Analyzin" class="tablenavigationbody selected">Analyzing Cell Constant/Temperature Calibration Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Selectin" class="tablenavigationbody selected">Selecting Enthalpy &amp; Temperature Calibration Results</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowEnd_ColEnd"><a href="#Using" class="tablenavigationbody selected">Using Multiple Standards to Calibrate Temperature</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Overview"></a>Overview</h2>
+        <h3>Calibrating Enthalpy (Cell Constant) and Temperature</h3>
+        <p>This calibration is based on an experiment in which a standard metal (for example, indium) is heated through its melting transition. The calculated heat of fusion is compared to the theoretical value. The cell constant is the ratio of these two values. The onset slope, or thermal resistance, is a measure of the suppression of temperature rise that occurs in a melting sample in relation to the thermocouple. Theoretically, a standard sample should melt at a constant heating rate. As it melts and draws more heat, a temperature difference develops between the sample and the sample thermocouple. The thermal resistance between these two points is calculated as the onset slope of the heat flow versus temperature curve on the front of the melting peak. The onset value is used for kinetic and purity calculations to correct for this thermal resistance.
+</p>
+        <p>The temperature calibration data from this experiment is automatically calculated when the cell constant calibration results are saved.
+</p>
+        <p>Calibration data is determined for all the available heat flow types, so this calibration does not need to be redone if you change heat flow selection within the <span>TRIOS </span>&gt; <span>Options&#160;</span>&gt;&#160;<span>Discovery DSC</span> options.</p>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <p>&#160;</p>
+        <h3><a name="Calibrat"></a>Calibrating Temperature
+</h3>
+        <p>Temperature calibration is based on an experiment in which a temperature standard (for example, indium) is heated through its melting transition using the same conditions to be used in subsequent measurements ( heating rate and purge gas). The measured melting temperature of this standard is compared to the known melting temperature and the difference is calculated as the temperature calibration. Up to five unique standards may be used for temperature calibration. A single-point calibration shifts the sample temperature by a constant amount. A two- or more-point calibration shifts the temperature by a constant amount below the first point, uses an interpolated shift function through the calibration points, and shifts by a constant amount after the last point.
+</p>
+        <p>During Cell Constant calibration, the temperature calibration data from the cell constant calibration experiment is automatically stored when the cell constant calibration results are saved.</p>
+        <p>Follow these basic instructions for Enthalpy/Temperature calibration.</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="1"><a href="#Collecti" class="selected">Collect Enthalpy/Temperature Calibration data</a>, which requires heating a standard (for example, indium) through its melting transition using the same conditions to be used in subsequent measurements (heating rate and purge gas). The process described here uses only indium for temperature calibration. However, a total of five standards may be used. See <a href="#Using" class="selected">Using Multiple Standards to Calibrate Temperature</a> for more information.</li>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="2"><a href="#Analyzin" class="selected">Analyze the data</a>.
+</li>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="3"><a href="#Selectin" class="selected">Apply calibration results</a>.</li>
+        </ol>
+        <h2><a name="Collecti"></a>Collecting Enthalpy (Cell Constant) and Temperature Calibration Data
+</h2>
+        <p>The Enthalpy/Temperature calibration experimental setup can be performed by setting up the experiments manually using the Experimental View or automatically using the Calibration Setup page. The Calibration Setup method is the recommended procedure since it facilitates multiple run setup and simplifies input parameters.
+</p>
+        <p>You can collect data one of two ways:</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="1">Using <a href="#Enthalpy" class="selected">Calibration Setup</a></li>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="2">Using standard experimental creation using <a href="#Enthalpy2" class="selected">procedure templates</a></li>
+        </ol>
+        <h3>Sample Preparation
+</h3>
+        <ol>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="1">Choose an appropriate calibration material with a known heat of fusion (for example, indium).
+</li>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="2">Weigh an empty sample and reference pan and record their weights.</li>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="3"> Prepare a 1 to 5 mg sample of calibration material in a sample pan and record the weight. Crimp the pan, and then place it on the sample platform (or within an available Autosampler tray position).
+</li>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="4">Prepare a reference pan using the same pan type used for the sample. Crimp the pan, then position it on the reference platform (or within an available Autosampler tray position).
+</li>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="5">Verify the calibration standard properties (theoretical enthalpy and melting point) within <span>Discovery DSC</span> &gt; <span>Standards </span>page of TRIOS Options.</li>
+        </ol>
+        <p style="margin-bottom: 6px;margin-top: 8px;">&#160;</p>
+        <h3><a name="Enthalpy"></a>Enthalpy Calibration Using Calibration Setup</h3>
+        <p style="margin-bottom: 6px;margin-top: 8px;">Before you begin, verify that a <a href="Cal TZero.htm">Tzero calibration</a> had been run previously on the instrument, as a Tzero calibration must have been performed, analyzed, and applied before a Cell Constant calibration procedure can be run. If a temperature calibration is run without a Tzero calibration saved on the instrument, you will receive the error below. A Tzero calibration does not need to be performed with the new temperature calibration that is going to be run. <br /><img src="../image/DSC/cal error_293x162.png" style="width: 293;height: 162;" /></p>
+        <ol>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="1">To create a new calibration, access the File Manager <span>Calibration </span>panel. Then double-click <span class="boolean">Calibration Setup</span>. </li>
+            <li class="NumberedIndent" style="margin-bottom: 6px; margin-top: 8px;" value="2">When you create a run from the Calibration Experiment Setup page, the settings are automatically saved. The next time TRIOS is started, you will be asked if you would like to use your saved settings. Click <span class="boolean">Yes</span> to populate the fields with your previously entered data, or <span class="boolean">No</span> to  receive a blank experiment setup page. </li>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="3">The <span class="boolean">Calibration Experiment Setup</span> screen displays, allowing you to generate new calibrations. To view current calibration sets, open <span class="boolean">Calibration Data</span>. <br /></li>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="4">Select the <span class="boolean">Cell Constant/Temperature</span> checkbox to open the calibration form.</li>
+        </ol>
+        <p>
+            <img src="../image/DSC/Cell Constant Calibration_538x476.png" style="padding-left: 30px;width: 538;height: 476;" />
+        </p>
+        <ol>
+            <li value="5" class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;">Enter the following information.
+</li>
+        </ol>
+        <ol style="list-style-type: lower-alpha;">
+            <li class="LetterIndent" style="margin-top: 8px;margin-bottom: 6px;" value="1">Enter <span>Operator </span>name.
+</li>
+            <li class="LetterIndent" style="margin-top: 8px; margin-bottom: 6px;" value="2">Enter <span>Project </span>name, if desired.
+</li>
+        </ol>
+        <ol>
+            <li class="LetterIndent" style="margin-top: 8px;margin-bottom: 6px;" value="1">Click the <span>Reference </span>field to display the drop-down table. Select the pan position along with the sample mass. If the pan position and sample mass are not in the table, click <span>Edit </span>at the bottom of the table to enter applicable values.
+If loading pans manually, set this field equal to <span>0</span> (<span>None</span>).</li>
+            <li class="LetterIndent" style="margin-top: 8px;margin-bottom: 6px;" value="2">Enter any comments (<span>Notes</span>), if desired.
+</li>
+            <li class="LetterIndent" style="margin-top: 8px;margin-bottom: 6px;" value="3">Program the method parameters.</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="1">If you are using this standard for the first time, check the <span>Premelt </span>option to melt the sample prior to collecting data.
+</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px; margin-bottom: 6px;" value="2">Click <span class="boolean">Add Experiment</span> to add as many experiments as needed. Use the drop-down menu on the Reference to change the reference type. Once an experiment is added, the <span class="boolean">Remove Experiment</span> button becomes available. </li>
+            <li class="SubBulletIndent2" style="margin-top: 8px; margin-bottom: 6px;" value="3">Select <span class="boolean">Calibration</span> to perform a verification run after the calibration completes. </li>
+            <li class="SubBulletIndent2" style="margin-top: 8px; margin-bottom: 6px;" value="4">Select <span class="boolean">Verification</span> to perform another calibration in standard mode if the initial calibration run fails. Enter the Verification Criteria (temperature and enthalpy). Note that if the calibration fails, a warning message displays and the experiment will continue with the next item in the Running Queue.</li>
+        </ul>
+        <ol>
+            <li class="NumberedIndent" value="6">When complete, select from one of the following options:
+</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" style="margin-bottom: 6pt;" value="1"><span>Run All</span>: Sends the calibration experiments to the Running Queue and execute run sequence.
+</li>
+            <li class="SubBulletIndent" style="margin-bottom: 6pt;" value="2"><span>Queue All</span>: Sends the calibration experiments to the Running Queue for execution.
+</li>
+            <li class="SubBulletIndent" style="margin-bottom: 6pt;" value="3"><span class="boolean">Schedule All</span>:  Schedules the calibration to run at a later specified date. Allows you to select how often the calibration should be run, the time, and the begin and end date.</li>
+        </ul>
+        <p style="margin-bottom: 6pt;">Refer to <a href="DSC Calibration Overview.htm">DSC Calibration Overview</a> for information on setting up auto calibrations and scheduling runs.</p>
+        <h3><a name="Enthalpy2"></a>Enthalpy/Temperature Calibration Setup Using the Template</h3>
+        <p>This calibration requires one experiment using indium. A general procedure for calibration is given below. Experiment setup follows the same general instructions as a standard experiment. See <a href="Defining DSC Experimental Parameters.htm">Defining DSC Experimental Parameters</a>. Specific instructions applicable to enthalpy/temperature calibration are outlined here.
+</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="1">Choose an appropriate calibration material with a known heat of fusion (indium).
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="2">Weigh an empty sample and reference pan and record their weights.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="3">Prepare a 1 to 5 mg sample of a known calibration material in a sample pan and record the weight. Crimp the pan, and then position it on the sample platform (or within an available Autosampler tray position).
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="4">Prepare a reference pan using the same pan type used for the sample. Crimp the pan, then position it on the reference platform (or within an available Autosampler tray position).
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="5">Access the Design View and add a run.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="6">Click on the associated Design Run Form (Single Run Form).
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="7">Click on the <span>Sample </span>bar. Enter the required test parameters for the experiment.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="8">Click on the <span>Procedure </span>bar. Enter the requested test parameters.
+</li>
+            <li class="LetterIndent" value="1" style="margin-top: 8px;margin-bottom: 6px;">Select the <span>Mode </span>as <span>Calibration</span>.</li>
+            <li class="LetterIndent" style="margin-top: 8px;margin-bottom: 6px;" value="2">Select the&#160;<span>Test&#160;</span>type as <span>Cell Constant</span>. The associated procedure template displays. Enter the requested information. Select the <span>Segments </span>tab to view the associated method in segment form.</li>
+        </ol>
+        <p style="margin-top: 8px;margin-bottom: 6px;">
+            <img src="../image/DSC/DSC_constant temp_procedure.png" style="padding-left: 40px;" />
+        </p>
+        <ul>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="1"><span>Premelt</span>: If you are using this standard for the first time, check the <span>Premelt </span>option to melt the sample before starting the experiment.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="2"><span>Equilibrate </span>to a temperature below the onset of the known melting temperature of the material. Use the following equation to determine that temperature:
+<b>5 min. X Heating Rate (°C/min) = Temperature (°C)</b><br />Typical example: 5 min X 20°C/min = 100°C (below the onset of the literature melting temperature)
+</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="3"><span>Ramp</span>: Heat the material at the same heating rate that you will use in your subsequent experiments, to 50°C above the literature melting temperature
+</li>
+            <li class="NumberedIndent" value="9" style="margin-top: 8px;margin-bottom: 6px;">Once the experiment is set up, copy the experiment to the Running Queue and click <span>Start </span>to begin the calibration run.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="10">Once the experiment is complete, analyze the data. See <a href="#Analyzin" class="selected">Analyzing DSC Enthalpy/Temperature Calibration Data</a>.</li>
+        </ul>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Analyzin"></a>Analyzing Cell Constant/Temperature Calibration Data
+</h2>
+        <p>There are several ways to analyze the cell constant and temperature calibration data files within TRIOS. If you have multiple calibrations of the same calibration standard, TRIOS automatically calculates the results of each of the individual calibrations, then takes the average of those calibrations and applies that resultant to the instrument. All calibrations, including Tzero, Cell Constant, Temperature and Heat Capacity, both Standard and Modulated, can be analyzed from either the Results Manager or from within the History View.</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="1">Access the File Manager and click the <span>Results </span>tab or the <span>History </span>tab.</li>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="2">Right-click and select <span>Open</span> from the pop-up menu to open the calibration file(s).</li>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="3">Highlight all of the file(s) (indium plus all other temperature calibrants, if applicable), then right-click and select <span>Calibrations…</span> &gt; <span>Temperature / Cell Constant</span>, as shown below (left image is the <span>Results </span>tab; right image is the <span>History </span> tab).</li>
+        </ol>
+        <p>
+            <img src="../image/DSC/DSC_constant temp_results and history tabs.png" style="padding-left: 40px;" />
+        </p>
+        <ul>
+            <li class="NoteIndent" value="1">NOTE: If you are analyzing multiple temperature calibrations, you <b>MUST </b>analyze all of the calibration data files (including indium) simultaneously so that they appear within the same calibration set</li>
+        </ul>
+        <ol>
+            <li value="4">A summary of the calibration results is generated in the form of a new Calibration Results document, as shown below. This Calibration Results document offers several different views.</li>
+        </ol>
+        <p>
+            <img src="../image/DSC/DSC_constant temp_results.png" style="padding-left: 40px;" />
+        </p>
+        <ul>
+            <li class="SubBulletIndent" style="margin-top: 8px;margin-bottom: 6px;" value="1">Spreadsheet: A table view of the associated calibration results (<span>Measured Temperatures</span>, <span>Offsets</span>, and <span>Cell Constant</span>)
+</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;margin-bottom: 6px;" value="2">Graph: A graphical view of the associated calibration results.</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;margin-bottom: 6px;" value="3">Results Summary: This selection displays a summary of the calibration results. If desired, add a description or make changes to the calibration name.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="4"><span>Standard</span>: The selected standard
+</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="5"><span>Heat Flow Type</span>: Calibration data is determined for all the available heat flow types, so if you change the heat flow selection within the TRIOS Options &gt; <span>Discovery DSC</span> options, you do not need to recalibrate.
+</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="6"><span>TMelt (Ref)</span>: Theoretical melting point obtained from the <span>Discovery DSC</span>&#160;&gt; <span>Standards </span>page of TRIOS Options.
+</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="7"><span>TMelt (Meas)</span>: Experimental melting temperature per Heat Flow type. Review the associated graph to verify the analysis limits are as desired.</li>
+        </ul>
+        <ol>
+            <li class="NumberedIndent" value="5">To view or edit any of the individual calibrations, click <span>Edit/Show details</span>.</li>
+        </ol>
+        <p>
+            <img src="../image/DSC/DSC_constant temp_show details.png" style="padding-left: 40px;" />
+        </p>
+        <ol>
+            <li value="6" class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;">Click <span>GoTo </span>to view the graph of the calibration analysis, as well as verify the analysis limits.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="7">A new File Overlay document is created showing the analysis.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="8">To adjust the analysis limits for the selected plot, click<img src="../image/TRIOS/edit button.png" style="vertical-align: middle;" /> from the Analysis ribbon.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="9">Using the mouse, drag the cursors to the desired locations and then click <span class="boolean">Accept</span> in the Edit Analysis dialog box. to save the new limits. If you prefer to enter the limits manually, click <span>Settings</span>, then select the tab <span>Limits</span> and enter your left and right x-axis coordinates.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="10">After making any changes to the limits, the offset, enthalpy, and cell constant are automatically recalculated based on the new limits.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="11">Click the tab <span>Calibration Results</span> to view your results.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="12">If you would like to adjust the limits for any of the other calibration standards or heat flow types, repeat step 7 to step 11.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="13">To save the calibration results, select one of the following options:</li>
+            <li class="LetterIndent" value="1" style="margin-top: 8px;margin-bottom: 6px;"><span>Save Results</span>: This option saves the results to the calibration database in the instrument, but it does not enable the calibration.</li>
+            <li class="LetterIndent" style="margin-top: 8px;margin-bottom: 6px;" value="2"><span>Save and Apply</span>: This option saves the results to the database and enables the calibration.</li>
+            <li class="NumberedIndent" value="14" style="margin-top: 8px;margin-bottom: 6px;">When clicking either of the save options, an entry is automatically created on the Global Calibration page in the form of a "calibration bullet". The active calibration is signified by a blue “bullet”.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="15">To view all of the calibrations, access the File Manager and select the <span>Calibration </span>tab. The active calibrations are signified by the blue “bullets”.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="16">To change a calibration, simply select a different calibration bullet, and click <span>Apply </span>to enable that calibration.</li>
+        </ol>
+        <p>
+            <img src="../image/DSC/Calibration Data_bullets_534x454.png" style="padding-left: 40px;width: 534;height: 454;" />
+        </p>
+        <ol>
+            <li value="17">After saving the results, a copy of the Results Calibration document is automatically saved to the following folder:</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" value="1">Windows 7 and 8, and Vista: <b>C:\ProgramData\TA Instruments\TRIOS\Discovery DSC\CalibrationDocs</b></li>
+            <li class="SubBulletIndent" value="2">Windows XP:&#160;<b>C:\Document and Settings\All Users\Application Data\TA Instruments\TRIOS\Discovery DSC\CalibrationDocs</b></li>
+        </ul>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Selectin"></a>Selecting Enthalpy &amp; Temperature Calibration Results
+</h2>
+        <p>The Discovery DSC stores all the calibration results in a database internal to the instrument. This allows you to access and set calibrations accordingly to meet the specific needs of your experiment. Selection of the calibration set is made on the <a href="Cal Global Calibration Screen.htm">Calibration Data</a>.
+</p>
+        <p>After analyzing and saving the results, you can apply the results so they are used in future experiments.
+</p>
+        <p>Access the <span>Calibration</span> &gt; <span>Calibration Data</span> window from the File Manager to access the Calibration Data screen.
+</p>
+        <p>Verify the desired calibration set is selected after applying the new calibration result.</p>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Using"></a>Using Multiple Standards to Calibrate Temperature</h2>
+        <p>A total of 5 calibrants can be used for Temperature calibration.
+</p>
+        <ol>
+            <li style="margin-top: 8px;margin-bottom: 6px;" value="1">Follow the instructions in <a href="#Enthalpy" class="selected">Enthalpy Calibration Using Calibration Setup</a> above to create a new Cell Constant calibration using an indium standard. Add the experiment to the Running Queue.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="2">If you wish to add additional Temperature calibration standards, return to the Calibration Data page and again create a new Enthalpy Calibration  and send it to the Running Queue.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="3">Repeat step 2 until all the standards needed are added to the Running Queue.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="4">Run the sequence of experiments.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="5">Once the experiments are complete, <a href="#Analyzin" class="selected">analyze the data</a>.</li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

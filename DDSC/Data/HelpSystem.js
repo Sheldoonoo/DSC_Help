@@ -1,0 +1,4 @@
+var xmlHelpSystemData = "";
+xmlHelpSystemData += '<?xml version=\"1.0\" encoding=\"utf-8\"?>';
+xmlHelpSystemData += '<WebHelpSystem DefaultUrl=\"Content/Welcome to TRIOS_DSC.htm\" Toc=\"Data/Toc.xml\" Index=\"Data/Index.xml\" Concepts=\"Data/Concepts.xml\" Glossary=\"Content/Glossary.htm\" SearchDatabase=\"Data/Search.xml\" Alias=\"Data/Alias.xml\" Synonyms=\"Data/Synonyms.xml\" Skin=\"Data/SkinTRIOS_Blue/Skin.xml\" Skins=\"Default,TRIOS_Blue\" BuildTime=\"4/22/2016 9:26:44 AM\" BuildVersion=\"11.1.0.17275\" TargetType=\"WebHelp\" SkinTemplateFolder=\"Skin/\" InPreviewMode=\"false\" MoveOutputContentToRoot=\"false\" MakeFileLowerCase=\"false\" UseCustomTopicFileExtension=\"false\" PreventExternalUrls=\"false\" EnableResponsiveOutput=\"false\" IncludeGlossarySearchResults=\"true\" ResultsPerPage=\"20\" />';
+CMCXmlParser._FilePathToXmlStringMap.Add('HelpSystem', xmlHelpSystemData);

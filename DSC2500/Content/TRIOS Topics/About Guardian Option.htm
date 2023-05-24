@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.TRIOS" class="" conditions="Primary.TRIOS" MadCap:tocPath="Using TRIOS Software" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>About the TRIOS Guardian Option</title>
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="top"></a>About the TRIOS Guardian™ Option</h1>
+        <p>The TRIOS Guardian option allows the user to restrict access, set user levels, and record analysis events.  Designed primarily for laboratories in regulated environments,  these tools aid with 21 CFR Part 11 compliance.  In addition, TRIOS Guardian provides options for laboratories and users who wish to define specific access rights as well as restrict calibration, method development, and/or data manipulation routines.</p>
+        <p>The Electronic Records and Electronic Signatures Rule (21 CFR Part 11) was established by the United States Food and Drug Administration (FDA) to define the requirements for submitting documentation in electronic form and the criteria for approved electronic signatures. TA Instruments understands the importance of this rule and has developed TRIOS Guardian to aid companies in their achievement of regulatory compliance.  However, in order to be fully compliant with this rule, it is also important for organizations that use electronic records and electronic signatures to define and implement Standard Operating Procedures (SOPs) that support and complement the TRIOS Guardian software.</p>
+        <p>Key features of this functionality are below:</p>
+        <ul>
+            <li style="margin-top: 8px;margin-bottom: 6px;" value="1"><b>Restricted Access to Authorized Users</b>: When the Guardian feature is enabled,  a TRIOS System Administrator can restrict access to various features within TRIOS software, thereby defining the authorized user list.  The user list is coupled to work with all local and domain-based Windows user accounts.  The inherent requirement for each user to be uniquely identified is satisfied in that each operator can have a unique Windows User ID. See <a href="Setting Guardian Options Accounts User Levels.htm">Setting up Guardian User Accounts</a> for more information.</li>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" value="2"><b> Restricted User Level</b>: Within TRIOS Guardian, each authorized user is assigned either a Standard User Level or a Basic User Level.  Whereas the Standard User will be allowed unrestricted access to all software features, the following restrictions are enforced for a Basic User:</li>
+        </ul>
+        <ul>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="1">Cannot calibrate the instrument system</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li class="SubBulletIndent" style="margin-top: 8px;margin-bottom: 6px;margin-left: 100px;" value="1">For DHR and AR Rheometers, a Basic User has access to mapping (both rotational and oscillatory), which are often used prior to measurement.</li>
+        </ul>
+        <ul>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="1">Can only execute saved procedures (cannot create nor edit procedures)</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px; margin-bottom: 6px;" value="2">Cannot download instrument software</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px; margin-bottom: 6px;" value="3">Cannot change instrument options</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px; margin-bottom: 6px;" value="4">Can only select configured geometry files (applicable to Rheology only)</li>
+        </ul>
+        <p class="IndentedParagraph" style="margin-top: 8px;margin-bottom: 6px;">For more information, refer to <a href="Setting Guardian Options Accounts User Levels.htm#Setting">Setting up Guardian User Levels</a>. </p>
+        <ul>
+            <li style="margin-top: 8px;margin-bottom: 6px;" value="1"><b>Audit Trail</b>: The TRIOS Software Notifications pane provides a computer-generated time/date log of events (inherent to the software), including Windows User ID.</li>
+        </ul>
+        <ul>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="1">This notification log is written to a daily file and can only be viewed within TRIOS.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px; margin-bottom: 6px;" value="2">The information contained in the log cannot be modified.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px; margin-bottom: 6px;" value="3">The log can be saved in various formats (xml, htm, csv or pdf), printed, or viewed as HTML.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px; margin-bottom: 6px;" value="4">All important events are recorded, including calibration changes, file creation/opens/saves, prints, Guardian user account changes, and messages.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px; margin-bottom: 6px;" value="5">Comments can also be manually entered into the log.</li>
+        </ul>
+        <p class="IndentedParagraph" style="margin-top: 8px;margin-bottom: 6px;">For more information, refer to <a href="About the Guardian Audit Trail.htm">About the Guardian Audit Trail</a>.</p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" value="1"><b>Analysis Log</b>: A record of the experimental test conditions and instrument parameters is saved by default within each data file.  If the Guardian option is enabled, any performed analysis and results functions are also stored within the file. For more information, see <a href="Viewing the Results Log.htm">Viewing the Results Log</a>.</li>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" value="2"><b>PDF File Creation</b>: TRIOS software includes an embedded PDF file generator.  This allows any printable document to be saved as a PDF.</li>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" value="3"><b>File Check</b>: When loading any native TRIOS data file, TRIOS Guardian automatically verifies that the file has not been tampered with or modified. If TRIOS detects any modification, the data file does not open and Guardian posts a message in the Notification Log. These events are also recorded in the Notifications (audit trail).</li>
+        </ul>
+        <p style="margin-top: 8px;margin-bottom: 6px;">The TRIOS Guardian system provides tools that work in conjunction with the standard Windows Operating system features.</p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" value="1"><b>File Security</b>:  Within the TRIOS Guardian system, the standard TRIOS  file format (a unique document for each data file) is employed.  Using the Windows Operating System, the product owner is responsible for setting up and administering folder access and permissions on the computer.</li>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" value="2"><b>Password Policies</b>: TRIOS Guardian utilizes the Windows Operating System Password Policies (aging process, password reuse, password requirements, lockout after specified failed login attempts). Guardian interfaces directly into the Windows User Accounts and their associated enforced password policies.  Therefore, administration of these items is the responsibility of the customer’s Information Technology group (or Administrator of the computer).</li>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" value="3"><b>Idle Lookout</b>: The Windows Operating System Screen Saver is utilized for Idle Lockout. The product owner is required to enable this option for each user.</li>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" value="4"><b>One PC System</b>:  The Guardian setup is per computer and assumes a local connection to the instrument.  In addition, if there are multiple users, each user is required to log out of Windows before another user can log on and connect to TRIOS (if unique Windows User IDs are necessary).</li>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" value="5"><b>Data Backup and/or Archive</b>:  This functionality is external to the TRIOS Guardian system and is the responsibility of the product owner.</li>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" value="6"><b>Electronic Signatures</b>:  Guardian does not include Digital Signatures.</li>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" value="7">Original data is always preserved in the TRIOS data file and can be recalled at any time.  To restore the original data, access the spreadsheet, and select <span>RELOAD DATA</span>.</li>
+        </ul>
+        <p>For additional information, see <a href="Setting TRIOS Options.htm#Installi">Installing the Keyed Option</a>.</p>
+        <p><a href="#top" class="BacktoTop">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

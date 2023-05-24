@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html conditions="Primary.DSC" MadCap:conditions="Primary.Mercury DSC" class="" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Discovery DSC|Calibrating the Discovery DSC" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Calibrating the T1 Baseline</title>
+        <link href="../Resources/TableStyles/InThisTopic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="top"></a>Calibrating the T1 Baseline</h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../Resources/TableStyles/InThisTopic.css');margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+            <caption>In this topic</caption>
+            <col style="width: 202px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Overview" class="tablenavigationbody selected">Overview</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Collecti" class="tablenavigationbody selected">Collecting T1 Calibration Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowEnd_ColEnd"><a href="#Analyzin" class="tablenavigationbody selected">Manually Analyzing T1 Calibration Data</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Overview"></a>Overview</h2>
+        <p>The baseline slope and offset calibration involves heating an empty cell through the entire temperature range expected in subsequent experiments.  The calibration program is used to calculate the slope and offset values needed to flatten the baseline and zero the heat flow signal.  This calibration is used in the DSC25, and when the selected heat flow is T1 for the DSC250 or DSC2500.</p>
+        <ul>
+            <li class="NoteIndent" value="1">NOTE: MDSC experiments are available for DSC2500, DSC250, and DSC25.</li>
+            <li class="NoteIndent" value="2">NOTE: The Quench Cooler can only be used with Heat Flow T1. Change the heat flow selection or change the cooler type so that a compatible cooler is used with the heat flow you choose.</li>
+            <li value="3"><span class="boolean">Baseline Slope</span> is a calibration constant that accounts for the baseline slope of an empty cell.  The baseline slope is calculated from data gathered as an empty cell is heated through the temperature range expected in subsequent experiments. Default is 0.00.<br /><br /></li>
+            <li value="4"><span class="boolean">Baseline Offset</span> is a calibration factor that shifts the curve up or down along the Y-axis to balance the heat flow at the sample and reference thermocouple positions. The baseline offset is calculated from data gathered as an empty cell is heated through the temperature range expected in subsequent experiments.</li>
+        </ul>
+        <p>Follow these basic instructions for baseline slope and offset calibration. Click the links to jump to the specific instructions for that item.</p>
+        <ol>
+            <li style="margin-top: 6px;" value="1"><a href="#Collecti" class="selected">Gather baseline calibration data</a>, which involves heating an empty cell through the entire temperature range expected in subsequent experiments. <br /></li>
+            <li style="margin-top: 6px;" value="2"><a href="#Analyzin" class="selected">Analyze the data</a>.</li>
+            <li style="margin-top: 6px;" value="3"><a href="#Selectin" class="selected">Select the calibration results</a>.</li>
+        </ol>
+        <h2><a name="Collecti"></a>Collecting T1 Calibration Data
+</h2>
+        <p>Baseline calibration involves heating an empty cell through the entire temperature range expected in subsequent experiments.  The calibration program is used to calculate the slope and offset values needed to flatten the baseline and zero the heat flow signal.</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">Access the File Manager and select the <span>Calibration </span>panel. Then click <span class="boolean">Calibration Setup</span>. <br /><br /></li>
+            <li value="2">When you create a run from the Calibration Experiment Setup page, the settings are automatically saved. <br /><br /></li>
+            <li value="3">The <span class="boolean">Calibration Experiment Setup</span> screen displays, allowing you to generate new calibrations. To view current calibration sets, open <span class="boolean">Calibration Data</span>. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Select the <span class="boolean">T1 Baseline</span> checkbox to open the calibration form.</li>
+        </ol>
+        <p style="margin-top: 8px;">
+            <img src="../image/DSC 25 250 2500/Calibration setup_T1_DSC2_726x420.png" style="margin-left: 40px;width: 726;height: 420;" />
+        </p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5">Enter the following information.</li>
+            <li class="LetterIndent" style="margin-top: 8px;" value="1">Enter the <span>Sample Name</span>. </li>
+            <li class="LetterIndent" style="margin-top: 8px;" value="2">Enter the <span>Operator </span>name.</li>
+            <li class="LetterIndent" style="margin-top: 8px;" value="3">Enter the <span>Project </span>name, if desired.</li>
+            <li class="LetterIndent" style="margin-top: 8px;" value="4">Modify method parameters, if required.
+</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent2" style="margin-top: 8px;" value="1">Enter the <span class="boolean">Ramp rate</span>, <span class="boolean">Lower temperature</span> and <span class="boolean">Upper temperature</span> limits, and <span class="boolean">Isothermal</span> limit. The range of temperatures should be at least as broad as the desired experimental range of subsequent DSC&#160;experiments.
+
+</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;" value="2">Select <span class="boolean">Perform verification Run After Calibration</span> to perform a baseline verification experiment after the T1 calibration is applied. Note that there is no verification criteria associated with this experiment and that it is for manual inspection only.</li>
+        </ul>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="6">When complete, select from one of the following options:
+</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="1"><span>Run All</span>: Sends the calibration experiment to the Running Queue and executes the sequence.
+</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="2"><span>Queue All</span>: Sends the calibration experiment to the Running Queue for execution.
+</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="3"><span>Schedule All</span>:  Schedules the calibration to run at a later specified date. Allows you to select how often the calibration should be run, the time, and the begin and end date.</li>
+        </ul>
+        <p>Refer to <a href="../DSC Topics/DSC Calibration Overview.htm">DSC Calibration Overview</a> for information on setting up auto calibrations and scheduling runs.</p>
+        <h2><a name="Analyzin"></a>Manually Analyzing T1 Calibration Data
+</h2>
+        <p>Use the instructions below to manually analyze an existing T1 calibration file.
+</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">Open the calibration file in TRIOS.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Select the file in the File Manager <span>Results </span>pane.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Right-click the file to display the File Manager context menu.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">When you select <span>Calibrate </span>&gt; <span>T1 Baseline</span>, a new document is created that contains the associated calibration results.</li>
+        </ol>
+        <p class="IndentedParagraph">Several views are available within this document.</p>
+        <ul>
+            <li class="SubBulletIndent2" style="margin-top: 8pt;" value="1">Spreadsheet: A table view of the associated ramp data.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8pt;" value="2">Graph: A graphical view of the associated ramp data.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8pt;" value="3">Results: A summary of the calibration parameters.</li>
+        </ul>
+        <ol MadCap:continue="true">
+            <li class="NumberedIndent" value="5">On the <span>Results </span>view, click <span class="boolean">Apply</span> to send the results to the instrument and enable the calibration.</li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

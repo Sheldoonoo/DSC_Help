@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Discovery DSC|Discovery DSC Cooling Options" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Guidelines to using the RCS</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><span class="MCBreadcrumbsSelf">Using the Discovery DSC</span><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="Menu Cooling Options DSC.htm">Discovery DSC Cooling Options</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Guidelines to Using the RCS</span>
+        </div>
+        <h1><a name="top"></a>Discovery DSC:&#160;Guidelines to using the RCS</h1>
+        <p>Once the RCS has been properly installed (as described in the <a href="../Resources/PDF Files/RCS_GettingStarted.pdf">Refrigerated Cooling Systems Getting Started Guide</a>), follow the steps below to set up the instrument parameters and
+condition the RCS-DSC system for optimum performance.</p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" value="1"><i>RCS90 and RCS40 only:</i> Verify that the RCS switch is set to <b>EVENT </b>on the RCS unit. The <span>RCS </span>button located within the <span>General </span><a href="Setting the Temperature.htm">Control panel</a><span>&#160;</span> toggles the RCS on and off when operated in the <b>EVENT </b>mode. </li>
+            <li class="bullet" style="margin-top: 8px; margin-bottom: 6px;" value="2">Turn the unit on by using the power
+switch on the back of the RCS, or by using TRIOS software. Refer to TRIOS software Help for
+additional information.</li>
+        </ul>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" MadCap:conditions="Primary.DSC" value="1">Access the <span>Options </span>&gt; <span>Discovery DSC</span> &gt; <span>Cooler </span>page in TRIOS software. Verify that the correct
+cooler type (RCS120, RCS40, or RCS90) is selected. See <a href="Configuring the Instrument_DSC.htm#Setting2">Setting Up DSC Cooler Options</a> for more information.</li>
+        </ul>
+        <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="5">Check <span>Activate secondary purge when lid is opened (RCS, CCS, and LNP only)</span>. The RCS
+purge will automatically turn on whenever the cell is opened by the <MadCap:conditionalText MadCap:conditions="Primary.DSC">AutoLid.</MadCap:conditionalText>  It is strongly recommended
+that the cell lids be in place anytime that a sample is not being actively loaded or
+unloaded.
+</li>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" value="1">Verify that the post-test conditions are set as desired in TRIOS software. A Standby Temperature or
+temperature window above ambient should be used to prevent the cell from cooling down between
+experiments (typical values are 35°C to 50°C). Once these conditions are verified, set the <span>Standby Temp</span> from the <a href="Setting the Temperature.htm">Control Panel</a> to invoke the standby temperature specified.</li>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" value="2">A dry, moisture-free gas source is required as the RCS purge when using the RCS, in addition to the
+standard purge gas. Dry nitrogen is recommended for these purges. These gases must remain on
+continuously. If they do not, the atmospheric moisture will enter and contaminate the system.
+</li>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" MadCap:conditions="Primary.DSC" value="3"><i>RCS90 and RCS40 only:</i> If you have an Autosampler, select <span>Options </span>&gt; <span>Discovery DSC</span> &gt; <span>Auto Sampler</span> page and check the
+<span>Leave Cooler On </span>box. This allows the RCS <b>EVENT </b>function to operate properly. See <a href="Configuring the Instrument_DSC.htm#Setting3">Setting Up DSC Autosampler Options</a> for more information.</li>
+            <li class="NoteIndent" style="margin-top: 8px;margin-bottom: 6px;" value="4">NOTE: Autosampler sequence stop options are invoked even for a one run sequence when the
+Autosampler is enabled.
+</li>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" value="5">DO NOT open the DSC cell at below ambient temperatures.
+</li>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" value="6">Once the DSC-RCS system has been conditioned, DO NOT turn off the RCS unless the system will
+not be used for an extended period of time (for more than 2 or 3 days). It is recommended that you do
+NOT turn off the RCS between runs or for overnight periods for optimal performance.</li>
+            <li class="bullet" style="margin-top: 8px;margin-bottom: 6px;" value="7">Operating without an effective base purge, allowing the cell to remain at the lower temperature limit
+without heater power (e.g., without post-test conditions) for extended periods of time, and/or removing
+the RCS from the cell when the flange temperature is below ambient can result in excessive moisture
+in the cell and requires extended conditions for drying such as performing the conditioning procedure.
+In those cases, the system must be dried for much longer times.</li>
+            <li class="WarningIndent" value="8">WARNING: Do not exceed 100°C with the RCS cooling head installed and the
+RCS power off. Serious damage and/or injury could occur.</li>
+            <li class="CautionIndent" value="9">CAUTION: Do not use the RCS when running isothermal experiments above 400°C. Damage to
+the unit can occur if used at high temperatures for extended periods.
+</li>
+            <li class="NoteIndent" value="10">NOTE: Once the cooling flange reaches operating temperature (–120°C for the RCS120, –90°C for RCS90, or –40°C for RCS40), it
+condenses any moisture present. If the initial moisture level is too high, or if the atmosphere moisture subsequently
+entering the cooling head enclosure is not minimized, then artifacts can be observed in the heat
+flow signals. Typically, but not exclusively, the artifacts are observed between 0 and 100°C, which increase
+in intensity over time.</li>
+        </ul>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

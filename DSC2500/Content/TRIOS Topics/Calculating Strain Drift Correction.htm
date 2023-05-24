@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.TRIOS" class="" conditions="Primary.TRIOS" MadCap:tocPath="Evaluating Data|Data Evaluation Utilities" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Calculating Drift Correction for Recoverable Compliance</title>
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1>Calculating Drift Correction for Recoverable Compliance</h1>
+        <p>The Recovery Drift subtraction is only available for creep recovery experiments, i.e. transient creep experiments with zero command stress. In order to be active, the recoverable strain has to be selected as a function of the step time.</p>
+        <p>In a creep recovery test, although the command stress is zero, a residual stress is always acting on the sample because of the offset between the electronic zero of the transducer and the mechanical stress in the sample. This offset is usually small and depends on the sample conditions during transducer torque zeroing</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">Select the <span>Analysis </span>tab.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">From the drop down menu,select the <span>Recovery Drift Subtraction</span> model.  Make sure that the recoverable strain is selected and plotted versus the step time.  Use the cursors to identify the linear section of the recoverable strain. The<span> Drift Subtraction</span> function fits a straight line and uses the slope to calculate the drift of the recoverable strain. It is important to select data points in the steady state region where the assumption can be made that only viscous flow due to residual stress is responsible for the drift. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">From the <span>Commands </span>toolbar, click<span>Start  </span>to fit the model. The model parameters are plotted on the graph (see Analysis Models for details on how to use models). The output parameters report the slope of the linear fit as shear rate and the intercept as recoverable strain.  Two additional parameters reported are the non-recoverable strain and the equilibrium compliance Je, calculated from the recoverable strain and the stress applied in the previous creep step.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">In order to apply the drift correction,click <span>Create File</span> from the <span>Commands </span>toolbar. A new document will be created using the existing file name with the extension <span>Drift corr.</span>. This new document has the same information as the original file, except that the recoverable compliance and all the dependent parameters are corrected for the drift.</li>
+        </ol>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

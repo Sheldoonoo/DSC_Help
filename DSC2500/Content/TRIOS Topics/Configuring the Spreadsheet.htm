@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" conditions="Primary.ARES-G2,Primary.TRIOS,Primary.Rheology" MadCap:conditions="Primary.TRIOS" class="" MadCap:tocPath="Evaluating Data|Using the Spreadsheet View" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Configuring the Spreadsheet</title>
+        <link href="../Resources/TableStyles/InThisTopic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="Top"></a>Configuring the Spreadsheet</h1>
+        <table class="TableStyle_InThisTopic" style="border-collapse: separate;caption-side: top;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/InThisTopic.css');" cellspacing="0">
+            <caption><span style="color: #000080;font-size: 8pt;font-weight: bold;font-family: Verdana;">In this topic</span>
+            </caption>
+            <col style="width: 148px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Working" target="_self" class="tablenavigationbody selected">Working with Columns, Rows, and&#160;Cells</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#User" class="tablenavigationbody selected">User Variables</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Saving" target="_self" class="tablenavigationbody selected">Saving Variable Layouts</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Resettin" class="tablenavigationbody selected">Resetting Variables Layouts</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowEnd_ColEnd"><a href="#Loading" class="tablenavigationbody selected">Loading Saved Variables Layouts</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Several functions allow you to configure your spreadsheet, including adding and removing column variables, reordering your columns, and adding or deleting rows. For details on customizing the appearance of spreadsheets, see <a href="Customizing TRIOS Properties.htm">Customizing TRIOS Properties</a>.                    </p>
+        <p>Configure the spreadsheet using the <span style="color: #000080;font-weight: bold;">Variables</span> ribbon (shown in the figure below) or by right-clicking to access the pop-up menu. To access the <span><span style="color: #000080;font-weight: bold;">Variables</span> <![CDATA[ ]]></span>ribbon, select the <span>Format </span>tab while in the <span>Spreadsheet </span>view. Select a column, row, or cell to enable the available functions on the toolbar. </p>
+        <p>
+            <img src="../image/TRIOS/Group-Graph-Variables.jpg" />
+        </p>
+        <p>There are four types of predefined spreadsheet layout options in TRIOS.&#160;</p>
+        <ul>
+            <li style="margin-top: 8px;" value="1">TRIOS (factory) defaults: Based on procedure type (one per procedure type)
+</li>
+            <li class="bullet" style="margin-top: 8px;" value="2">User defaults: Based on procedure type (one per procedure type)</li>
+            <li class="bullet" style="margin-top: 8px;" value="3">Predefined: Special case 
+</li>
+            <li class="bullet" style="margin-top: 8px;" value="4">Saved user layouts: Saved layout files which can be recalled/applied when desired
+</li>
+        </ul>
+        <p>Upon initiation of an experiment, the spreadsheet layout appears based on the saved User Defaults for each procedure type, if one exists. Otherwise, the spreadsheet layout appears based on the TRIOS default layout.  Once the spreadsheet is displayed, the variables can be customized using the Spreadsheet <span>Variables </span>windows. </p>
+        <ul>
+            <li class="NoteIndent" value="1"> 
+NOTE:  When opening a saved data file, the variable configuration will appear as originally saved, unless the option to <span>Load view settings</span> is unselected in the TRIOS <span>Options </span>&gt; <span>User </span>settings.
+</li>
+        </ul>
+        <p>The sections below detail these functions. The following instructions assume an open data file with the appropriate spreadsheet tab selected. </p>
+        <p><a href="#Top" target="_self" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Working"></a>Working with Columns, Rows, and Cells</h2>
+        <p>Add, remove, and configure spreadsheet columns and rows using the <span>Table </span>toolbar. When a spreadsheet first opens, the step test type determines which default variables appear in the column headers. See the topics below for instructions regarding spreadsheet configuration.</p>
+        <h3>To Configure or Remove Column Headers</h3>
+        <ul>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1"><span style="color: #000080;font-weight: bold;"> <![CDATA[ ]]></span>Within the spreadsheet view, select <span>Format </span>tab &gt;&#160;<span>Variables</span>toolbar &gt;&#160;<span>Select <img src="../image/icons/Icon-ColumnSetup_24x24.jpg" class="imgInline" style="width: 24;height: 24;" /></span>, or right-click on a cell and select <span>Select Variables</span> <img src="../image/icons/Icon-ColumnSetup_24x24.jpg" class="imgInline" style="width: 24;height: 24;" /> from the pop-up menu. The <span style="color: #000080;font-weight: bold;">Spreadsheet columns</span> window displays.</li>
+            <li value="2" class="NumberedIndent" style="margin-top: 8px;">  Select the desired column header(s) from either pane. The right pane lists the <span>Displayed columns</span>, while the left pane lists <span>Available variables</span>. To select more than one variable at a time, hold the CTRL key as you click on each variable name. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">If desired, select the <span>Show extended list</span> or <span>Show user variables</span> checkboxes to display additional variables.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Move the variables to the left pane or right pane using the corresponding arrows. Reorder the variables in the <span>Displayed columns</span> pane using the up arrow or down arrow. The following functions are available:</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="5"><span>Add all variables</span>: Adds all variables from the <span>Available variables</span> list to the <span>Displayed columns</span> list.</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="6"><span>Remove all variables</span>: Removes all variables from the <span>Displayed columns</span> list.</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="7"><span>Match graph</span>: Sets the variables to match the currently-opened graph.</li>
+            <li class="NoteIndent" style="margin-top: 8px;" value="8">NOTE:&#160;As corresponding graph variables are changed, new variables added to the graph will automatically be updated in the spreadsheet if <span>Add graph variables to the spreadsheet</span> is checked in the <a href="Setting TRIOS Options.htm#Choosing">TRIOS&#160;Options &gt;&#160;User</a> screen.</li>
+            <li class="NumberedIndent" value="5" style="margin-top: 8px;">For information on saving the configuration, see <a href="#Saving" class="selected">Saving and Reloading Spreadsheets</a>. Otherwise, select <span style="color: #000080;font-weight: bold;">OK</span> when finished. The spreadsheet will be reconfigured with the chosen variables as column headers. </li>
+        </ul>
+        <p><a href="#Top" target="_self" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h3>To Add User Columns</h3>
+        <ul>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">Click in the column header that will be <i>to</i> <i>the right </i>of the newly-created column. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Select <span style="color: #000080;font-weight: bold;">Add</span> <img src="../image/icons/Icon-AddColumn.jpg" class="imgInline" /> in the <b style="color: #000080;">User Columns</b> toolbar on the <span style="color: #000080;font-weight: bold;">Format</span> tab, or right-click and select <span style="color: #000080;font-weight: bold;">Add User Column</span> from the pop-up menu. The <span class="boolean">Add New User Column</span> window displays. </li>
+        </ul>
+        <p style="margin-top: 8px;">
+            <img src="../image/TRIOS/Add New User Column dialog_325x472.png" style="padding-left: 40px;width: 325;height: 472;" />
+        </p>
+        <ul>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1"> Fill in the <span>Name </span>and&#160;<span>Equation Name</span>fields as appropriate.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Proceed to setting the rest of the fields. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">When finished, click <span>OK&#160;</span>to add the new user variable column to the spreadsheet. The column letters adjust to include the new column.</li>
+        </ul>
+        <p><a href="#Top" target="_self" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h3>To Add or Delete Rows </h3>
+        <ul>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">If adding a row, click in the row number that will be <cite>below </cite>your newly-added row.<br />If deleting a row, click the row number you wish to delete.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Select <span>Format </span>tab <span>Data  </span>toolbar &gt;&#160;<b style="color: #000080;">Row</b>  drop-down arrow <img src="../image/icons/Icon-Row.jpg" class="imgInline" />, or right-click and select <span style="color: #000080;font-weight: bold;">Add Row</span> or <span>Delete Row</span> from the pop-up menu.  </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">See below for instructions on <a href="#Editng" class="selected">editing the value of a cell</a>.</li>
+            <li class="NoteIndent" value="4">NOTE: Some variables are calculated and are therefore dependent upon the values entered for other variables.</li>
+        </ul>
+        <h3><a name="Editng"></a>To Edit a Cell&#160;Value</h3>
+        <p>Use one of the following methods to edit the cell values on a spreadsheet:</p>
+        <ul>
+            <li class="bullet" value="1">Right-click on the desired cell  and select <span class="boolean">Edit value</span>. Type the new value.</li>
+            <li class="bullet" value="2">Double-click within the desired cell and type the new value.</li>
+            <li class="NoteIndent" value="3">NOTE: If another cell is dependent upon the value in the edited cell, it will automatically be recalculated. When cells are modified, a marker <img src="../image/icons/Icon-Table-ModifiedItem.jpg" style="width: 16px;height: 16px;"></img>displays. The original data will not be altered.</li>
+        </ul>
+        <p><a href="#Top" target="_self" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="User"></a>User Variables</h2>
+        <p>The user variables function allows you to create your own variable based on variables within the file and mathematical functions. See <a href="Creating User Variables.htm">Creating User Variables</a> for more information.</p>
+        <h2><a name="Saving"></a>Saving Variable Layouts</h2>
+        <p>Once the spreadsheet is displayed, the variables can be customized using the <span>Spreadsheet columns</span> window.  To save this layout for the procedure type, select from one of the following options from the <span>Spreadsheet </span>&gt; <span>Format </span>&gt; <span>Variables </span>options.</p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;" value="1">Select <span>Defaults </span>&gt; <span>Set Variables as User Default</span>.  This option replaces any previously saved User Defaults for the associated procedure type.
+</li>
+            <li class="bullet" style="margin-top: 8px;" value="2">Select <span>Save </span>to specify a name and location for the saved spreadsheet layout file.  As saved layouts have the greatest utility when applied to similar data (same procedure types), it’s suggested you name the saved data file accordingly for easy identification. Once saved, this layout can be reapplied in the future by selection from the <span>Load </span>function. 
+<br /></li>
+        </ul>
+        <p><b>See Also</b>
+        </p>
+        <p><a href="Configuring Plot Variables.htm#Saving">Saving Graph Variables Layouts&#160;</a>
+        </p>
+        <p>Saving and Loading Document Templates</p>
+        <p><a href="#Top" class="tablenavigationbody selected">Back to top</a>
+        </p>
+        <h2><a name="Resettin"></a>Resetting Variables Layouts
+</h2>
+        <p>To restore the spreadsheet layout to either the User Defaults or TRIOS (factory) defaults, select from appropriate option from the <span>Spreadsheet </span>&gt; <span>Format </span>&gt; <span>Variable </span>options.</p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;" value="1"><span>Defaults </span>&gt; <span>Reset Variables to User Default</span>: Restores the spreadsheet configuration to the saved layout for that procedure type. </li>
+            <li class="bullet" style="margin-top: 8px;" value="2"><span>Defaults </span>&gt; <span>Reset Variables to Factory Default</span>: Restores the spreadsheet configuration to the factory defaults for that procedure type. 
+</li>
+        </ul>
+        <p>These are the same functions available in the <span><span>Spreadsheet columns</span> <![CDATA[ ]]></span>window<span></span>.
+</p>
+        <h3>To Reload Original Data for a Data File&#160;</h3>
+        <p>Click <span style="color: #000080;font-weight: bold;">Reload</span> <img src="../image/icons/Icon-ReloadTable.jpg" class="imgInline" /> on the <b>Data</b> toolbar to open the original data file again. Changes to the spreadsheet configuration do not display unless you have <a href="#FactDefaults" class="selected">saved the file</a><b>.</b></p>
+        <p><a href="#Top" class="tablenavigationbody selected">Back to top</a>
+        </p>
+        <h2><a name="Loading"></a>Loading Saved Variables Layouts
+</h2>
+        <p>To load a saved layout file:</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">Select <span>Load </span>&gt; <span>Browse </span>from the <span>Spreadsheet </span>&gt; <span>Format </span>&gt; <span>Variables </span>options. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Navigate to the saved directory location and select the file.  </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Click <span>Open</span>.  The saved spreadsheet variables settings will be applied.  </li>
+            <li class="NoteIndent" value="4">NOTE:  Saved layouts have the greatest utility when applied to similar data (same procedure types); otherwise, unexpected layouts may result.
+</li>
+        </ol>
+        <p><a href="#Top" target="_self" class="BacktoTop selected">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

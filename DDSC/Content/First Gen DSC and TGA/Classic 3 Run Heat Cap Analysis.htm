@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.DSC,Primary.TGA" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Classic 3 Run Heat Capacity Analysis</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/TableStyles/InThisTopic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <h1><a name="top"></a>Classic 3 Run Heat Capacity Analysis</h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../Resources/TableStyles/InThisTopic.css');margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+            <caption>In this topic</caption>
+            <col style="width: 287px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Overview" class="tablenavigationbody selected">Overview</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Collecti" class="tablenavigationbody selected">Collecting Classic 3 Run Heat Capacity Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowEnd_ColEnd"><a href="#Analyzin" class="tablenavigationbody selected">Performing Classic 3 Run Heat Capacity Analysis</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Overview"></a>Overview</h2>
+        <p>The specific heat of an unknown material can be determined using any of the three heat flow types (T1, T4, or T4P) by comparing the difference between the sample’s heat flow signal and the heat flow signal of a known heat capacity standard (typically sapphire) relative to a common heat flow baseline.  This is considered the classic 3-run heat capacity method discussed in ASTM E1269.</p>
+        <h2><a name="Collecti"></a>Collecting Classic 3 Run Heat Capacity Data
+</h2>
+        <p>To obtain the best results from the DSC Heat Capacity analysis, the data used should follow these guidelines:</p>
+        <ul>
+            <li style="margin-top: 8px;" value="1">The sample pans used to obtain the data files should be matched in material and type.</li>
+            <li style="margin-top: 8px;" value="2">Pan/lid combinations for all runs should be cleaned and weight matched to a precision of + 0.01 mg.</li>
+            <li style="margin-top: 8px;" value="3">Samples and reference materials should be weighed to a precision of + 0.01 mg.</li>
+            <li style="margin-top: 8px;" value="4">Samples should be distributed uniformly across the bottom of the pan.  The pan should be crimped so that the bottom is as flat as possible.</li>
+            <li style="margin-top: 8px;" value="5">Volatile samples should be sealed in hermetic pans and weighed after sealing.<br /><br /></li>
+            <li class="NoteIndent" style="margin-top: 8px;" value="6">NOTE:  Encapsulate the sample as tightly as possible to minimize temperature gradients and/or sample movement.</li>
+            <li style="margin-top: 8px;" value="7">Small sample sizes should be used to reduce thermal gradients.  ASTM (E1269) recommends 5–15 mg sample sizes for organics and polymers, and 20–50 mg sizes for inorganics.  In addition, sample mass is assumed to be constant in the heat capacity equation.  The sample pan should be weighed before, as well as after, the experiment to ensure that no weight loss has occurred due to vaporization or decomposition.  If a weight change &gt; 0.3 percent is observed, the measurement is invalid.</li>
+            <li style="margin-top: 8px;" value="8">Three data files will be needed:<ol><li style="margin-top: 8px;" value="1"><span class="boolean">Sample File</span>—containing data from an experiment using an unknown sample.</li><li style="margin-top: 8px;" value="2"><span class="boolean">Baseline File</span>—containing data from an experiment using empty DSC pans.  When setting up the baseline experiment in TRIOS, the sample size must be set to zero in order to enable the analysis.</li><li style="margin-top: 8px;" value="3"><span class="boolean">Reference File</span>—containing data from a heat flow calibration run using a known, well- characterized reference sample (sapphire). When setting up the reference experiment in TRIOS, the sample name must be sapphire in order to enable the analysis.</li></ol></li>
+            <li style="margin-top: 8px;" value="9">All three experiments should be run using the same Iso-ramp-Iso procedure.</li>
+            <li style="margin-top: 8px;" value="10">Include a ten-minute isothermal period both before and after the ramp segment to establish equilibrium points between the three experiments.</li>
+            <li style="margin-top: 8px;" value="11">Temperature calibration of the DSC is strongly recommended.  This calibration should be made using high purity (99.99%) calibration materials such as indium or other suitable material.</li>
+            <li style="margin-top: 8px;" value="12">A ramp rate of 20°C/min is recommended because it provides the best compromise between maximum heat flow displacement and minimum thermal gradients.</li>
+        </ul>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Analyzin"></a>Performing Classic 3 Run Heat Capacity Analysis</h2>
+        <p>Once the calibration experiment completes, analyze the data following the instructions below.</p>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Open your baseline, reference, and sample data files in TRIOS.</li>
+            <li style="margin-top: 8px;" value="2">Select all three files in the File Manager <span>Results </span>pane.</li>
+            <li style="margin-top: 8px;" value="3">Right-click and select <span class="boolean">Transformations…</span> &gt; <span class="boolean">Heat Capacity Calculation…</span></li>
+        </ol>
+        <p>
+            <img src="../image/DSC/3 run heat cap.png" style="padding-left: 40px;" />
+        </p>
+        <ol MadCap:continue="true">
+            <li style="margin-top: 8px;" value="4">Verify the information displayed in the dialog, then click <span class="boolean">OK</span>.</li>
+        </ol>
+        <p style="margin-top: 8px;">
+            <img src="../image/DSC/3 run heat cap_dialog.png" style="padding-left: 40px;" />
+        </p>
+        <p>An overlay document is generated with ASTM Heat Capacity and Heat Flow plotted versus Temperature. In addition to this overlay document, the new ASTM Heat Capacity signal is made available in your sample’s data file.</p>
+        <p>
+            <img src="../image/DSC/3 run heat cap_results_805x411.png" style="width: 805;height: 411;" />
+        </p>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

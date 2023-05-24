@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Discovery DSC|Setting Up Discovery DSC Experiments" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.DSC" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Defining DSC Experimental Parameters</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/TableStyles/InThisTopic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><span class="MCBreadcrumbsSelf">Using the Discovery DSC</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Setting Up Discovery DSC Experiments</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Defining DSC Experimental Parameters </span>
+        </div>
+        <h1><a name="top"></a>Discovery DSC: Defining DSC Experimental Parameters </h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../Resources/TableStyles/InThisTopic.css');margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+            <caption>In this topic</caption>
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Entering" class="tablenavigationbody selected">Entering Sample Information</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Defining" class="tablenavigationbody selected">Defining a DSC&#160;Procedure</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Saving" class="tablenavigationbody selected">Saving a Procedure to File</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowEnd_ColEnd"><a href="#Opening" class="tablenavigationbody selected">Opening a Saved Procedure File</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Creating DSC experiments requires entering the sample information and defining a procedure.  Experiments are created in either the <span>Design View</span> or within the <span>Running</span><span style="color: #ff0000;">&#160;</span><span>Queue</span>. In either case, the information below applies.</p>
+        <p>To set up a new run, click <span>Setup </span> <img src="../image/icons/experiment_new.png" class="imgInline" /> from the <span>Experiment </span>tab..  This automatically enables the <span>Design Run</span> experiment window as the active window. </p>
+        <p>If no runs are currently set up, then <span>Empty </span>appears within the File Manager - <span>Experiments </span>list (as shown below).  Click <span>Empty </span>to create a new run.  If runs already appear in the list, you can append a new run to the list.  See <a href="../Thermal Common Topics/Creating Sequences.htm">Creating Sequences</a> for more information.</p>
+        <p>
+            <img src="../image/Other/Thermal Defining Exp 1.png" />
+        </p>
+        <p>Follow the instructions below to enter the experiment parameters (<span>Sample </span>and <span>Procedure </span>information).  
+</p>
+        <h2><a name="Entering"></a>Entering Sample Information
+</h2>
+        <p>The <span>Sample </span>window defines the sample parameters. If the sample parameters are not visible, click the <span>Sample </span>bar to expand the contents of this selection.</p>
+        <p>
+            <img src="../image/Other/Thermal Defining Exp 2.png" />
+        </p>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Enter the <span>Sample Name</span>. 
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Enter the <span>Sample </span>pan number. </li>
+        </ol>
+        <ul>
+            <li class="NoteIndent" value="1"> NOTE: Setting this value to <span>0</span> (zero) implies manual loading of the pan, and the Autosampler will not attempt to load the pan.</li>
+        </ul>
+        <ol start="3">
+            <li style="margin-top: 8px;" value="3">Enter the sample size in the field directly to the right of the <span>Sample </span>pan number field.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4"><i>For T4P Heat Flow selection</i>:  In the Pan Mass fields, enter the  weight of the sample pan and reference pan to use the weights for Advanced Tzero calculations. <a href="Selecting a Sample Pan.htm">Pan correction</a> is factored into the calculations. 
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5">Select the <span>Reference </span>pan,  which includes the type of pan that will be used in the experiment. Click the down arrow to display a drop-down list of Reference pans, and then select the desired pan for the experiment. A different pan type can be selected for each reference pan number; click <span class="boolean">Edit</span> to change the pan type and make your selection from the drop-down menu. <span class="boolean">Pan Mass</span> and <span class="boolean">Sample Size</span> can also be set for the desired Reference pan in the Edit mode. See  <a href="Selecting a Sample Pan.htm">Selecting a Sample Pan</a> for more information.	</li>
+        </ol>
+        <p style="margin-top: 0.6em;margin-left: 40px;">
+            <img src="../image/DSC/changing pan type 1_551x314.png" style="width: 551;height: 314;" /> <img src="../image/DSC/changing pan type 2_562x318.png" style="width: 562;height: 318;" /></p>
+        <ul MadCap:continue="true">
+            <li class="NoteIndent" value="6">NOTE: Setting this value to <span>0</span> (zero) implies manual loading of the pan, and the Autosampler will not attempt to load the pan.</li>
+        </ul>
+        <ol start="7">
+            <li class="NumberedIndent" style="margin-top: 8px;" value="7">Enter the <span>Operator </span>name. 
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="8">Enter the <span>Project </span>name, if desired. 
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="9">Enter any comments into the <span>Notes </span>field. For example, enter additional text to help describe the experiment, sample treatment, or experimental conditions. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="10">Verify the <span>File Name</span>. TRIOS is designed to make data file naming easy through the use of tokens. File names are created based on the experimental parameters defined for the test (for example, sample name, procedure, operator, and instrument). TRIOS uses the default file directory and file name template specified in the <a href="../TRIOS Topics/Setting TRIOS Options.htm">TRIOS Options</a>. If you wish to override the defaults for this experiment, click the down arrow located to the left of <span>File Name</span> to expand the selection and modify the desired parameter(s). The default values are used when either the file path or template are blank.</li>
+        </ol>
+        <p>
+            <img src="../image/Other/Thermal Defining Exp 3.png" class="imgIndent" />
+        </p>
+        <ul>
+            <li class="SubBulletIndent" value="1">Default Path: Use this field to select the file save directory. 
+</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="2">Template: Enter the desired file name or select  <img src="../image/Other/Thermal Defining Exp 4.png" class="imgInline" /> to set up a file name schema to be used in creation of the file name.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;" value="3">File name templates can be specified using any combination of text and tokens. 
+</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;" value="4">To add a token, click <span>Add Token</span>. Select the desired token from the list of available options. Click <span>Insert </span>to add to template. Multiple tokens can be used:<br />--<span>holder </span>(specified pan) <br />--<span>instrumenttype</span> <br />--<span>instrumentserialnumber</span> <br />--<span>operator</span>, <span>project</span>, <span>procedure</span>, <span>samplename </span>(as defined for experiment on Sample information parameters)<br />--<span>instrumentname </span>(as defined by operator through instrument setup or user interface) <br />--<span>date </span><br />--<span>runnumber </span>(internal counter; incremented each run) </li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="5">In addition, tokens can be used to specify subdirectories (for example, \&lt;samplename&gt;). If the specified directory doesn’t exist it will be created at run start. 
+</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="6"><span>Reset run number when saved</span>: Select to have the run number token reset back to one, if used in the file name template. </li>
+        </ul>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Defining"></a>Defining a DSC&#160;Procedure</h2>
+        <p>Click the <span>Procedure </span>bar to reveal the Procedure parameters. The current procedure displays, as shown below.</p>
+        <p>
+            <img src="../image/DSC/Defining a DSC Procedure.png" />
+        </p>
+        <p>An experimental Procedure consists of following parameters:
+</p>
+        <ul>
+            <li style="margin-top: 8px;" value="1"><span>Mode </span>and <span>Test</span>: There are two options when creating procedures. You can choose to use one of the available pre-preprogrammed test types (templates), or you can choose a custom test and create your own method.</li>
+            <li class="bullet" style="margin-top: 8px;" value="2"><span>Name</span>:&#160;A&#160;procedure name used to describe the test (this field is optional).</li>
+            <li class="bullet" style="margin-top: 8px;" value="3"><span>Method </span>/ <span>Custom</span>:&#160;A series of one or more segments used to define the experimental conditions of the test. Depending on the <span>Test </span>type selected (<span>Custom </span>or a <a href="DSC Tests/Available DSC Tests.htm">pre-defined template</a>), the method parameters are represented as an <a href="../First Gen DSC and TGA/Creating Custom Methods.htm">editable custom method</a> or a template, respectively.</li>
+            <li class="bullet" style="margin-top: 8px;" value="4"><span>Advanced Settings</span>: Defines the specific temperature conditions to be used between experiments.</li>
+        </ul>
+        <p style="margin-top: 0.6em;margin-left: 40px;">
+            <img src="../image/DSC/DSC_advanced settings.png" />
+        </p>
+        <p>The basic steps for setting up a Procedure
+are described below:</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">Select the test <span>Mode </span>(<span>Standard </span>in the example above) from the drop-down list. Based on the information selected, the parameters for that test type are displayed.  The lists contain both <a href="DSC Tests/Available DSC Tests.htm">pre-programmed tests</a> (test templates) and a Custom option. The available modes are:
+</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="1"><span>Standard</span>:  Used to generate the standard (non-modulated) data.
+</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="2"><span>Calibration</span>:  Used to generate the calibration data.</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="3"><span>Modulated</span>:  Used to generate Modulated DSC<sup>®</sup> (MDSC) data.
+</li>
+        </ul>
+        <ol>
+            <li class="NumberedIndent" value="2" style="margin-top: 8px;">Select the <span>Test </span>type (<span>Custom </span>in the example above) from the drop-down list. Based on the information selected, the parameters for that test type are displayed.  The lists contain both <a href="DSC Tests/Available DSC Tests.htm">pre-programmed tests</a> (test templates) and a <span>Custom </span>option.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Input a procedure <span>Name</span>, if desired.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Enter the desired method segments. For additional information, refer to  <a href="../First Gen DSC and TGA/Creating Custom Methods.htm">Creating Custom Methods</a>.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5">Access the <span>Advanced </span>parameters by clicking the arrow next to <span>Advanced</span>. 
+</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="1"><span>Load Window</span>: Select to use the current standby temperature or define a specific temperature range to load the pans at the start of the test.
+</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="2"><span>End of Test</span>:</li>
+        </ul>
+        <ul>
+            <li class="SubBulletIndent2" style="margin-top: 8px;" value="1">Select the <span class="boolean">Discard pan in waste bin at end of text</span> option to have the Autosampler arm place the pan in the waste bin at the end of the run. If this is not selected, the arm will return the pan to its previous position on the sample tray at the end of the run. </li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;" value="2">Select the <span class="boolean">Use Standby Temperature</span> option to use the current standby temperature; uncheck this option to define a specific temperature range to unload the pans at the end of the test.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;" value="3">If needed, enter the delay time that the instrument will wait after reaching the unload temperature range before unloading the sample. A delay time of 2 minutes (120 S) should be used when an experiment ends with the cell at subambient temperature. This allows time for the cell lids and cover to warm in order to prevent moisture from condensing on cold components. </li>
+        </ul>
+        <p style="margin-left: 100px;margin-top: 8px;">
+            <img src="../image/DSC/Defining a DSC Procedur_delay time.png" /> </p>
+        <ul>
+            <li class="NumberedIndent" value="7" style="margin-top: 8px;">If desired, click the <span>Save </span>button  on the <span>Procedure </span>bar to save the procedure for future use. </li>
+            <li class="NoteIndent" value="8">NOTE:&#160;Experimental information can also be imported from the <span>History View</span>, the <span>Incomplete </span>run view, and from a saved data file.</li>
+        </ul>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Saving"></a>Saving a Procedure to File</h2>
+        <p>Clicking <span>Save </span>saves the <span>Procedure </span>parameters described above. To save the current procedure to file for future recall:
+</p>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Access the Experiment <span>Procedure </span>section. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">	Click <span>Save Procedure</span>.
+</li>
+        </ol>
+        <p style="margin-top: 8px;">
+            <img src="../image/Other/Thermal Open Procedure.png" class="imgIndent" />
+        </p>
+        <ol>
+            <li class="NumberedIndent" value="3" style="margin-top: 8px;">Locate the desired folder for your method files.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Enter the name for the file. The default extension is <b>.tprc</b>.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5">Click <span>Save</span>.
+</li>
+        </ol>
+        <h2><a name="Opening"></a>Opening a Saved Procedure File&#160;</h2>
+        <p>To open a saved Procedure file:
+</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">Access the Experiment <span>Procedure </span>section. 
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Click <span>Load Procedure</span><img src="../image/icons/Icon-FileOpen_23x24.jpg" class="imgInline" style="width: 23;height: 24;" /> .
+</li>
+        </ol>
+        <p style="margin-top: 8px;">
+            <img src="../image/Other/Thermal Open Procedure.png" class="imgIndent" />
+        </p>
+        <ol>
+            <li class="NumberedIndent" value="3" style="margin-top: 8px;">Locate the desired folder containing the method files. Select a file from the list.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Click <span>Open</span>.
+</li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

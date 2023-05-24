@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Discovery DSC|Discovery DSC Cooling Options" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.DSC" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Drying the DSC-RCS&#160;or DSC-LN2P System</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><span class="MCBreadcrumbsSelf">Using the Discovery DSC</span><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="Menu Cooling Options DSC.htm">Discovery DSC Cooling Options</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Drying the DSC-RCS&#160;or DSC-LN2P System</span>
+        </div>
+        <h1><a name="top"></a>Drying the DSC-RCS&#160;or DSC-LN2P System</h1>
+        <p MadCap:conditions="Primary.DSC">Under certain conditions, it may be necessary to dry out the DSC-RCS or DSC-LN2P system. To remove moisture in the DSC cell and cooling head, follow the instructions below.</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" MadCap:conditions="Primary.DSC" value="1">Verify that the DSC cell is empty and close the lid. Verify that the AutoLid is seated properly.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" MadCap:conditions="Primary.DSC" value="2"> 
+Access the TRIOS <span>Options </span>&gt; <span>Discovery DSC</span> &gt; <span>Cooler </span>page of TRIOS software. Verify that the correct cooler type (<span class="boolean">RCS 120</span>, <span>RCS 40</span>, <span>RCS 90</span>, or <span>LN2P</span>) is selected. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" MadCap:conditions="Primary.DSC" value="3">Check <span>Leave Cooler On</span>.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4" MadCap:conditions="Primary.DSC">Check <span>Activate secondary purge when lid is opened (RCS and LN2P)</span>, if desired. With this option selected, the purge automatically turns on whenever the cell is opened by the AutoLid. </li>
+        </ol>
+        <p>
+            <img src="../image/DSC/DSC_cooler settings_activate.png" style="padding-left: 40px;" MadCap:conditions="Primary.DSC" />
+        </p>
+        <ol MadCap:conditions="Primary.DSC">
+            <li class="NumberedIndent" value="5">Access the TRIOS <span>Options </span>&gt; <span>Discovery DSC</span> &gt; <span>Auto Sampler </span>page of TRIOS software and select <span>Leave Cooler On</span> as a <span>Sequence Stop Option</span>. This allows the RCS or LN2P event function to operate.
+</li>
+        </ol>
+        <p>
+            <img src="../image/DSC/DSC_autosampler settings_cooler on.png" style="padding-left: 40px;" />
+        </p>
+        <ol MadCap:continue="true">
+            <li class="NumberedIndent" style="margin-top: 8px;" MadCap:conditions="Primary.DSC" value="6">Access the TRIOS <span>Control panel</span> &gt; <span>General </span>page  and <a href="Setting the Temperature.htm">verify the desired <span style="font-weight: normal;">Standby Temperature</span></a>.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" MadCap:conditions="Primary.DSC" value="7">Access the Experiment <span>Procedure </span>section to <a href="../First Gen DSC and TGA/Creating Custom Methods.htm">create a custom method</a>.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" MadCap:conditions="Primary.DSC" value="8">Using the instructions found in <a href="../First Gen DSC and TGA/Creating Custom Methods.htm">Creating Custom&#160;Methods</a>, set up the following method:</li>
+        </ol>
+        <p class="IndentedParagraph" style="margin-top: 8px;" MadCap:conditions="Primary.DSC"><span>Event1 Off</span> (for RCS) or <span>LNC&#160;Control</span> <span>Off </span>(for LN2P)</p>
+        <p class="IndentedParagraph" style="margin-top: 8px;" MadCap:conditions="Primary.DSC"><span>Equilibrate 75.00°C</span> <![CDATA[ ]]></p>
+        <p class="IndentedParagraph" style="margin-top: 8px;" MadCap:conditions="Primary.DSC"><span>Air Cool On</span>
+        </p>
+        <p class="IndentedParagraph" style="margin-top: 8px;" MadCap:conditions="Primary.DSC"><span>Isothermal  120.0 min</span> (or less depending upon the application)</p>
+        <p class="IndentedParagraph" style="margin-top: 8px;" MadCap:conditions="Primary.DSC"><span>Air Cool Off</span>
+        </p>
+        <p class="IndentedParagraph" style="margin-top: 8px;" MadCap:conditions="Primary.DSC"><span>Event1 On</span> (for RCS) or<span> LNC&#160;Control Off </span>(for LN2P)</p>
+        <p class="IndentedParagraph" style="margin-top: 8px;" MadCap:conditions="Primary.DSC">These conditions are suitable for typical situations.</p>
+        <ol MadCap:continue="true">
+            <li class="NumberedIndent" style="margin-top: 8px;" MadCap:conditions="Primary.DSC" value="9">In the Experiment <span>Procedure </span>section:</li>
+            <li class="LetterIndent" style="margin-top: 8px;" value="1" MadCap:conditions="Primary.DSC">Name the method <span>Cell Cooler Conditioning</span> (or similar) and save the method for future recall.</li>
+            <li class="LetterIndent" style="margin-top: 8px;" MadCap:conditions="Primary.DSC" value="2">Click <span>Advanced </span>to display the <span>End of Test</span> options. Check <span>Use Standby Temperature</span>. Once the RCS or LN2P is operating, it is very important that the cell is always kept slightly above ambient temperature before and after experiments.
+</li>
+        </ol>
+        <p>
+            <img src="../image/DSC/DSC_end of test.png" style="padding-left: 40px;" MadCap:conditions="Primary.DSC" />
+        </p>
+        <ol start="10" MadCap:conditions="Primary.DSC">
+            <li value="10"><a href="../Thermal Common Topics/Starting a Discovery Experiment.htm">Start the experiment.</a>
+            </li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li class="NumberedIndent" style="margin-top: 8px;" MadCap:conditions="Primary.DSC" value="11">Upon completion of this experiment, it is recommended that the base and cell purges remain on continuously. If the purges do not remain on, atmospheric moisture may contaminate the system and, depending on the time involved and relative humidity, the procedure may have to be repeated. The base purge is automatically active when the RCS or LN2P is selected as the cooler type.</li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

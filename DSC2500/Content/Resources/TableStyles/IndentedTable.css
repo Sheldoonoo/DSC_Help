@@ -1,0 +1,595 @@
+/* MadCap Table Style: */
+
+/*<meta Version="7" />*/
+
+mcTableStyle
+{
+	name: IndentedTable;
+	border-collapse: collapse;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #000000;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	cell-padding-left: 2px;
+	cell-padding-right: 2px;
+	cell-padding-top: 2px;
+	cell-padding-bottom: 2px;
+	max-id: 3;
+	margin-left: 40px;
+}
+
+mcTableColumnStyle
+{
+	span: 1;
+	separator-style: none;
+	separator-width: 1px;
+	separator-color: #000000;
+	name: Column1;
+	id: 0;
+}
+
+mcTableHeadStyle
+{
+	span: 1;
+	id: 3;
+	name: Header1;
+	font-size: 11pt;
+	font-family: Arial;
+	color: #000080;
+	font-weight: bold;
+}
+
+mcTableBodyStyle
+{
+	span: 1;
+	font-weight: normal;
+	separator-style: none;
+	separator-width: 1px;
+	separator-color: #000000;
+	name: Body1;
+	id: 1;
+	font-size: 10pt;
+	font-family: Arial;
+}
+
+
+/* Cell Styles: */
+ 
+.TableStyle-IndentedTable
+{
+	border-collapse: collapse;
+	border-left-style: solid;
+	border-left-color: #000000;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-color: #000000;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-top-color: #000000;
+	border-top-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+	border-bottom-width: 1px;
+	margin-left: 40px;
+	border-spacing: 0px 0px;
+}
+
+.TableStyle-IndentedTable .Column-Column1
+{
+	
+}
+
+.TableStyle-IndentedTable .Head-Header1
+{
+	
+}
+
+.TableStyle-IndentedTable .HeadI-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .HeadI-Column1-Header1 p
+{
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .HeadE-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: none;
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .HeadE-Column1-Header1 p
+{
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .HeadF-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .HeadF-Column1-Header1 p
+{
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .HeadH-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: none;
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .HeadH-Column1-Header1 p
+{
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .HeadD-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .HeadD-Column1-Header1 p
+{
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .HeadC-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .HeadC-Column1-Header1 p
+{
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .HeadB-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: none;
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .HeadB-Column1-Header1 p
+{
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .HeadA-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .HeadA-Column1-Header1 p
+{
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .HeadG-Column1-Header1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .HeadG-Column1-Header1 p
+{
+	color: #000080;
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.TableStyle-IndentedTable .FootI-Column1-
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.TableStyle-IndentedTable .FootI-Column1- p
+{
+	
+}
+
+.TableStyle-IndentedTable .FootE-Column1-
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: none;
+}
+
+.TableStyle-IndentedTable .FootE-Column1- p
+{
+	
+}
+
+.TableStyle-IndentedTable .FootF-Column1-
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.TableStyle-IndentedTable .FootF-Column1- p
+{
+	
+}
+
+.TableStyle-IndentedTable .FootH-Column1-
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: none;
+}
+
+.TableStyle-IndentedTable .FootH-Column1- p
+{
+	
+}
+
+.TableStyle-IndentedTable .FootD-Column1-
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.TableStyle-IndentedTable .FootD-Column1- p
+{
+	
+}
+
+.TableStyle-IndentedTable .FootC-Column1-
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.TableStyle-IndentedTable .FootC-Column1- p
+{
+	
+}
+
+.TableStyle-IndentedTable .FootB-Column1-
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: none;
+}
+
+.TableStyle-IndentedTable .FootB-Column1- p
+{
+	
+}
+
+.TableStyle-IndentedTable .FootA-Column1-
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.TableStyle-IndentedTable .FootA-Column1- p
+{
+	
+}
+
+.TableStyle-IndentedTable .FootG-Column1-
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.TableStyle-IndentedTable .FootG-Column1- p
+{
+	
+}
+
+.TableStyle-IndentedTable .Body-Body1
+{
+	
+}
+
+.TableStyle-IndentedTable .BodyI-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-IndentedTable .BodyI-Column1-Body1 p
+{
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-IndentedTable .BodyE-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	border-bottom-style: none;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: none;
+}
+
+.TableStyle-IndentedTable .BodyE-Column1-Body1 p
+{
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-IndentedTable .BodyF-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	border-bottom-style: none;
+}
+
+.TableStyle-IndentedTable .BodyF-Column1-Body1 p
+{
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-IndentedTable .BodyH-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: none;
+}
+
+.TableStyle-IndentedTable .BodyH-Column1-Body1 p
+{
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-IndentedTable .BodyD-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	border-bottom-style: none;
+}
+
+.TableStyle-IndentedTable .BodyD-Column1-Body1 p
+{
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-IndentedTable .BodyC-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-IndentedTable .BodyC-Column1-Body1 p
+{
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-IndentedTable .BodyB-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+	border-right-width: 1px;
+	border-right-color: #000000;
+	border-right-style: none;
+}
+
+.TableStyle-IndentedTable .BodyB-Column1-Body1 p
+{
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-IndentedTable .BodyA-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-IndentedTable .BodyA-Column1-Body1 p
+{
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-IndentedTable .BodyG-Column1-Body1
+{
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.TableStyle-IndentedTable .BodyG-Column1-Body1 p
+{
+	font-family: Arial;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+

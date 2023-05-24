@@ -1,0 +1,704 @@
+/*<meta />*/
+
+p.MyStyle
+{
+	margin: 0px;
+	font-family: Georgia;
+	font-size: 10pt;
+	font-style: normal;
+}
+
+img
+{
+	border: none;
+	float: none;
+	vertical-align: text-bottom;
+}
+
+a.Popup
+{
+	
+}
+
+h1
+{
+	color: #00008b;
+	line-height: normal;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 18pt;
+}
+
+h2
+{
+	color: #00008b;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 15pt;
+	margin-top: 25pt;
+	margin-bottom: 0.45em;
+}
+
+h3
+{
+	color: #00008b;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 13pt;
+	margin-bottom: 0.15em;
+}
+
+body
+{
+	font-family: Georgia;
+	font-size: 10pt;
+	display: block;
+}
+
+img.imgRight
+{
+	float: right;
+}
+
+li
+{
+	text-align: left;
+	margin-left: 0px;
+	padding-left: auto;
+	list-style-position: outside;
+	list-style: hanging indent;
+	text-indent: 0px;
+	font-size: 10pt;
+	vertical-align: baseline;
+	margin-top: 0pt;
+	font-family: Arial;
+}
+
+p
+{
+	text-indent: 0px;
+	padding-left: 0px;
+	font-style: normal;
+	font-size: 10pt;
+	margin: 0;
+	margin-top: 0.60em;
+	margin-bottom: 0pt;
+	font-family: Arial;
+}
+
+li.LetterIndent
+{
+	list-style-image: none;
+	list-style-type: lower-alpha;
+	vertical-align: text-bottom;
+	text-align: inherit;
+	display: list-item;
+	list-style-position: outside;
+	color: #000000;
+	margin-left: 35px;
+	margin-top: 4pt;
+	margin-bottom: 4px;
+}
+
+img.imgLeft
+{
+	float: left;
+}
+
+img.imgInline
+{
+	float: none;
+	margin-left: 0pt;
+	vertical-align: middle;
+}
+
+table
+{
+	table-layout: inherit;
+	float: inherit;
+}
+
+table.tablenavigration
+{
+	border: solid 2pt #808080;
+	border-style: solid;
+}
+
+tbody
+{
+	font-family: Verdana;
+	font-size: 9pt;
+}
+
+tbody.tablenavigationbody
+{
+	font-size: 8pt;
+}
+
+a
+{
+	font-size: inherit;
+	font: inherit;
+	font-family: Arial;
+}
+
+a.tablenavigationbody
+{
+	font-size: 8pt;
+	font-family: 'Arial Unicode MS';
+}
+
+MadCap|breadcrumbsProxy
+{
+	color: #00008b;
+	font-size: 10pt;
+	border-bottom-color: #00008b;
+	border-bottom-style: inset;
+	border-bottom: inset 1px #00008b;
+	margin-bottom: 8px;
+	padding-bottom: 8px;
+	mc-breadcrumbs-count: 4;
+	font-family: Arial;
+}
+
+p.pBacktoTop
+{
+	font-size: 8pt;
+	color: #000080;
+}
+
+li.NoteIndent
+{
+	margin-top: 16px;
+	font-size: 10pt;
+	color: #000000;
+	list-style-image: url('../../image/icons/notepad.jpg');
+	list-style: default;
+	list-style-position: outside;
+	padding-left: auto;
+	font-family: Arial;
+	text-indent: 0pt;
+	margin-left: 0pt;
+	white-space: normal;
+	display: list-item;
+	margin-bottom: 16px;
+	text-align: left;
+	vertical-align: bottom;
+}
+
+li.CautionIndent
+{
+	font-weight: bold;
+	font-size: 11pt;
+	text-align: left;
+	list-style-image: url('../../image/icons/caution_icon.jpg');
+	text-indent: 0pt;
+	margin-bottom: 16px;
+	margin-top: 16px;
+	font-family: Arial;
+	list-style: default;
+	vertical-align: top;
+	margin-left: 0px;
+	white-space: normal;
+	color: #000000;
+}
+
+p.TellMeMore
+{
+	color: #00008b;
+}
+
+table.tableImported
+{
+	margin-left: 52px;
+	width: 577px;
+	border-left-style: Solid;
+	border-left-width: 2px;
+	border-right-style: Solid;
+	border-right-width: 2px;
+	border-top-style: Solid;
+	border-top-width: 2px;
+	border-bottom-style: Solid;
+	border-bottom-width: 2px;
+	border-left-color: #808080;
+	border-right-color: #808080;
+	border-top-color: #808080;
+	border-bottom-color: #808080;
+	border-spacing: 0px;
+	border-spacing: 0px;
+	float: none;
+	border-style: solid;
+	border: solid 2px #808080;
+	caption-side: top;
+	border-color: #808080;
+	border-left: solid 2px;
+	border-right: solid 2px;
+	border-top: solid 2px;
+	table-layout: inherit;
+	border-bottom: solid 2px;
+	border-collapse: inherit;
+}
+
+MadCap|miniTocProxy.MiniTOCproxy
+{
+	
+}
+
+li.NumberedIndent
+{
+	list-style-type: decimal;
+	list-style-image: none;
+	text-indent: 0px;
+	margin-top: 4px;
+}
+
+caption
+{
+	font-family: Verdana;
+	color: #00008b;
+	font-weight: bold;
+	font-size: 8pt;
+	margin-top: 10pt;
+}
+
+td
+{
+	font-family: Georgia;
+	font-size: 10pt;
+}
+
+a.BacktoTop
+{
+	font-size: 8pt;
+	font-family: Arial;
+}
+
+table.tableforMenuPages
+{
+	border-collapse: separate;
+	border-spacing: 6px;
+	table-layout: inherit;
+	float: inherit;
+}
+
+h4
+{
+	font-weight: bold;
+	color: #00008b;
+	font-family: Arial;
+	font-size: 11pt;
+}
+
+h5
+{
+	color: #00008b;
+	font-family: Georgia;
+	font-size: 9.83pt;
+	font-weight: bold;
+}
+
+MadCap|xref:focus
+{
+	text-decoration: blink;
+	color: #4169e1;
+}
+
+MadCap|xref:hover
+{
+	text-decoration: blink;
+	color: #00008b;
+}
+
+a.BacktoTop:link
+{
+	color: #00008b;
+	text-decoration: underline;
+}
+
+a.BacktoTop:visited
+{
+	color: #006400;
+	text-decoration: underline;
+}
+
+a.BacktoTop:focus
+{
+	color: #00008b;
+	text-decoration: underline;
+}
+
+a.BacktoTop:hover
+{
+	text-decoration: blink;
+	color: #4169e1;
+}
+
+a:link
+{
+	color: #00008b;
+}
+
+a:visited
+{
+	color: #9400d3;
+}
+
+a:focus
+{
+	color: #00008b;
+}
+
+a:hover
+{
+	color: #4169e1;
+	text-decoration: blink;
+}
+
+tr
+{
+	
+}
+
+MadCap|xref.ContinueTo
+{
+	mc-format: '(continued in {title})';
+}
+
+MadCap|xref.ContinueFrom
+{
+	mc-format: '(continued from {title})';
+}
+
+p.Bulleted
+{
+	text-align: left;
+	margin-left: 0.25in;
+	margin-right: 0in;
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: 0em;
+	color: #000000;
+	mc-auto-number-format: '• ';
+	mc-auto-number-position: outside-head;
+	mc-auto-number-offset: 24px;
+	mc-auto-number-class: ;
+	line-height: 12pt;
+	text-decoration: none;
+	font-size: 12pt;
+	font-family: Arial;
+	margin-bottom: 6pt;
+	margin-top: 8px;
+}
+
+p.Notes
+{
+	text-align: left;
+	margin-left: 0in;
+	margin-right: 0in;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10pt;
+	letter-spacing: 0em;
+	color: #000000;
+	text-indent: 0px;
+	line-height: 12pt;
+	text-decoration: none;
+	font-family: 'Times New Roman';
+}
+
+table.Default
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 12pt;
+	margin-bottom: 12pt;
+	border-spacing-x: 0;
+	border-spacing-y: 0;
+	border-collapse: collapse;
+	border-color: black;
+	border-top-style: solid;
+	border-top-width: 2pt;
+	border-top-color: #37318b;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #37318b;
+	border-right-style: none;
+	border-left-style: none;
+}
+
+p.CellBody
+{
+	text-align: left;
+	margin-left: 0in;
+	margin-right: 0in;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: 0em;
+	color: #000000;
+	text-indent: 0px;
+	line-height: 12pt;
+	text-decoration: none;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+table.tablewithBlueLines
+{
+	border: solid 2pt #00008b;
+	float: none;
+	padding: 1px;
+	border-color: #00008b;
+	border-style: solid;
+	border-bottom: solid 2px;
+	border-left: solid 2px;
+	border-right: solid 2px;
+	border-top: solid 2px;
+	border-width: 2px;
+	table-layout: inherit;
+}
+
+li.NoBulletIndent
+{
+	list-style-image: none;
+	display: none;
+}
+
+p.IndentedParagraph
+{
+	margin-left: 0.43in;
+}
+
+li.SubBulletIndent
+{
+	text-align: inherit;
+	display: list-item;
+	list-style-position: outside;
+	vertical-align: middle;
+	margin-left: 40px;
+	margin-top: 8pt;
+	margin-bottom: 5pt;
+}
+
+span
+{
+	color: #00008b;
+	font-weight: bold;
+}
+
+p.FooterText
+{
+	text-indent: 0px;
+	padding-left: 0px;
+	font-style: normal;
+	font-family: 'Times New Roman';
+	font-size: 9 pt;
+	margin-top: 0em;
+	margin-bottom: 0em;
+	margin: 0;
+}
+
+p.WarningIndent
+{
+	list-style-image: url('../../image/icons/flag_red.jpg');
+	color: #dc143c;
+	font-weight: bold;
+	vertical-align: baseline;
+	margin-top: 16px;
+	font-family: 'Times New Roman';
+	font-size: 11pt;
+	margin-left: 6px;
+	text-indent: -5pt;
+	display: list-item;
+}
+
+li.WarningIndent
+{
+	color: #dc143c;
+	font-weight: bold;
+	font-size: 11pt;
+	display: list-item;
+	list-style-image: url('../../image/icons/warning2.jpg');
+	text-indent: 0in;
+	margin-bottom: 16px;
+	margin-top: 16px;
+	font-family: Arial;
+	list-style: default;
+	white-space: normal;
+	margin-left: 0px;
+	vertical-align: top;
+}
+
+li.bullet
+{
+	margin-top: 6px;
+	text-align: left;
+	margin-left: 0px;
+	padding-left: auto;
+	list-style-position: outside;
+	list-style: hanging indent;
+	text-indent: 0px;
+	vertical-align: middle;
+	font-size: 10pt;
+	font-family: Arial;
+}
+
+MadCap|expandingHead
+{
+	font-style: normal;
+	font-family: 'Arial Unicode MS';
+	font-size: 10pt;
+	font-variant: normal;
+	font-weight: normal;
+	color: #000000;
+}
+
+MadCap|expandingBody
+{
+	font-size: 10pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	color: #000000;
+	font-family: Arial;
+}
+
+hr
+{
+	margin-top: 12pt;
+}
+
+MadCap|expandingHead.ExpandingHeadSpan
+{
+	color: #00008b;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+img.imgIndent
+{
+	margin-left: 30pt;
+	margin-bottom: 2pt;
+}
+
+li.SubBulletIndent2
+{
+	text-align: inherit;
+	display: list-item;
+	list-style-position: outside;
+	vertical-align: middle;
+	list-style-image: url('../../image/icons/Bullet2.jpg');
+	text-indent: 0pt;
+	margin-left: 65px;
+	margin-top: 5pt;
+}
+
+MadCap|dropDownHead
+{
+	
+}
+
+td.tdTableRows
+{
+	padding-left: 5pt;
+	vertical-align: top;
+}
+
+p.IndentedParagraph2
+{
+	margin-left: 60pt;
+}
+
+span.SYMBOL
+{
+	font-family: Symbol;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 12pt;
+}
+
+@media non-print
+{
+	li.CautionIndent
+	{
+		
+	}
+
+	li.WarningIndent
+	{
+		
+	}
+}
+
+MadCap|xref
+{
+	mc-format: 'see {quote}{paratext}{quote}';
+}
+
+sub
+{
+	vertical-align: sub;
+}
+
+table.IndentedTable
+{
+	margin-left: 40px;
+}
+
+thead
+{
+	font-family: Arial;
+	font-size: 11pt;
+	font-weight: bold;
+	color: #000080;
+}
+
+li.VideoIndent
+{
+	font-size: 10pt;
+	color: #000000;
+	list-style: default;
+	list-style-position: outside;
+	padding-left: auto;
+	font-family: Arial;
+	text-indent: 0pt;
+	margin-left: 0pt;
+	white-space: normal;
+	display: list-item;
+	text-align: left;
+	vertical-align: bottom;
+	list-style-image: url('../../image/icons/VideoIcon.png');
+	margin-bottom: 16px;
+	margin-top: 16px;
+	margin: 0px;
+}
+
+@media pdf
+{
+	img
+	{
+		mc-image-position: left;
+	}
+
+	img.imgIndent
+	{
+		mc-image-spacing: 1px;
+		margin-left: 10pt;
+	}
+}
+
+img
+{
+	mc-image-position: left;
+}
+
+img.imgIndent
+{
+	mc-image-spacing: 1px;
+	margin-left: 10pt;
+}
+

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Discovery DSC|Calibrating the Discovery DSC" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.DSC" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Calibrating MDSC Heat Capacity</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/TableStyles/InThisTopic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><span class="MCBreadcrumbsSelf">Using the Discovery DSC</span><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="DSC Calibration Overview.htm">Calibrating the Discovery DSC</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Calibrating MDSC Heat Capacity</span>
+        </div>
+        <h1><a name="top"></a>Calibrating MDSC Heat Capacity</h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../Resources/TableStyles/InThisTopic.css');margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+            <caption>In this topic</caption>
+            <col style="width: 197px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Overview" class="tablenavigationbody selected">Overview</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Collecti" class="tablenavigationbody selected">Collecting MDSC Heat Capacity Calibration Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Sample" class="tablenavigationbody selected">Sample Preparation</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#MDSC" class="tablenavigationbody selected">MDSC Heat Capacity Calibration Using New Calibration Setup</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#MDSC2" class="tablenavigationbody selected">MDSC Heat Capacity Calibration Setup Using the Template</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Analyzin" class="tablenavigationbody selected">Analyzing MDSC Heat Capacity Calibration Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowEnd_ColEnd"><a href="#Selectin" class="tablenavigationbody selected">Selecting MDSC Heat Capacity Calibration Results</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Overview"></a>Overview
+</h2>
+        <p>MDSC Heat Capacity calibration is only required to measure the accurate value of the sample’s heat capacity or when using periods less than or equal to 40 seconds. The calibration uses a standard material with a known heat capacity over a specific temperature range of interest. Reference data is available for sapphire and polystyrene.  Users can also generate their own reference tables for other materials.  The calibration experiment should be run under similar conditions (pan type, modulation amplitude, period and heating rate) to those that will be used for subsequent MDSC samples. The range of temperatures should be at least as broad as the desired experimental range.
+</p>
+        <p>The MDSC Heat Capacity calibration curve is calculated by dividing the theoretical value of heat capacity by the measured value over a specific temperature range. The resultant calibration data, as a function of temperature, is sent to the instrument  and applied to subsequent measurements.
+</p>
+        <p>This calibration only applies to the measurement of the Reversing Heat Capacity using T4P Heat Flow.</p>
+        <p>Follow these basic instructions for Standard Heat Capacity calibration.
+</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">Collect MDSC Heat Capacity calibration data, which requires heating a heat capacity calibration standard (in pans). The experimental method used will be similar to that for subsequent experiments. The range of temperatures should be at least as broad as the desired experimental range using the same conditions to be used in subsequent measurements (modulation conditions and purge gas).
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Analyze the data.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Apply calibration results.</li>
+        </ol>
+        <h2><a name="Collecti"></a>Collecting MDSC Heat Capacity Calibration Data</h2>
+        <p>The MDSC Heat Capacity calibration experimental setup can be performed by setting up the experiments manually using the Experimental View or automatically using the New Calibration Setup from the <span>Global Calibration</span> page. The <a href="#MDSC" class="selected">New Calibration Setup</a> method is the recommended procedure since it simplifies run setup and input parameters.</p>
+        <p>You can collect data one of two ways:&#160;</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="1">Using&#160;<a href="#MDSC" class="selected">New Calibration&#160;Setup</a></li>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="2">Through standard experimental creation using <a href="#MDSC2" class="selected">procedure templates</a></li>
+        </ol>
+        <h2><a name="Sample"></a>Sample Preparation
+</h2>
+        <ol>
+            <li value="1">Obtain the larger sapphire disk from the MDSC Calibration Sapphire Kit (P/N 970370.001) or other heat capacity calibration standard and record the sample weight.
+</li>
+            <li class="NumberedIndent" value="2">Weight an empty sample and reference pans and record their weights.
+</li>
+            <li class="NumberedIndent" value="3">Crimp the calibration standard into the sample pan, and then position it on the sample platform (or within an available Autosampler tray position).
+</li>
+            <li class="NumberedIndent" value="4">Prepare a reference pan using the same pan type used for the sample (empty pan). Crimp the pan, then position it on the reference platform (or within an available Autosampler tray position).</li>
+        </ol>
+        <h2><a name="MDSC"></a>MDSC Heat Capacity Calibration Using New Calibration Setup</h2>
+        <p style="margin-top: 8px;">Before you begin, verify that the appropriate <a href="Cal TZero.htm">Tzero</a> and <a href="Cal Cell Constant Temp.htm">Cell Constant/Temperature</a>  calibrations had been run previously on the instrument, they must have been performed, analyzed, and applied before beginning the MDSC Heat Capacity calibration procedure.
+ If a heat capacity calibration is run without Tzero and Cell Constant/Temperature calibrations saved on the instrument, you will receive the error below. These calibrations do not need to be performed with the new heat capacity calibration that is going to be run. <br /><img src="../image/DSC/cal error_293x162.png" style="width: 293;height: 162;" /></p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">Access the File Manager and select the <span>Calibration </span>panel. Then double-click <span class="boolean">Calibration Setup</span>. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">When you create a run from the Calibration Experiment Setup page, the settings are automatically saved. The next time TRIOS is started, you will be asked if you would like to use your saved settings. Click <span class="boolean">Yes</span> to populate the fields with your previously entered data, or <span class="boolean">No</span> to  receive a blank experiment setup page. <br /><br /></li>
+            <li value="3">The <span class="boolean">Calibration Experiment Setup</span> screen displays, allowing you to generate new calibrations. To view current calibration sets, open <span class="boolean">Calibration Data</span>. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Select the <span class="boolean">Reversing Heat Capacity</span> checkbox to open the calibration form.</li>
+        </ol>
+        <p>
+            <img src="../image/DSC/reversing heat cap.png" style="padding-left: 40px;" />
+        </p>
+        <ol>
+            <li class="NumberedIndent" value="5" style="margin-top: 8px;margin-bottom: 6px;">Enter the following information.</li>
+            <li class="LetterIndent" value="1" style="margin-top: 8px;margin-bottom: 6px;">Sapphire will be displayed for the sample <span>Name </span>of the new calibration. </li>
+            <li class="LetterIndent" style="margin-top: 8px;margin-bottom: 6px;" value="2">Enter the <span>Operator </span>name.</li>
+            <li class="LetterIndent" style="margin-top: 8px; margin-bottom: 6px;" value="3">Enter the <span>Project </span>name, if desired.</li>
+            <li class="LetterIndent" style="margin-top: 8px; margin-bottom: 6px;" value="4">Enter the sample pan number in the <span class="boolean">Sample</span> field, the sample size in the <span class="boolean">Size</span> field, and the pan mass in the <span class="boolean">Pan Mass</span> field.</li>
+            <li class="LetterIndent" style="margin-top: 8px; margin-bottom: 6px;" value="5">Enter <span>Reference </span>pan number. Click the <span>Reference </span>field to display the drop-down table. Select the pan position along with the sample mass. If the pan position and sample mass are not in the table, click <span>Edit </span>at the bottom of the table to enter applicable values.</li>
+            <li class="LetterIndent" style="margin-top: 8px;margin-bottom: 6px;" value="6">Enter any comments or <span>Notes</span>, if desired.
+</li>
+            <li class="LetterIndent" style="margin-top: 8px;margin-bottom: 6px;" value="7">Modify the method parameters.
+</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="1">Calibration must be performed using the same atmosphere and cooling accessory that will be used in subsequent experiments. Obviously, the lower and upper temperatures chosen for calibration must be within the operating range of the cooling accessory selected. In addition, the temperature range for calibration should be at least as broad as the range that will be used in subsequent experiments. Typical temperature ranges are: <a href="DSC RCS Intro.htm">–90 to 550°C for the RCS90</a>, <a href="DSC RCS Intro.htm">–40 to 400°C for the RCS40</a>, and <a href="DSC FACS Intro.htm">50 to 400°C for the FACS</a>. </li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="2">Enter the <span>Modulation </span>parameters and the heating <span>Ramp </span>rate. Heat the material at the same heating rate that you will use in your subsequent experiments.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px; margin-bottom: 6px;" value="3">Enter the <span class="boolean">lower temperature</span> and <span class="boolean">upper temperature</span>.</li>
+        </ul>
+        <ol>
+            <li class="NumberedIndent" value="6" style="margin-top: 8px;margin-bottom: 6px;">When sample and experimental input is complete, select from one of the following options:
+</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" style="margin-top: 8px;margin-bottom: 6px;" value="1"><span>Run All</span>: Sends the calibration experiment to the Running Queue and execute run sequence.
+</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;margin-bottom: 6px;" value="2"><span>Queue All</span>: Sends the calibration experiment to the Running Queue for execution.
+</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;margin-bottom: 6px;" value="3"><span>Schedule All</span>:  Schedules the calibration to run at a later specified date. Allows you to select how often the calibration should be run, the time, and the begin and end date.</li>
+        </ul>
+        <p style="margin-top: 8px;margin-bottom: 6px;">Refer to <a href="DSC Calibration Overview.htm">DSC Calibration Overview</a> for information on setting up auto calibrations and scheduling runs.</p>
+        <p><a href="#top" class="tablenavigationbody selected">Back to top</a>
+        </p>
+        <h2><a name="MDSC2"></a>MDSC Heat Capacity Calibration Setup Using the Template</h2>
+        <p>This calibration requires one experiment using a sapphire or other suitable standard. A general procedure for calibration is given below. Experiment setup follows the same general procedure as a standard experiment (see <a href="Defining DSC Experimental Parameters.htm">Defining DSC Experimental Parameters</a>).</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="1">Prepare the sample and reference pans as described above in <a href="#Sample" class="selected">Sample Preparation</a>.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="2">Access the Design View and add a run.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="3">Click on the associated Design Run Form (Single Run Form).
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="4">Click the <span>Sample </span>bar. Enter the required test parameters for the experiment.
+</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" style="margin-top: 8px;margin-bottom: 6px;" value="1">Note that the <span>Name </span>field varies based on the procedure mode/test type selected below. For calibration, this field is not programmed.
+</li>
+            <li class="NumberedIndent" value="5" style="margin-top: 8px;margin-bottom: 6px;">C
+lick the <span>Procedure </span>bar. Enter the required test parameters.
+</li>
+            <li class="LetterIndent" value="1" style="margin-top: 8px;margin-bottom: 6px;">Select the <span>Mode </span>to <span>Calibration</span>.
+</li>
+            <li class="LetterIndent" style="margin-top: 8px;margin-bottom: 6px;" value="2">Select the <span>Test </span>type as <span>MDSC Heat Capacity</span>. The associated procedure template displays. Enter the required information. Select the <span>Segments </span>tab to view the associated method is segment form.</li>
+        </ul>
+        <p style="margin-top: 8px;margin-bottom: 6px;">
+            <img src="../image/DSC/DSC_heat cap cal template.png" style="padding-left: 40px;" />
+        </p>
+        <ul>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="1"><span class="boolean">Lower Temperature</span> &amp; <span class="boolean">Upper Temperature</span>: Calibration should be performed using the same atmosphere and cooling accessory that will be used in subsequent experiments. The selected lower and upper temperatures for calibration must be within the operating range of the selected cooling accessory and the temperature range for calibration should be as broad as the range that will be used on your samples in subsequent experiments.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="2"><span>Ramp</span>: Enter the heating rate. Heat the material, at the same heating rate that you will use in your subsequent experiments.</li>
+        </ul>
+        <ul>
+            <li class="NumberedIndent" value="6" style="margin-top: 8px;margin-bottom: 6px;">Once the experiment is setup, copy the experiment to the Running Queue and click <span>Start </span>to begin the calibration.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="7">Once the experiment is complete, <a href="#Analyzin" class="selected">analyze the data</a>.</li>
+        </ul>
+        <p><a href="#top" class="tablenavigationbody selected">Back to top</a>
+        </p>
+        <h2><a name="Analyzin"></a>Analyzing MDSC Heat Capacity Calibration Data</h2>
+        <p>Once the calibration experiment completes, analyze the data following the instructions below.
+</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="1">Open the MDSC Heat Capacity calibration file in TRIOS.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="2">Select <span>Calibrate </span>&gt; <span>MDSC Heat Capacity</span> from the <span>Instrument </span>menu options. Alternatively, you can select this option from the File Manager right-click pop-up menu.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="3">When you select <span>Calibrate </span>&gt; <span>MDSC Heat Capacity</span>, a new document is created that contains the associated calibration results. </li>
+        </ol>
+        <p class="IndentedParagraph" style="margin-top: 8px;margin-bottom: 6px;">Several views are available within this document.&#160;&#160;</p>
+        <ul>
+            <li class="SubBulletIndent" style="margin-top: 8px;margin-bottom: 6px;" value="1">Spreadsheet (the first <span>Step </span>tab in the above image): A table view of the associated calibration results </li>
+            <li class="SubBulletIndent" style="margin-top: 8px;margin-bottom: 6px;" value="2">Graph (the second <span>Step </span>tab in the above image): A graphical view of the associated calibration results.</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;margin-bottom: 6px;" value="3">Results Summary (the <span>Calibrations </span>tab in the above image): A summary of the calibration parameters. Change the calibration name and add a description, if desired.
+</li>
+        </ul>
+        <ol>
+            <li class="NumberedIndent" value="4" style="margin-top: 8px;margin-bottom: 6px;">On the <span>Results </span>view, select from one of the following options:
+</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" style="margin-top: 8px;margin-bottom: 6px;" value="1"><span>Save Results</span>: Sends the results to the calibration database, but does not enable or apply the results.</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;margin-bottom: 6px;" value="2"><span>Save and Apply</span>: Sends the results to the calibration database and enables the calibration and then applies the results. </li>
+            <li class="NoteIndent" value="3">NOTE: This calibration document will automatically be saved to the following folder: <b>C:\ProgramData\TA Instruments\TRIOS\Discovery DSC\CalibrationDocs</b> in Windows 7 or 8 or <b>C:\Documents and Settings\All Users\TA Instruments\TRIOS\Discovery DSC\CalibrationDocs</b> in Windows XP.</li>
+        </ul>
+        <p><a href="#top" class="tablenavigationbody selected">Back to top</a>
+        </p>
+        <h2 value="6"><a name="Selectin"></a>Selecting MDSC Heat Capacity Calibration Results
+</h2>
+        <p>The Discovery DSC stores all the calibration results in a database internal to the instrument. This allows you to access and set calibrations accordingly to meet the needs of your experiment. Selection of the calibration set is made on the <a href="Cal Global Calibration Screen.htm">Calibration Data</a> page.
+</p>
+        <p>After analyzing and saving the results, you can apply the results so they are used in future experiments.
+</p>
+        <p>Access the <span>Calibration </span>&gt; <span>Calibration Data</span>window from the File Manager to access the Calibration Data page.
+</p>
+        <p>Verify the desired calibration set is selected after applying the new calibration result.</p>
+        <p><a href="#top" class="tablenavigationbody selected">Back to top</a>
+        </p>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

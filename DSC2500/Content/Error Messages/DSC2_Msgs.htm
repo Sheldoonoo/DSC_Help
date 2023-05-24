@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="" conditions="Primary.ARES-G2,Primary.RSA-G2" MadCap:conditions="Primary.Mercury DSC" MadCap:tocPath="Error Messages" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Discovery DSC Error Messages</title>
+        <link href="../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="top"></a>Discovery DSC Models 25/250/2500 Error and Warning Messages</h1>
+        <p>Refer to the table below for the list of Discovery DSC error messages and possible solutions.  Any errors or warnings not documented below are informational only and require no action to be taken.</p>
+        <h2>Discovery DSC Instrument Errors</h2>
+        <p>&#160;</p>
+        <table class="TableStyle-Basic" style="mc-table-style: url('../Resources/TableStyles/Basic.css');margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+            <col style="width: 112px;" class="Column-Column1" />
+            <col style="width: 346px;" class="Column-Column1" />
+            <col style="width: 346px;" class="Column-Column1" />
+            <col style="width: 331px;" class="Column-Column1" />
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1"><b>Message Code</b>
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="font-weight: bold;text-align: center;">Message Text</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><b>Description</b>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-weight: bold;text-align: center;">Solutions to Error</td>
+                </tr>
+                <tr class="Body-Body1" id="5523">
+                    <td class="BodyE-Column1-Body1">5523</td>
+                    <td class="BodyE-Column1-Body1" style="font-weight: normal;text-align: left;">Data memory is full before end of run.  Terminate run and transfer existing data.</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: left;font-weight: normal;">Insufficient memory available to complete run – sequence terminated.  Data captured before termination is available.  </td>
+                    <td class="BodyD-Column1-Body1" style="font-weight: normal;text-align: left;">Redesign sequence to allow proper transfer of data between runs.</td>
+                </tr>
+                <tr class="Body-Body1" id="5524">
+                    <td class="BodyE-Column1-Body1">5524</td>
+                    <td class="BodyE-Column1-Body1" style="font-weight: normal;text-align: left;">Internal error, failed saving experiment data.  OS Error Code  {0:uint}</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: left;font-weight: normal;">There was an internal error on the instrument.</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: left;font-weight: normal;">  Contact Customer Support.</td>
+                </tr>
+                <tr class="Body-Body1" id="5525">
+                    <td class="BodyE-Column1-Body1">5525</td>
+                    <td class="BodyE-Column1-Body1" style="font-weight: normal;text-align: left;">Internal error, failed creating experiment data file.  OS Error Code  {0:uint}</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: left;font-weight: normal;">There was an internal error on the instrument.</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: left;font-weight: normal;">  Contact Customer Support.</td>
+                </tr>
+                <tr class="Body-Body1" id="5526">
+                    <td class="BodyE-Column1-Body1">5526</td>
+                    <td class="BodyE-Column1-Body1" style="font-weight: normal;text-align: left;">Internal error, failed saving configuration data.  OS Error Code  {0:uint}</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: left;font-weight: normal;">There was an internal error on the instrument.</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: left;font-weight: normal;">  Contact Customer Support.</td>
+                </tr>
+                <tr class="Body-Body1" id="5527">
+                    <td class="BodyE-Column1-Body1">5527</td>
+                    <td class="BodyE-Column1-Body1" style="font-weight: normal;text-align: left;">Internal error, failed creating configuration data.  OS Error Code  {0:uint}</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: left;font-weight: normal;">There was an internal error on the instrument.</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: left;font-weight: normal;"> Contact Customer Support.</td>
+                </tr>
+                <tr class="Body-Body1" id="5528">
+                    <td class="BodyE-Column1-Body1">5528</td>
+                    <td class="BodyE-Column1-Body1" style="font-weight: normal;text-align: left;">Internal error, failed reading configuration data.  OS Error Code  {0:uint}</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: left;font-weight: normal;">There was an internal error on the instrument.</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: left;font-weight: normal;"> Contact Customer Support.</td>
+                </tr>
+                <tr class="Body-Body1" id="5529">
+                    <td class="BodyE-Column1-Body1">5529</td>
+                    <td class="BodyE-Column1-Body1" style="font-weight: normal;text-align: left;">CANbus internal cabling is broken.</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: left;font-weight: normal;">A discontinuity has been detected in the internal CANbus cabling.</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: left;font-weight: normal;">Contact TA Instruments for service.</td>
+                </tr>
+                <tr class="Body-Body1" id="6001">
+                    <td class="BodyE-Column1-Body1">6001</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">One or more of the temperature measurement ADCs are not responding.</td>
+                    <td class="BodyE-Column1-Body1">There is a problem with the instrument's measurement system. An A/D conversion was not reported properly.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p> Cycle power on the instrument and retry operation. </p>
+                        <p>If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6003">
+                    <td class="BodyE-Column1-Body1">6003</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Fep failed power on self test (POST)</td>
+                    <td class="BodyE-Column1-Body1">The Front-End Power board failed its power-on self-test.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;"> If this error persists, contact TA Instruments for service.</td>
+                </tr>
+                <tr class="Body-Body1" id="6004">
+                    <td class="BodyE-Column1-Body1">6004</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Temperature derivative is zero while power request is maximum.</td>
+                    <td class="BodyE-Column1-Body1">There is a problem with the instrument's heater control system. Power is being supplied to the cell but the cell temperature is not changing. The run has been terminated. The heater windings for the cell might be open. </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Cycle power on the instrument and retry operation. </p>
+                        <p>If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6044">
+                    <td class="BodyE-Column1-Body1">6044</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">GDM A/D Converters (MAX1403) Not Responding</td>
+                    <td class="BodyE-Column1-Body1">There is a problem with the instrument's gas delivery system. An A/D conversion was not reported properly. </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Cycle power on the instrument and retry operation.</p>
+                        <p> If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6045">
+                    <td class="BodyE-Column1-Body1">6045</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">GDM firmware CRC Failed. Reload firmware.</td>
+                    <td class="BodyE-Column1-Body1">The GDM board firmware failed a confidence check and may be corrupt.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Reload GDM firmware to the instrument from the PC and cycle power to the instrument. </p>
+                        <p>If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="1115">
+                    <td class="BodyE-Column1-Body1">6046</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">GDM failed power on self-test (POST).</td>
+                    <td class="BodyE-Column1-Body1">The GDM board firmware failed a confidence check and may be corrupt.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Reload GDM firmware to the instrument from the PC and cycle power to the instrument.</p>
+                        <p> If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6047">
+                    <td class="BodyE-Column1-Body1">6047</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Requested Purge Flow Rate Out of Valid Range {0:float} ml/min</td>
+                    <td class="BodyE-Column1-Body1">The sample purge flow rate you requested is outside the allowable range of the instrument. DSC Sample Purge Allowable Flow Rate: 5–200.0 ml/min</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">Change your requested flow rate to within the instrument's allowable range.</td>
+                </tr>
+                <tr class="Body-Body1" id="6048">
+                    <td class="BodyE-Column1-Body1">6048</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Base Purge Flow Rate Out of Valid Range {0:float} ml/min</td>
+                    <td class="BodyE-Column1-Body1">The base purge flow sensor has detected a low flow rate. Minimum flow rate: 200 ml/min</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Check that the supply going to the instrument (gas inlet) has adequate pressure. See the Getting Started Guide for adequate pressure. </p>
+                        <p>If the pressure is correct, check for other obstructions in the flow and then resume your experiment.</p>
+                        <p>If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6049">
+                    <td class="BodyE-Column1-Body1">6049</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Purge Flow Rate Out of Valid Range Requested: {0:float} ml/min Measured {1:float} ml/min</td>
+                    <td class="BodyE-Column1-Body1">The sample purge flow sensor has detected a flow rate out of range.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Check that the supply going to the instrument (gas inlet) has adequate pressure. See the <a href="../Resources/PDF Files/Discovery DSC_25.250.2500_Getting Started.pdf">Getting Started Guide</a> for adequate pressure.</p>
+                        <p>If the pressure is correct, check for other obstructions in the flow and then retry your method. If this error occurs during a run, the run will continue.</p>
+                        <p>If, after troubleshooting, this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6054">
+                    <td class="BodyE-Column1-Body1">6054</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Lost Communication with FEP PCB–Heartbeat not received from FEP PCB</td>
+                    <td class="BodyE-Column1-Body1">Communication with the FEP board has been lost, possibly indicating a wire harness connection problem or board failure.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Cycle power on the instrument and retry operation.</p>
+                        <p>If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6055">
+                    <td class="BodyE-Column1-Body1">6055</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Lost Communication with FCM PCB– Heartbeat not received from FCM PCB</td>
+                    <td class="BodyE-Column1-Body1">Communication with the FCM board has been lost, possibly indicating a wire harness connection problem or board failure.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Cycle power on the instrument and retry operation.</p>
+                        <p>If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6056">
+                    <td class="BodyE-Column1-Body1">6056</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Lost Communication with Autosampler PCB–Heartbeat not received from Autosampler PCB</td>
+                    <td class="BodyE-Column1-Body1">Communication with the Autosampler board has been lost, possibly indicating a wire harness connection problem or board failure.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Cycle power on the instrument and retry operation.</p>
+                        <p>If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6057">
+                    <td class="BodyE-Column1-Body1">6057</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Lost Communication with Gas Delivery Module PCB–Heartbeat not received from GDM PCB</td>
+                    <td class="BodyE-Column1-Body1">Communication with the Gas Delivery Module has been lost, possibly indicating a wire harness connection problem or board failure.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Cycle power on the instrument and retry operation.</p>
+                        <p>If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6058">
+                    <td class="BodyE-Column1-Body1">6058</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Lost Communication with LNP PCB–Heartbeat not received from LNP PCB</td>
+                    <td class="BodyE-Column1-Body1">Communication with Liquid Nitrogen Pump has been lost, possibly indicating a wire harness connection problem or board failure.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Cycle power on the instrument and retry operation.</p>
+                        <p>If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6059">
+                    <td class="BodyE-Column1-Body1">6059</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Lost Communication with PCA PCB–Heartbeat not received from PCA PCB</td>
+                    <td class="BodyE-Column1-Body1">Communication with the PCA has been lost, possibly indicating a wire harness connection problem or board failure.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Cycle power on the instrument and retry operation.</p>
+                        <p>If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6060">
+                    <td class="BodyE-Column1-Body1">6060</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">LN2P A/D Converter Not Responding</td>
+                    <td class="BodyE-Column1-Body1">There is a problem with the LN2P cooling system. An A/D conversion was not reported properly</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Cycle power to the cooler and retry operation.</p>
+                        <p>If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6061">
+                    <td class="BodyE-Column1-Body1">6061</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">LN2P CRC Failed</td>
+                    <td class="BodyE-Column1-Body1">The Front-End Power board firmware failed a confidence check and may be corrupt.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Reload LN2P firmware to the instrument from the PC and cycle power to the cooler.</p>
+                        <p>If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6062">
+                    <td class="BodyE-Column1-Body1">6062</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">LN2P Failed Power on self test (POST)</td>
+                    <td class="BodyE-Column1-Body1">The LN2P cooling system failed its power-on self-test </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">If this error persists, contact TA Instruments for service.</td>
+                </tr>
+                <tr class="Body-Body1" id="6063">
+                    <td class="BodyE-Column1-Body1">6063</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">LN2P Pump Motor Temperature Out of Range {0:float}</td>
+                    <td class="BodyE-Column1-Body1">The temperature out of the LN2P pump motor is out of the desired range (40° ±5°C)</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">Contact TA Instruments for service.</td>
+                </tr>
+                <tr class="Body-Body1" id="6064">
+                    <td class="BodyE-Column1-Body1">6064</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">LN2P Tank Empty–Liquid level sensor reports 0% full</td>
+                    <td class="BodyE-Column1-Body1">You have set up a run that requires the LN2P to provide liquid nitrogen cooling, but the LN2P is empty.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">The run will not be started until the LN2P contains adequate liquid nitrogen. If this error occurs during a run, the run will be terminated, the LN2P turned off, and the cell will go to standby temperature. Fill the LN2P tank using one of the methods outlined in the <a href="../Resources/PDF Files/DiscoveryLN2P_GettingStarted.pdf">LN2P Getting Started Guide</a> or the Discovery DSC Getting Started Guide.</td>
+                </tr>
+                <tr class="Body-Body1" id="6065">
+                    <td class="BodyE-Column1-Body1">6065</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Liquid Level Sensor Out of Range {0:float}</td>
+                    <td class="BodyE-Column1-Body1">Liquid Level Sensor Out of Range. Low = possible short circuit of the sensor. High = possible open circuit of the sensor.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">Contact TA Instruments for service.</td>
+                </tr>
+                <tr class="Body-Body1" id="6066">
+                    <td class="BodyE-Column1-Body1">6066</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">LN2P Tank Level Not Increasing During Fill: {0:float} Bulk tank may be empty.</td>
+                    <td class="BodyE-Column1-Body1">The LN2P liquid level sensor is not changing during the autofill function, indicating that the bulk storage tank may have run out of liquid nitrogen.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Check the condition of the bulk storage tank and resume autofill. </p>
+                        <p>If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6067">
+                    <td class="BodyE-Column1-Body1">6067</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">LN2P Tank Level Warning–Level of LN2 remaining in the tank reaches 20% of full.</td>
+                    <td class="BodyE-Column1-Body1">The LN2P liquid level sensor indicates that your tank is only 20% full of LN2</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">You may want to refill your tank now or use the autofill feature prior to your next run to ensure adequate cooling supply to the cell for your experiment. If this message occurs during a run, the run will continue.</td>
+                </tr>
+                <tr class="Body-Body1" id="6082">
+                    <td class="BodyE-Column1-Body1">6082</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Auto Sampler Crc failed. Please reload firmware.</td>
+                    <td class="BodyE-Column1-Body1">The Autosampler board firmware failed a confidence check and may be corrupt.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Reload Autosampler firmware to the instrument from the PC and cycle power to the instrument.</p>
+                        <p>If this error persists, select "Bypass Autosampler" to run the instrument in manual mode and contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6083">
+                    <td class="BodyE-Column1-Body1">6083</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Auto Sampler failed power on self test (POST)</td>
+                    <td class="BodyE-Column1-Body1">The Autosampler failed its power-on self-test. </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">If this error persists, select "Bypass Autosampler" to run the instrument in manual mode and contact TA Instruments for service.</td>
+                </tr>
+                <tr class="Body-Body1" id="6084">
+                    <td class="BodyE-Column1-Body1">6084</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Auto Sampler Autocal Failed Verification</td>
+                    <td class="BodyE-Column1-Body1">The DSC Autosampler failed to confirm its calibration.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Inspect the DSC cell and autosampler tray to verify that each is installed properly and there are no obstructions. Select "Calibrate Autosampler" in instrument control to attempt the calibration and verification again. </p>
+                        <p>If this error persists, select "Bypass Autosampler" to run the instrument in manual mode and contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6085">
+                    <td class="BodyE-Column1-Body1">6085</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Autosampler Tray Not Present–tray limit switch did not detect tray present at method start or during method start or during load/unload operation.</td>
+                    <td class="BodyE-Column1-Body1">The Autosampler tray limit switch did not detect the tray present at method start or during a load/unload operation. The switch may have failed or you may have neglected to place the sample tray on the instrument before attempting to run your method.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>If the tray is missing, replace the tray on the instrument and retry.</p>
+                        <p>If this error persists, select "Bypass Autosampler" to run the instrument in manual mode and contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6086">
+                    <td class="BodyE-Column1-Body1">6086</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Pan Not Detected –&#160;The range finder did not detect a pan when a pan was expected in the gripper fingers.</td>
+                    <td class="BodyE-Column1-Body1">The Autosampler failed to detect a pan during the load/unload operation. </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">Visually inspect the DSC cell or Autosampler tray for a missing pan. Replace the missing pan and resume operation. If the pan is present but not detected, there could be a hardware problem with the Autosampler. Retry the operation and if the problem persists, contact TA&#160;Instruments for service.</td>
+                </tr>
+                <tr class="Body-Body1" id="6087">
+                    <td class="BodyE-Column1-Body1">6087</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Auto Sampler Encountered Unexpected Object – Bounce sensor triggered. Halt motion and travel full up and stop.</td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>The Autosampler detected an unexpected object during y-axis motion and was unable to recover. </p>
+                        <p>This could be caused by: </p>
+                        <ul>
+                            <li value="1">An obstruction in the axis of motion</li>
+                            <li value="2">A failed motor or lead screw</li>
+                            <li value="3">An Autosampler wire harness problem</li>
+                            <li value="4">An Autosampler board failure</li>
+                        </ul>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">Reset the Autosampler in instrument control and retry operation.</td>
+                </tr>
+                <tr class="Body-Body1" id="6088">
+                    <td class="BodyE-Column1-Body1">6088</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Auto Sampler X-axis Motion Error – X axis home flag not tripped as expected</td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>The Autosampler encountered an x-axis motion error – the home sensor could not be found. </p>
+                        <p>This could be caused by:</p>
+                        <ul>
+                            <li value="1">
+                                <p>An obstruction in the x-axis of motion</p>
+                            </li>
+                            <li value="2">A failed x-axis motor</li>
+                            <li value="3">A failed x-axis home sensor</li>
+                            <li value="4">A bent or otherwise damaged x-axis flag</li>
+                            <li value="5">An Autosampler wire harness problem</li>
+                            <li value="6">An Autosampler board failure</li>
+                        </ul>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">Reset the Autosampler in instrument control and retry operation.</td>
+                </tr>
+                <tr class="Body-Body1" id="6089">
+                    <td class="BodyE-Column1-Body1">6089</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Auto Sampler Y-axis Motion Error – Y axis home flag not tripped as expected</td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>The Autosampler encountered a y-axis motion error – the home sensor could not be found. </p>
+                        <p>This could be caused by:</p>
+                        <ul>
+                            <li value="1">
+                                <p>An obstruction in the x-axis of motion</p>
+                            </li>
+                            <li value="2">A failed y-axis motor</li>
+                            <li value="3">A failed y-axis home sensor</li>
+                            <li value="4">A bent or otherwise damaged y-axis flag</li>
+                            <li value="5">An Autosampler wire harness problem</li>
+                            <li value="6">An Autosampler board failure</li>
+                        </ul>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">Reset the Autosampler in instrument control and retry operation.</td>
+                </tr>
+                <tr class="Body-Body1" id="6090">
+                    <td class="BodyE-Column1-Body1">6090</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Auto Sampler Z-axis Motion Error – Z axis home flag not tripped as expected</td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>The Autosampler encountered a z-axis motion error – the home sensor could not be found. </p>
+                        <p>This could be caused by:</p>
+                        <ul>
+                            <li value="1">
+                                <p>An obstruction in the x-axis of motion</p>
+                            </li>
+                            <li value="2">A failed z-axis motor</li>
+                            <li value="3">A failed z-axis home sensor</li>
+                            <li value="4">A bent or otherwise damaged y-axis flag</li>
+                            <li value="5">An Autosampler wire harness problem</li>
+                            <li value="6">An Autosampler board failure</li>
+                        </ul>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">Reset the Autosampler in instrument control and retry operation.</td>
+                </tr>
+                <tr class="Body-Body1" id="6091">
+                    <td class="BodyE-Column1-Body1">6091</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Finger Motion Error</td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>The Autosampler encountered a gripper finger motion error – the gripper finger position could not reach the desired position.  </p>
+                        <p>This could be caused by:</p>
+                        <ul>
+                            <li value="1">An obstruction in the gripper finger motion</li>
+                            <li value="2">A decomposed sample adhered to the gripper fingers causing the pan to become stuck to the fingers</li>
+                            <li value="3"> A mechanical problem with the gripper finger rotation</li>
+                            <li value="4">A failed gripper motor</li>
+                            <li value="5">A failed absolute encoder</li>
+                            <li value="6">An autosampler wire harness problem</li>
+                            <li value="7">An autosampler board failure</li>
+                        </ul>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Reset the Autosampler in instrument control and retry operation.</p>
+                        <p>  If this error persists, select “Bypass Autosampler” to allow you to run your instrument in manual mode and contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6092">
+                    <td class="BodyE-Column1-Body1">6092</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Auto Sampler Dropped Pan (Near Cell Area) – After a successful pick-up but before a gripper open event, the range finder did not detect a pan when a pan was expected in the gripper fingers.  The pan may have been dropped during travel from tray to cell or back.</td>
+                    <td class="BodyE-Column1-Body1">The Autosampler failed to successfully load/unload pan after pick-up.  The pan may have dropped during travel in an area near or in the DSC cell proper. </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p> Visually inspect the cell area for a dropped pan and resume operation (the Autosampler will resume operation with the next scheduled pan to be loaded).</p>
+                        <p> If this error persists, select “Bypass Autosampler” to allow you to run your instrument in manual mode and contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6093">
+                    <td class="BodyE-Column1-Body1">6093</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Run in Progress, Cannot Open Lid – Open lid selected from touchscreen or PC during an active method.</td>
+                    <td class="BodyE-Column1-Body1">You requested the lid to open during an active run.  The lid should not be opened during an active experiment.   </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;"><span style="background-color: #ffffff; color: #000000; font-weight: normal;">Wait until the current run is complete before opening the cell.   The lid will open even if running an experiment.</span>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6103">
+                    <td class="BodyE-Column1-Body1">6103</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Failed to upgrade the Auto Sampler Firmware.</td>
+                    <td class="BodyE-Column1-Body1">The Auto sampler control board firmware was not successfully updated.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>  Cycle power on the Instrument and try again.</p>
+                        <p>  If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6104">
+                    <td class="BodyE-Column1-Body1">6104</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Failed to upgrade the GDM Firmware.</td>
+                    <td class="BodyE-Column1-Body1">The GDM control board firmware was not successfully updated.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>  Cycle power on the Instrument and try again.</p>
+                        <p>  If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6105">
+                    <td class="BodyE-Column1-Body1">6105</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Failed to upgrade the transducer (FEP) Firmware.</td>
+                    <td class="BodyE-Column1-Body1">The FEP control board firmware was not successfully updated. </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>  Cycle power on the Instrument and try again.</p>
+                        <p>  If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6106">
+                    <td class="BodyE-Column1-Body1">6106</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Failed to upgrade the Furnace Control Firmware.</td>
+                    <td class="BodyE-Column1-Body1">The FCM control board firmware was not successfully updated.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Cycle power on the Instrument and try again.</p>
+                        <p>  If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6107">
+                    <td class="BodyE-Column1-Body1">6107</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Failed to upgrade the LN2P Firmware.</td>
+                    <td class="BodyE-Column1-Body1">The LN2P control board firmware was not successfully updated.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>Cycle power on the Instrument and try again.</p>
+                        <p>  If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6115">
+                    <td class="BodyE-Column1-Body1">6115</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">AC Mains Zero-Cross Error – Zero cross signal not reported or out of expected range.</td>
+                    <td class="BodyE-Column1-Body1">Zero-cross error detected. There may be a problem with the electrical power going to the instrument.  The problem may have been a transient mains power glitch.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>  Retry the operation. </p>
+                        <p> If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6116">
+                    <td class="BodyE-Column1-Body1">6116</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Furnace Control Module lost communication with FEP. Setting the Power Delivered to zero.</td>
+                    <td class="BodyE-Column1-Body1">Communication with the FEP board has been lost, possibly indicating a wire harness connection problem, CAN connection problem or board failure.  </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;font-weight: normal;">
+                        <p>Cycle power on the instrument and retry operation.</p>
+                        <p>  If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6117">
+                    <td class="BodyE-Column1-Body1">6117</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">An unexpected reset was detected on the FEP.</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;font-weight: normal;">
+                        <p>Cycle power on the instrument and retry operation.  </p>
+                        <p>If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6118">
+                    <td class="BodyE-Column1-Body1">6118</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">An unexpected reset was detected on the Autosampler.</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;font-weight: normal;">
+                        <p>Cycle power on the instrument and retry operation. </p>
+                        <p> If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6119">
+                    <td class="BodyE-Column1-Body1">6119</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">An unexpected reset was detected on the FCM.</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;font-weight: normal;">
+                        <p>Cycle power on the instrument and retry operation. </p>
+                        <p> If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6120">
+                    <td class="BodyE-Column1-Body1">6120</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">An unexpected reset was detected on the GDM.</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;font-weight: normal;">
+                        <p>Cycle power on the instrument and retry operation. </p>
+                        <p> If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6121">
+                    <td class="BodyE-Column1-Body1">6121</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">An unexpected reset was detected on the LNP.</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;font-weight: normal;">
+                        <p>Cycle power on the instrument and retry operation. </p>
+                        <p> If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6125">
+                    <td class="BodyE-Column1-Body1">6125</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">FEP A/D ARM7 Converter Not Responding.</td>
+                    <td class="BodyE-Column1-Body1">There is a problem with the instrument's measurement system. An A/D conversion was not reported properly.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;font-weight: normal;">
+                        <p>Cycle power on the instrument and retry operation. </p>
+                        <p> If this error persists, contact TA Instruments for service.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1" id="6125">
+                    <td class="BodyE-Column1-Body1">12500</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Tweak menu item failed for command [command name].</td>
+                    <td class="BodyE-Column1-Body1">Unexpected user interface system error.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;font-weight: normal;">Contact TA Instruments for assistance.</td>
+                </tr>
+                <tr class="Body-Body1" id="6125">
+                    <td class="BodyE-Column1-Body1">12501</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Command handling failed for command [command name].</td>
+                    <td class="BodyE-Column1-Body1">Unexpected user interface system error.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;font-weight: normal;">Contact TA Instruments for assistance.</td>
+                </tr>
+                <tr class="Body-Body1" id="6125">
+                    <td class="BodyE-Column1-Body1">12502</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Selected item changed handling failed for command [command name].</td>
+                    <td class="BodyE-Column1-Body1">Unexpected user interface system error.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;font-weight: normal;">Contact TA Instruments for assistance.</td>
+                </tr>
+                <tr class="Body-Body1" id="6125">
+                    <td class="BodyE-Column1-Body1">12503</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Value edited handling failed for command [command name].</td>
+                    <td class="BodyE-Column1-Body1">Unexpected user interface system error.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;font-weight: normal;">Contact TA Instruments for assistance.</td>
+                </tr>
+                <tr class="Body-Body1" id="6125">
+                    <td class="BodyE-Column1-Body1">12504</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Before dropdown handling failed for command [command name].</td>
+                    <td class="BodyE-Column1-Body1">Unexpected user interface system error.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;font-weight: normal;">Contact TA Instruments for assistance.</td>
+                </tr>
+                <tr class="Body-Body1" id="6125">
+                    <td class="BodyE-Column1-Body1">12505</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Color picker handling failed for command [command name].</td>
+                    <td class="BodyE-Column1-Body1">Unexpected user interface system error.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;font-weight: normal;">Contact TA Instruments for assistance.</td>
+                </tr>
+                <tr class="Body-Body1" id="6125">
+                    <td class="BodyE-Column1-Body1">12506</td>
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Start live preview handling failed for command [command name].</td>
+                    <td class="BodyE-Column1-Body1">Unexpected user interface system error.</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;font-weight: normal;">Contact TA Instruments for assistance.</td>
+                </tr>
+                <tr class="Body-Body1" id="6125">
+                    <td class="BodyB-Column1-Body1">12507</td>
+                    <td class="BodyB-Column1-Body1" style="font-family: Arial;">Failed to copy the user's settings from the previous build. Some settings may have reverted to the factory defaults.</td>
+                    <td class="BodyB-Column1-Body1">Unexpected user interface system error.</td>
+                    <td class="BodyA-Column1-Body1" style="font-family: Arial;font-weight: normal;">Contact TA Instruments for assistance.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

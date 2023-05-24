@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html conditions="Primary.DSC" MadCap:conditions="Primary.Mercury DSC" class="" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Discovery DSC|Preparing the Discovery DSC" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Networking Discovery Instruments</title>
+        <link href="../Resources/TableStyles/InThisTopic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="top"></a>Networking Discovery Instruments</h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../Resources/TableStyles/InThisTopic.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+            <caption>In this topic</caption>
+            <col style="width: 325px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd">
+                        <p><a href="#Option" class="tablenavigationbody selected">Option 1: Connection of Instrument(s) to Standalone Router</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Option3" class="tablenavigationbody selected">Option 2:&#160;Connection of Instrument(s) to Switch</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Option2" class="tablenavigationbody selected">Option 3: Connection of Instrument(s) Directly to Corporate LAN</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowEnd_ColEnd"><a href="#How" class="tablenavigationbody selected">Configuring the</a><a href="#How" class="tablenavigationbody selected"> Discovery Instruments for Static IP&#160;Addressing</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>There are three options for configuring Discovery instruments: connecting the instrument to a standalone router, connecting the instrument to a switch, or connecting the instrument to a corporate LAN.</p>
+        <h2><a name="Option"></a>Option 1: Connection of Instrument(s) to Standalone Router</h2>
+        <p> 
+In this configuration, instruments are connected to a standalone router. This option requires that a dedicated a 10 Base T /100 Base TX Ethernet card be installed in the computer (controller) to communicate with the instrument. If you want to communicate with your corporate LAN, a second Ethernet card will need to be installed in the computer.
+</p>
+        <p>&#160;</p>
+        <h3>Connecting the Instrument to the Router
+</h3>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">DO NOT install the CD included with the router, this is not applicable for our use.
+Plug one end of the power cord into the power connector and the other end into the AC outlet (100-240 Vac 50/60 Hz).
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Power off the instrument.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Locate the Ethernet port on the rear of the instrument.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Connect one end of the Ethernet cable into the Ethernet port.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5">Connect the other end of the Ethernet cable to one of the LAN ports on the router.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="6">Power on the instrument.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="7">Check the Ethernet port on the rear of the instrument. If communication between the instrument and the router has been properly established, a solid green light and flashing yellow light will appear at the port.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="8">Follow the directions in the next section to connect the controller computer to the router.
+</li>
+        </ol>
+        <p style="margin-top: 8px;">&#160;</p>
+        <h3>Configuring the Ethernet Card for DHCP
+</h3>
+        <p>To configure the Ethernet card for DHCP:
+	</p>
+        <ol>
+            <li class="NoteIndent" value="1">NOTE: The Discovery Series thermal instruments support both DHCP and Static IP addresses.
+
+</li>
+        </ol>
+        <h4>Windows 7 (and Up) Users</h4>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Click the Windows start button on the taskbar, then select <span class="boolean">Control Panel</span> &gt; <span class="boolean">Network and Sharing Center</span>.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Click the  <span class="boolean">Local Area Connection</span> link. A Local Area Connection Status dialog box displays. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Click the <span class="boolean">Properties</span>button.
+A Local Area Connection Properties dialog box displays.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Select the <span class="boolean">Internet Protocol Version 4 (TCP/IPv4)</span> and click <span class="boolean">OK</span>.
+</li>
+        </ol>
+        <p style="margin-top: 8px;">&#160;</p>
+        <h4>Windows Vista Users</h4>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Click the Windows start button on the taskbar, then select <span class="boolean">Control Panel</span> &gt; <span class="boolean">Network and Internet</span> &gt; <span class="boolean">View network status and tasks</span>.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Highlight the <span class="boolean">Local Area Connection</span> link for the Ethernet card that will communicate with the instrument. Then right-click and select <span class="boolean">Properties</span>.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">From the <span class="boolean">General</span> tab, highlight the <span class="boolean">Internet Protocol Version 4 (TCP/IPv4)</span> and then select <span class="boolean">Properties</span>.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Enable the radio button selection <span class="boolean">Obtain an IP address automatically</span> and click <span class="boolean">OK</span>.
+</li>
+        </ol>
+        <p style="margin-top: 8px;">&#160;</p>
+        <h3>Connecting the Computer to the Router
+</h3>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">Locate the Ethernet port on the back of the computer.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Plug one end of the Ethernet cable into the computer's Ethernet port.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Connect the other end of the cable to one of the network ports on the router.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Check the Ethernet port on the rear of the computer. If communication between the computer and the router has been properly established, a solid green light and flashing yellow light will appear at the port.   
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5">Follow the directions in the next section to connect the controller computer to a LAN for networking capabilities.
+</li>
+        </ol>
+        <p style="margin-top: 8px;">&#160;</p>
+        <h3>Connecting the Computer to a LAN (optional)
+</h3>
+        <p>Before you can connect the controller computer to a LAN, you will need to have already installed an additional Ethernet card in the computer.
+</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">Locate the second Ethernet port on the back of the computer.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Plug one end of the Ethernet cable into the computer's Ethernet port.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Plug the other end into the corporate LAN.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Check the Ethernet port on the rear of the computer. If communication between the computer and the LAN has been properly established, a solid green light and flashing yellow light will appear at the port. </li>
+        </ol>
+        <h2><a name="Option3"></a>Option 2:&#160;Connection of Instrument(s) to Switch</h2>
+        <p>In order to connect the instrument to a network, you will need to make the necessary cable connections described below. The instrument and computer are connected to an Ethernet switch.</p>
+        <h3>Connecting the Instrument to the Switch</h3>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Locate the Ethernet port on the rear of the instrument.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Connect one end of the Ethernet cable into the  Ethernet port.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Connect the other end of the Ethernet cable into one of the network ports on the Ethernet switch.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Check the configuration switches located on the back panel. These switches must be set to off (or in the up position) for the controller to communicate with the instrument.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5">Check the Ethernet port on the rear of the instrument. If communication between the instrument and the switch is properly established, a solid green light and flashing yellow light will appear at the port.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="6">Follow the directions in the next section to connect the controller to the Ethernet switch.</li>
+        </ol>
+        <p style="margin-top: 8px;">&#160;</p>
+        <h3>Connecting the Computer to the Switch</h3>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Locate the Ethernet port on the back of the computer. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Plug one end of the Ethernet cable into the computer's Ethernet port.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Connect the other end of the cable to one of the network ports on the switch.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Check the Ethernet port on the rear of the computer. If communication between the computer and the switch is properly established, a solid green light and flashing yellow light will appear at the port.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5">Follow the directions in the next section to connect the computer to a LAN for networking capabilities.</li>
+        </ol>
+        <p style="margin-top: 8px;">&#160;</p>
+        <h3>Connecting the Computer to a LAN</h3>
+        <p>Before connecting the controller to a LAN, ensure that a network interface card is already installed in the computer.</p>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Locate the second Ethernet port on the back of the computer.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Plug one end of the Ethernet cable into the computer's Ethernet port.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Plug the other end into the LAN.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Check the Ethernet port on the rear of the computer. If communication between the computer and the LAN is properly established, a solid green light and flashing yellow light will appear at the port.</li>
+        </ol>
+        <h2><a name="Option2"></a>Option 3: Connection of Instrument(s) Directly to Corporate LAN 
+</h2>
+        <p>In this configuration, instruments are plugged directly into corporate LAN. This option requires that a single 10 Base T /100 Base TX Ethernet card (configured with corporate LAN settings) be installed in the controller to communicate with the instrument. 
+</p>
+        <p>Discovery thermal instruments can be configured as DHCP or Static IP. If you are using Static IP addressing, you'll need to ensure the IP, Gateway, and Subnet Mask are compatible with your company network.
+</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">Power off the instrument.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Locate the Ethernet port on the rear of the instrument.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Connect one end of the Ethernet cable into the  Ethernet port.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Connect the other end of the Ethernet cable to the corporate LAN.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5">Power on the instrument.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="6">Locate the Ethernet port on the back of the computer.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="7">Plug one end of the Ethernet cable into the computer's Ethernet port. Plug the other end into the corporate LAN.</li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="How"></a>Configuring the Discovery Instruments for Static IP&#160;Addressing</h2>
+        <p>Currently, the only supported way to change the network settings on the Discovery instruments is to use the instrument touchscreen.
+</p>
+        <ol>
+            <li class="NumberedIndent" value="1">On the instrument user interface, press  <span class="boolean">System Info</span> &gt; <span class="boolean">Network</span>. The below screen displays.</li>
+        </ol>
+        <p>
+            <img src="../image/DSC 25 250 2500/network_426x266.png" style="padding-left: 40px;width: 426;height: 266;" />
+        </p>
+        <ol>
+            <li value="2">Press the <span class="boolean">Network</span> button.</li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li value="3">The instrument <span class="boolean">Network Properties</span> window  displays for the instrument. The default network setting is DHCP. The active network configuration (DHCP or Static) is indicated by an option button. In the figure shown below, the instrument is configured as DHCP. </li>
+        </ol>
+        <p>
+            <img src="../image/DSC 25 250 2500/network edit_473x294.png" style="padding-left: 40px;width: 473;height: 294;" />
+        </p>
+        <ol MadCap:continue="true">
+            <li value="4">To switch the Discovery instrument's configuration to Static, press <span class="boolean">Static</span>. You can input your static IP Address, Subnet Mask, and Gateway. Press the field you would like to edit, a keyboard displays. </li>
+        </ol>
+        <ol>
+            <li class="LetterIndent" value="1" style="margin-top: 8px;">Enter  the IP Address; ensure that the address is unique.</li>
+            <li class="LetterIndent" style="margin-top: 8px;" value="2">Enter the Subnet Mask. The Subnet Mask assigned must be the exact same range as all the other instruments so that ALL of the instruments will appear within the TRIOS Connection Dialog.</li>
+            <li class="LetterIndent" style="margin-top: 8px;" value="3">Now enter a valid <span>Gateway</span>. 
+Note the following:</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;" value="4">The 1st octet of the Gateway MUST match the 1st octet of the IP address.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;" value="5">The 2nd octet of the Gateway MUST match the 2nd octet of the IP address.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;" value="6">The 3rd octet  of the Gateway MUST be between 1 and 255.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;" value="7">The 4th octet of the Gateway MUST be 1.</li>
+        </ol>
+        <ol start="5">
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5">When you have finished entering your new addresses, press <span class="boolean">OK</span> to hide the keyboard.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="6">Press <span class="boolean">Save</span>. </li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

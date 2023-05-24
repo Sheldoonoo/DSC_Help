@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.Thermal General" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Thermal Kinetics - Borchardt &amp; Daniels</title>
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/InThisTopic.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <h1><a name="top"></a>Borchardt &amp; Daniels Kinetics Analysis</h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../../Resources/TableStyles/InThisTopic.css');margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+            <caption>In this topic</caption>
+            <col style="width: 130px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Overview" class="tablenavigationbody selected">Overview</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Experimental" class="tablenavigationbody selected">Experimental</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Analysis" class="tablenavigationbody selected">Analysis</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Settings" class="tablenavigationbody selected">Analysis Settings</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowEnd_ColEnd"><a href="#References" class="tablenavigationbody selected">References</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Overview"></a>Overview</h2>
+        <p>The Borchardt and Daniels (B/D) kinetics approach permits the calculation of activation energy ( E<span style="vertical-align: sub;"><span style="color: #000000;font-weight: normal;vertical-align: sub;">α</span></span>), pre-exponential factor (Z), heat of reaction (<img src="../../image/math/delta symbol.png" />H), reaction order (n), and rate constant (k) from a single DSC scan. This approach was originally described by Borchardt and Daniels [1] for solutions and was subsequently refined for solids by other researchers [2]. The Borchardt and Daniels approach assumes that the reaction follows nth order kinetics and obeys the general rate equation:</p>
+        <p>
+            <img src="../../image/math/kinetics_B&amp;D_1.png" />
+        </p>
+        <p>Where:</p>
+        <p>dα /dt = reaction rate (1/sec)</p>
+        <p>α = fraction remaining to react</p>
+        <p>k(T) = specific rate constant at temperature T</p>
+        <p>n = reaction order.</p>
+        <p>The Borchardt and Daniels approach also assumes Arrhenius behavior:</p>
+        <p>
+            <img src="../../image/math/kinetics_B&amp;D_2.png" />
+        </p>
+        <p>E<span style="vertical-align: sub; font-weight: normal; color: #000000;">α</span>= Activation energy (J/mol)</p>
+        <p>Z = pre-exponential factor or Arrhenius frequency factor (1/sec)</p>
+        <p>R = gas constant = 8.314 J/mol K</p>
+        <p>Substituting equation (2) into equation (1), rearranging, and taking logarithms yields:</p>
+        <p>
+            <img src="../../image/math/kinetics_B&amp;D_3.png" />
+        </p>
+        <p>
+            <img src="../../image/math/kinetics_B&amp;D_4.png" />
+        </p>
+        <p>Equation (4) can be solved with a multiple linear regression of the general form: z = a + bx +cy where z = <i>ln</i>[dα/dt], a = <i>ln</i>[Z], b = <span style="vertical-align: super;font-weight: bold;"><span style="color: #000000; font-weight: normal;">E<span style="vertical-align: sub; font-weight: normal; color: #000000;">α</span></span></span>/R, x = 1/T, c = n, and y = <i>ln</i>[1 – α]. The parameters dα/dt, T, and α are determined from the DSC exotherm [2]. The determination uses a specified number of segments (default = 20) of the curve, evenly spaced by temperature with heat flow (dH/dt), and absolute temperature (T) being determined at each point. The default conditions are that the first segment starts at 10 percent of peak height and the last segment ends at 90 percent of peak area but these segment ranges should be user adjustable. Initially the whole of the exotherm is integrated as a function of time to give total energy of the reaction (H). Then the individual heat flow measurements (dH/dt) are normalized to the total energy to give dα/dt = (dH/dt)/H. The amount left to react (α) is that energy fraction of the exotherm after the indicated temperature (Hf) normalized by the total energy α = Hf/H. Thus the value of (1 – α) goes from 0 to 1 during the course of the reaction. Once the value of the reaction order (n) has been determined by multiple linear regression, then the value of <i>ln</i> [<i>k</i>(T)] may be determined by <i>ln</i>[<i>k</i>(T)] = <i>ln</i> [(dα/dt)/(1 – α)<span style="vertical-align: super; font-weight: normal; color: #000000;">n</span>].</p>
+        <h2><a name="Experimental"></a>Experimental</h2>
+        <p>The experimental details to perform a B&amp;D kinetics analysis are very straightforward. The user performs a single heating experiment, typically at 10°C/min. The resultant thermal curve will generally include a broad exothermic peak corresponding to the kinetic process under investigation. This peak is integrated using DSC Conversion Calculation as shown in the example below.</p>
+        <p>
+            <img src="../../image/Other/kinetics_B&amp;D_DSC Conversion example.png" />
+        </p>
+        <h2><a name="Analysis"></a>Analysis</h2>
+        <p>Once the data is plotted, it is necessary to analyze the data using DSC Conversion Calculation prior to generating the kinetics:</p>
+        <ul>
+            <li class="NoteIndent" value="1">NOTE: Contact TA Instruments Sales to acquire the Kinetics key.</li>
+        </ul>
+        <ol>
+            <li style="margin-top: 8px;" value="1">From the <span class="boolean">Graph</span> &gt; <span class="boolean">Analysis</span> menu, select <span class="boolean">DSC Conversion Calculation</span>.</li>
+            <li style="margin-top: 8px;" value="2">Select the peak integration limits, and then click <span class="boolean">Analyze</span>. A new document tab is generated with the conversion data.</li>
+            <li style="margin-top: 8px;" value="3">With the conversion ramp plot displayed, select <span class="boolean">Borchardt and Daniels nth Order</span> from the Analysis list and click <span class="boolean">Analyze</span>.</li>
+            <li style="margin-top: 8px;" value="4">Click <span class="boolean">Edit Analysis</span> to verify selections.</li>
+        </ol>
+        <p>
+            <img src="../../image/Other/BD analysis parameters.png" style="padding-left: 40px;" />
+        </p>
+        <ol MadCap:continue="true">
+            <li value="5">Click <span class="boolean">Accept</span>. A new document tab displays for the Rate Constant Plot (a Half Life plot may also be obtained from this document).</li>
+        </ol>
+        <h3>Additional Plots</h3>
+        <p>Two predictive curves are obtained from the B&amp;D kinetic modeling: isothermal plots and isoconversion plots. Isothermal plots provide time conditions and degree of conversion information for specific isothermal temperatures. Isoconversion plots provide time and temperature conditions for a specific conversion level. Both predictive plots are useful in the development and control of reaction conditions in order to achieve the desired final product.</p>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Display the conversion plot.</li>
+            <li style="margin-top: 8px;" value="2">From the File Manager, select the conversion plot and then right-click and select <span class="boolean">Transformations...</span> &gt; <span class="boolean">Kinetics Conversion...</span></li>
+        </ol>
+        <p>
+            <img src="../../image/Other/transformations_kinetics conversion.png" style="padding-left: 40px;" />
+        </p>
+        <ol MadCap:continue="true">
+            <li value="3">A window to define the desired conversion plot as well as the parameters of that plot displays.</li>
+        </ol>
+        <p>
+            <img src="../../image/Other/kinetics conversion dialog.png" style="padding-left: 40px;" />
+        </p>
+        <blockquote>
+            <ol style="list-style-type: lower-alpha;">
+                <li style="margin-top: 8px;" value="1">In the Conversion Type drop-down menu, select either <span class="boolean">Isothermal</span> or <span class="boolean">IsoConversion</span>.</li>
+                <li style="margin-top: 8px;" value="2">Select either a single temperature or temperature range.</li>
+                <li style="margin-top: 8px;" value="3">Enter in the desired temperature.</li>
+                <li style="margin-top: 8px;" value="4">Select <span class="boolean">Show Options</span> to specify the number of points for each curve as well as the data spacing (log or linear).</li>
+            </ol>
+        </blockquote>
+        <ol MadCap:continue="true">
+            <li value="4">A new document is created for this plot.</li>
+        </ol>
+        <h2><a name="Settings"></a>Analysis Settings</h2>
+        <p>
+            <img src="../../image/Other/BD analysis parameters.png" />
+        </p>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Enter the conversion limits over which the kinetics results will be determined.</li>
+            <li style="margin-top: 8px;" value="2">Enter the desired number of temperature intervals (default = 20).</li>
+            <li style="margin-top: 8px;" value="3">Select the Calculation type.<ol style="list-style-type: lower-alpha;"><li style="margin-top: 8px;" value="1">Select <span class="boolean">Calculate</span> and the program will calculate and display the reaction order when the analysis is performed</li><li style="margin-top: 8px;" value="2">Select <span class="boolean">Fixed</span> if you want to enter your own reaction order. Based upon kinetic theory, the chemical reaction order should be a small integer (commonly 1). Enter the reaction order desired for your particular kinetics reaction. The program will other kinetics parameters based on this reaction order.</li></ol></li>
+            <li style="margin-top: 8px;" value="4">Click <span class="boolean">Accept</span>.</li>
+        </ol>
+        <h2><a name="References"></a>References</h2>
+        <p>[1] H.J. Borchardt, F. Daniels, The application of differential thermal analysis to the study of reaction kinetics, Journal of the American Chemical Society, 79 (1957) 41-46.</p>
+        <p>[2] E2041, Method for estimating kinetic parameters by differential scanning calorimetry using the Borchardt and Daniels method, Annual Book of ASTM Standards, ASTM International, West Conshohocken PA.</p>
+        <p>&#160;</p>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

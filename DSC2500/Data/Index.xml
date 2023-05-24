@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultTargetIndex Count="4">
+    <IndexEntry>
+        <Entries>
+            <IndexEntry Term="columns">
+                <Entries>
+                    <IndexEntry Term="clearing">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Understanding the Spreadsheet View" Link="/Content/TRIOS Topics/Understanding the Spreadsheet View.htm#kanchor1" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links />
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+            <IndexEntry Term="row">
+                <Entries>
+                    <IndexEntry Term="clearing">
+                        <Entries />
+                        <Links>
+                            <IndexLink Title="Understanding the Spreadsheet View" Link="/Content/TRIOS Topics/Understanding the Spreadsheet View.htm#kanchor1" UsedConditions="" LocalConditions="" />
+                        </Links>
+                        <SeeAlsoLinks />
+                        <IndexControlLinks />
+                        <SortAsLinks />
+                    </IndexEntry>
+                </Entries>
+                <Links />
+                <SeeAlsoLinks />
+                <IndexControlLinks />
+                <SortAsLinks />
+            </IndexEntry>
+        </Entries>
+        <Links />
+        <SeeAlsoLinks />
+        <IndexControlLinks />
+        <SortAsLinks />
+    </IndexEntry>
+</CatapultTargetIndex>

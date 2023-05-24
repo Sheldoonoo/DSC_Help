@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" conditions="Primary.DSC" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" MadCap:tocPath="Technical Information" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Instrument Signals</title>
+        <link href="../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="top"></a>Discovery DSC&#160;Instrument Signals</h1>
+        <p>Listed below are all of the possible Discovery DSC signals. The available signals are dependent on instrument type, mode, cell, cooler, and options installed. For a detailed explanation of the available signals, see the table below:</p>
+        <p>&#160;</p>
+        <table class="TableStyle-Basic" style="margin-left: 0;margin-right: auto;caption-side: top;mc-table-style: url('../Resources/TableStyles/Basic.css');" cellspacing="0">
+            <caption>Discovery DSC Signals</caption>
+            <col style="width: 270px;" class="Column-Column1" />
+            <col style="width: 351px;" class="Column-Column1" />
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: left;"><span style="color: #00008b; font-weight: bold; font-family: Arial; font-size: 11pt;">Basic Signal</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: left;"><span style="color: #00008b; font-weight: bold; font-family: Arial; font-size: 11pt;">Description</span>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Temperature, °C</td>
+                    <td class="BodyD-Column1-Body1">The current temperature of the sample.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Heat Flow, mW</td>
+                    <td class="BodyD-Column1-Body1">The Heat Flow signal is the average or total heat flow (in mW) exchanged by the sample. This signal is stored in the data file.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Heat Capacity, Cp</td>
+                    <td class="BodyD-Column1-Body1">The Heat Capacity is calculated as the ratio of the Heat Flow to the programmed heating rate.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Delta T</td>
+                    <td class="BodyD-Column1-Body1">The temperature difference (in µV) between the sample and the reference temperatures.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Delta Tzero</td>
+                    <td class="BodyD-Column1-Body1">The temperature difference (in µV) between the Tzero and sample temperatures.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Tzero Temperature</td>
+                    <td class="BodyD-Column1-Body1">This is the temperature at the Tzero thermocouple.  This signal is used in the Tzero heat flow equation and is also designated as the temperature of the DSC enclosure.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Flange Temperature, °C</td>
+                    <td class="BodyD-Column1-Body1">The temperature of the cooling flange of the cell.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Heater Temperature, °C</td>
+                    <td class="BodyD-Column1-Body1">The temperature measured inside the silver furnace.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Reference Junction Temperature</td>
+                    <td class="BodyD-Column1-Body1">A reference temperature measured within the electronics.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Power Delivered</td>
+                    <td class="BodyD-Column1-Body1">The amount of power (in Watts) currently being delivered to the heater windings of the furnace.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Delta T, Delta Tzero Uncorrected </td>
+                    <td class="BodyD-Column1-Body1">Calibration Signal, used for Tzero calibration.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Sample Temperature Uncorrected</td>
+                    <td class="BodyD-Column1-Body1">Calibration Signal, used for Tzero calibration.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Heat Flow T1, T4, T4P Uncalibrated</td>
+                    <td class="BodyD-Column1-Body1">Calibration Signal, used for Enthalpy and Temperature calibration.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Sample Temperature, Sample Pan Temperature Uncalibrated</td>
+                    <td class="BodyD-Column1-Body1">Calibration Signal, used for Enthalpy and Temperature calibration.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Heat Capacity Uncorrected</td>
+                    <td class="BodyD-Column1-Body1">Calibration Signal, used for Heat Capacity calibration.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Reversing Heat Capacity Uncorrected</td>
+                    <td class="BodyD-Column1-Body1">Calibration Signal, used for MDSC Heat Capacity calibration.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Sample Pan Temperature</td>
+                    <td class="BodyD-Column1-Body1">This is the temperature of the bottom of the sample pan, as defined in the Advanced Tzero heat flow model.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Reversing Heat Flow</td>
+                    <td class="BodyD-Column1-Body1">The Reversing Heat Flow signal is displayed when running MDSC experiments. It is the measured Reversing Heat Capacity expressed as a heat flow (by multiplying by the negative heating rate).  The Reversing Heat Flow is usually inverted to be consistent with the “endo down” notation.  This signal can be saved in the data file.
+Reversing heat flow can be described as the heat capacity component of the total heat flow. Transitions seen in this signal are generally associated with changes in the heat capacity of a materials, and are usually thermodynamically reversible at the time and temperature at which they are detected. Typical transitions include the glass transition and some reversible melting.
+</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Non-Reversing Heat Flow</td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>The Nonreversing Heat Flow signal is displayed when running MDSC experiments. It is calculated as the difference of the Total Heat Flow and the Reversing Heat Flow. This creates a signal which contains the sum of all heat flow events except those which are related to heat capacity. This signal is selectable and can be included in the data file.
+</p>
+                        <p>Nonreversing heat flow can be described as the kinetic component of the Total Heat Flow. 
+</p>
+                        <p>Transitions seen in this signal are usually thermodynamically nonreversible at the time and temperature at which they are detected. Typical Nonreversing Heat Flow transitions include enthalpy recovery at the glass transition, crystallization, evaporation, thermoset cure, melting of highly crystalline phases and decomposition.
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Total Heat Flow</td>
+                    <td class="BodyD-Column1-Body1">In MDSC experiments, the Total Heat Flow is the calculated average heat flow.  It is analogous to the Heat Flow measured in a standard DSC experiment at the same underlying heating rate.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Modulated Heat Flow</td>
+                    <td class="BodyD-Column1-Body1">This MDSC signal is the measured four-term heat flow signal. Its sinusoidal shape is the result of the changing sinusoidal heating rate used in MDSC. The primary value of the Modulated Heat Flow signal is to examine the fundamental response to heat flow transitions at a modulated heating rate. This signal can also be used to confirm appropriate modulation parameters were employed, i.e. that sufficient modulation cycles (4-6) occurred during a transition.  This signal is selectable and can be included in the data file.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Modulated Temperature</td>
+                    <td class="BodyD-Column1-Body1">The Modulated Temperature signal is displayed when running MDSC experiments.  It is the measured sample temperature. This signal is selectable and can be included in the data file.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Reversing Heat Capacity</td>
+                    <td class="BodyD-Column1-Body1">The Reversing Heat Capacity signal is displayed when running MDSC experiments. Reversing Heat Capacity is the portion of the Total Heat Capacity that responds to temperature modulation. It is identical to the Reversing Heat Flow signal except that it is expressed in heat capacity (J/g°C) units instead of heat flow (W/g) units. It typically includes all transitions where there is a change in heat capacity such as the glass transition, plus that portion of the melting process which has a relatively short time constant and can, therefore, follow the temperature modulation.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Non-Reversing Capacity</td>
+                    <td class="BodyD-Column1-Body1">The Nonreversing Heat Capacity signal is displayed when running MDSC experiments. Nonreversing Heat Capacity is the portion of the Total Heat Capacity that is independent of temperature modulation. Transitions seen in this signal are kinetic in nature in that the resulting heat flow is a function of time at an absolute temperature (evaporation, crystallization, thermoset cure, etc.). The signal is identical to the nonreversing heat flow except for the units (J/g°C vs. W/g).</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">Total Heat Capacity</td>
+                    <td class="BodyA-Column1-Body1">The Total Heat Capacity is calculated as the ratio of the Total Heat Flow and the underlying (average) heating rate.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

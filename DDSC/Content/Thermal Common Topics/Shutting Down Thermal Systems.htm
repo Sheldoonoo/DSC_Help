@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Discovery DSC" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.Thermal General" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Shutting Down Thermal Systems</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><span class="MCBreadcrumbsSelf">Using the Discovery DSC</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Shutting Down the Discovery DSC System</span>
+        </div>
+        <h1><a name="top"></a>Shutting Down the Discovery Instrument</h1>
+        <p>Occasionally, it may be necessary to shut down (to clear an error or restart after a firmware download update) the Discovery DSC or Discovery TGA system. </p>
+        <p>Before powering down the system, consider the following:</p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;" value="1">All of the  thermal analysis system components are designed to be powered on for extended periods of time.
+</li>
+            <li class="bullet" style="margin-top: 8px;" value="2">The electronics of the instrument and the controller perform more reliably if power fluctuations (caused by turning units on and off) are minimized.
+</li>
+        </ul>
+        <p>For these reasons, turning the system and its components on and off frequently is discouraged. Therefore, when you are finished running an experiment on the instrument and wish to use the thermal analysis system for some other task, it is recommended that the instrument remain on.
+</p>
+        <h2><a name="Shutting"></a>Shutting Down the Discovery Instrument</h2>
+        <ol>
+            <li class="NoteIndent" value="1">NOTE:  To ensure proper shutdown of the instrument, it is recommended that you <span>Shutdown </span>the instrument before powering it off.
+</li>
+        </ol>
+        <p MadCap:conditions="Primary.DSC,Primary.TGA">To shut down the Common Cabinet and instrument:</p>
+        <ol>
+            <li class="NumberedIndent" value="1">You can initiate an system shutdown through either TRIOS software or through the instrument user interface. Select from one of the options below. </li>
+        </ol>
+        <p class="IndentedParagraph" MadCap:conditions="Primary.DSC">Note that if you are shutting the instrument down using the user interface, you should first disconnect the instrument from TRIOS&#160;software.</p>
+        <ul>
+            <li class="SubBulletIndent" MadCap:conditions="Primary.DSC,Primary.TGA" value="1">From the Discovery instrument's user interface, access <span class="boolean">More Options</span>.</li>
+        </ul>
+        <p MadCap:conditions="Primary.DSC,Primary.TGA">
+            <img src="../image/Other/FlashMoreMenu_356x474.png" style="padding-left: 80px;width: 356;height: 474;" />
+        </p>
+        <ul>
+            <li value="2" class="SubBulletIndent">From TRIOS software, access the <span>Instrument </span>menu option and select <span>Shutdown (Instrument)</span>. </li>
+        </ul>
+        <p MadCap:conditions="Primary.DSC">
+            <img src="../image/DSC/DSC_Shutdown.png" style="padding-left: 80px;" />
+        </p>
+        <p>&#160;</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">A confirmation appears on the user interface screen <MadCap:conditionalText MadCap:conditions="Primary.DSC">(if available)</MadCap:conditionalText> or in TRIOS software (TRIOS&#160;software confirmation message shown below). Press or click <span>Yes </span>to continue. All communication  halts while the system goes through the shutdown procedure. </li>
+        </ol>
+        <p>
+            <img src="../image/Other/Thermal ShutdownMessage.png" class="imgIndent" />
+        </p>
+        <ol start="3">
+            <li class="NoteIndent" value="3">NOTE:  To ensure proper shutdown of the instrument, it is recommended that you wait until the user interface screen is black<MadCap:conditionalText MadCap:conditions="Primary.DSC"> (or wait 1 minute if the user interface screen is not available)</MadCap:conditionalText>, before setting the power switch to OFF (0).</li>
+            <li class="NumberedIndent" value="4" MadCap:conditions="Primary.DSC,Primary.TGA">Power down the Common Cabinet and the instrument by setting the power switch on the Common&#160;Cabinet to the OFF (0) position.
+</li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

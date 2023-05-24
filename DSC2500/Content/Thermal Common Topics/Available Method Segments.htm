@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" conditions="Primary.DSC" MadCap:conditions="Primary.Thermal General" MadCap:tocPath="Using the Discovery DSC|Setting Up Discovery DSC Experiments" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Available Method Segments</title>
+        <link href="../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="top"></a>Available Method Segments</h1>
+        <p>A segment is a pre-programmed series of instructions used in a method. Several segments can be linked together to create the desired method. The available segment list varies depending on the instrument and optional accessories installed.
+</p>
+        <p>For details on a specific segment, see the table below:
+</p>
+        <p>&#160;</p>
+        <table class="TableStyle-Basic" style="mc-table-style: url('../Resources/TableStyles/Basic.css');margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+            <caption>Available Segments</caption>
+            <col style="width: 190px;" class="Column-Column1" />
+            <col style="width: 650px;" class="Column-Column1" />
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;font-weight: bold;"><span style="color: #00008b; font-weight: bold; font-family: Arial; font-size: 11pt;">Segment</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;font-weight: bold;"><span style="color: #00008b; font-weight: bold; font-family: Arial; font-size: 11pt;">Description</span>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Abort</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Abort </span>segment skips over the next segment when specified limit conditions are met.</p>
+                        <ul>
+                            <li class="bullet" value="1">If the limit is reached at the beginning of a segment, then that segment is skipped and method execution continues with the next segment.
+</li>
+                            <li class="bullet" value="2">If the limit is reached during the execution of a segment, then the remaining portion of the segment is skipped.
+
+</li>
+                            <li class="NoteIndent" value="3">NOTE: The <span>Abort </span>segment is generally followed by a <span>Ramp</span> or <span>Isothermal </span>segment.</li>
+                        </ul>
+                        <p>Example (DSC):
+
+</p>
+                        <ol>
+                            <li class="NumberedIndent" value="1">Equilibrate at 200°C</li>
+                            <li class="NumberedIndent" value="2">Abort next segment if mW&gt;1
+</li>
+                            <li class="NumberedIndent" value="3">Isothermal for 100 min
+</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Air Cool <br /></span>(Discovery DSC&#160;only)</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Air Cool</span> segment controls the internal cooling solenoid valve connected to compressed air (air cool feature).</p>
+                        <p>Example:</p>
+                        <p>Air Cool: On</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Balance Flow Rate</span>
+                        <br />(Discovery TGA&#160;only)</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>This segment is used to alter the rate of flow of the selected gas to the balance.
+</p>
+                        <p>Example:  </p>
+                        <p>Flow rate 50 mL/min
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Blend Gas</span>
+                        <p>(Discovery TGA only)</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p><i>Applicable to Blending GDM instruments only</i>: The <span class="state">Blend Gas</span> segment allows you to select the input gas for Channel A (Gas 1 or Gas 2), a percentage to blend with Channel B (Gas 3 or Gas 4), and which input Gas to use for Channel B.</p>
+                        <p>  <![CDATA[ ]]></p>
+                        <ul>
+                            <li class="NoteIndent" value="1">NOTE: Minimum controllable flow rate is 5 mL/min. Take this into account when specifying percentage. It may be necessary to increase overall sample flow.</li>
+                        </ul>
+                        <p>Example:</p>
+                        <p>Blend Gas 1 at 60% with Gas 3</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Data</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Data </span>segment controls data collection during the experiment. If a <span>Data </span>segment is not used, data storage is automatically initiated by the first <span>Ramp</span>, <span>Isothermal</span>, or <span>Step </span>segment that appears in the method.</p>
+                        <p>Example: </p>
+                        <p>Data Storage: On</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Electromagnet
+</span>(Discovery TGA only)
+</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The Discovery TGA  has a magnetic coil surrounding the furnace. The <span>Electromagnet </span>segment allows you to apply a magnetic field during an experiment so that temperature calibration using Curie point standards may be performed.
+</p>
+                        <p>Example:
+</p>
+                        <p>Electromagnet: On
+</p>
+                        <p>Ramp 10°C/min to 250°C
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Equilibrate</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Equilibrate </span>segment heats or cools the furnace to the defined temperature, stabilizes the furnace at that temperature, then continues to the next segment. This segment does not automatically start data collection.</p>
+                        <p>Example: </p>
+                        <p>Equilibrate at 200°C
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Event 1</span> / <span>Event 2</span></td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Event </span>segment controls the external event relay through the event jack on the back of the instrument. This is used to synchronize control of additional hardware through the method.
+</p>
+                        <p>Example: </p>
+                        <p>Event 1: On
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Fill Cooler_Wait</span>
+                        <p>(Discovery DSC LN2P Accessory only, which is not currently available for DSC2500, DSC250, and DSC25)</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">The <span>Fill Cooler_Wait</span> segment fills the LN2P&#160;Dewar to 100%; it waits for the fill process to complete before moving on to the next method segment.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Fill Cooler_No Wait</span>
+                        <p>(Discovery DSC LN2P Accessory only, which is not currently available for DSC2500, DSC250, and DSC25)</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">The <span>Fill Cooler_No Wait</span> segment  initiates a fill on the LN2P&#160;Dewar and moves on to the next segment while still filling the Dewar.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>High Resolution Ramp
+</span>(Discovery TGA only)
+</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p><i>Available for TGA High Resolution Instruments only</i>: The <span>High Resolution</span> <span>Ramp </span>segment varies the heating/cooling rate of the furnace in response to changes in the rate of decomposition of the sample to improve weight change resolution.
+The resolution setting is a unitless number ranging from 0 (lowest resolution) to 8.0 (highest resolution). Increased resolution tends to increase the experiment time.</p>
+                        <p>Example:</p>
+                        <p> Ramp 50.00°C/min res 4.0 to 800.00°C
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>High Resolution Sensitivity</span> (Discovery TGA only)
+</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p><i>Available for TGA High Resolution Instruments only</i>: The <span>High Resolution Sensitivity</span> segment sets an additional parameter associated with the High Resolution Ramp segments, which can be used to adjust the response of the High Resolution temperature control algorithm. This is sometimes necessary due to the wide variation in decomposition mechanisms of typical sample materials. The sensitivity setting is a unitless number ranging from 1.0 (lowest sensitivity) to 8.0 (highest sensitivity). Increasing sensitivity tends to increase experiment time.
+</p>
+                        <p>&#160;</p>
+                        <ul>
+                            <li class="NoteIndent" value="1">NOTE: This segment should be set prior to the High Resolution Ramp segment.</li>
+                        </ul>
+                        <p>Example: </p>
+                        <p>High resolution sensitivity 2.0
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Heater PID</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Heater PID</span> segment changes the performance of the instrument furnace during the execution of a thermal method. PID stands for Proportional, Integral, and Derivative, the three modes of traditional temperature control. The <span>Heater PID</span> segment specifies the control coefficients for each mode of temperature control.
+This segment is only maintained during the current method. At the end of the method, the Heater PID values are reset to the default values.</p>
+                        <p>Example: </p>
+                        <p>P= 35  I= 70 D=2
+
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Increment</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Increment </span>segment raises or lowers the temperature in a controlled step, lets the temperature equilibrate, then begins the next segment.
+
+</p>
+                        <p>Example: </p>
+                        <p>Increment by 5°C
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Increment Gas</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p><i>Applicable to Blending GDM instruments only:</i> The <span class="state">Increment Gas</span> Blend segment increases or decreases the specified gas blend percentage in a controlled step,  then begins the next segment.  A complementary change in the second gas being blended attends the execution of this segment.</p>
+                        <p>Example: Increment Gas 3 5%</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Initial Temperature</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Initial Temperature</span> segment heats or cools the furnace to the defined temperature, stabilizes the furnace at that temperature, then holds the temperature until the experiment is continued by clicking <span class="boolean">OK</span> on the TRIOS dialog box, or by selecting <span class="boolean">Start</span> on the instrument display or instrument keypad. This segment does not automatically start data collection.
+
+</p>
+                        <p>Example: </p>
+                        <p>Initial Temperature 200°C
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Isothermal</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Isothermal </span>segment holds the sample at the current temperature (as programmed by the previous segment) for a defined period of time. This segment automatically turns on data collection, except when preceded by a <span>Data OFF</span> segment.
+
+</p>
+                        <p>Example: </p>
+                        <p>Isothermal for 10 min
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Jump</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Jump </span>segment instantly changes the set point temperature, causing ballistic changes in the sample temperature. This segment then allows the immediate execution of the next segment (which is usually the <span>Isothermal </span>segment). Note that large temperature overshoots may result from the use of this segment. This segment does not automatically start data collection.
+</p>
+                        <p>Example: </p>
+                        <p>Jump to 200°C
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span class="boolean">LN2P Control</span>
+                        <p>(Discovery DSC LN2P Accessory only, which is not currently available for DSC2500, DSC250, and DSC25)</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">The <span class="boolean">LN2P Control</span> segment turns the active cooling of the LN2P Dewar on or off.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Mark End</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Mark End</span> segment places a marker in the data for use by the data analysis programs. In general, markers provide quick parsing of data to separate experimental segments (i.e., the heat-cool cycle).
+</p>
+                        <p>Example: </p>
+                        <p>Mark end of cycle 0
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Mass Flow</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Mass Flow</span> segment  alters the rate of flow of the selected gas when an instrument is equipped with a Gas Delivery Module (GDM).
+
+</p>
+                        <p>Example: </p>
+                        <p> Mass Flow 50 mL/min
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Modulate Temperature</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p><i>Available for Modulated Instruments Only</i>: This segment allows you to enter the modulation temperature amplitude and period (frequency) parameters that will be used with subsequent ramp or isothermal segments.
+
+</p>
+                        <p>Example: </p>
+                        <p>Modulate temperature amplitude 1°C period 60 seconds
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Ramp</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Ramp </span>segment heats or cools the sample at a fixed rate until it reaches the specified temperature, producing a linear plot of temperature versus time. This segment automatically turns on data collection, except when preceded by a <span>Data OFF</span> segment.
+
+</p>
+                        <p>Example: </p>
+                        <p>Ramp 10°C/min to 200°C
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Ramp Gas</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p><i>Applicable to Blending GDM instruments only:</i> The <span class="state">Ramp Gas</span> Blend segment is used to ramp the blend percentage of the sample purge gas stream, while the sample is held at a constant temperature.  A complementary change in the second gas being blended attends the execution of this segment.</p>
+                        <p>Example: Ramp Gas 3 0.20%/min to 80.00%</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Repeat</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Repeat </span>segment does exactly what the name implies: it repeats a group of one or more segments within a method for the number of times specified.
+</p>
+                        <p>Example:
+
+</p>
+                        <ol>
+                            <li class="NumberedIndent" value="1">Ramp 5°C/min to 200°C
+
+</li>
+                            <li class="NumberedIndent" value="2">Ramp 5°C/min to 50°C
+
+</li>
+                            <li class="NumberedIndent" value="3">Repeat segment 1 for 2 times
+</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Repeat Until</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Repeat Until</span> segment repeats of group of one or more segments within a method until the specified final temperature is reached or passed.
+
+</p>
+                        <p>Example:
+</p>
+                        <ol>
+                            <li class="NumberedIndent" value="1">Equilibrate at 50°C
+</li>
+                            <li class="NumberedIndent" value="2">Isothermal for 5 min
+</li>
+                            <li class="NumberedIndent" value="3">Increment 10°C
+
+</li>
+                            <li class="NumberedIndent" value="4">Repeat segment 2 until 200°C
+</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Sample Interval</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Sample Interval</span> segment allows you to define or change the rate at which data is to be collected (in seconds per point).
+</p>
+                        <p>Example: </p>
+                        <p>Sample Interval 2 sec /pt</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Select Gas</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Select Gas</span> segment controls the switching of gas between Gas 1 and Gas 2 for an instrument with a GDM installed. This segment is used to synchronize gas switching at a specific time or temperature in an experiment.
+
+</p>
+                        <p>Example: </p>
+                        <p>Select Gas1
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span class="state">Shutter</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p><i>Applicable to Discovery DSC  PCA accessory only:</i>The <span class="state">Shutter</span> segment controls the PCA UV shutter through the USB port on the back of the DSC using an RS232 to USB interface board. </p>
+                        <p>Example:</p>
+                        <p>Isothermal for 0.5 min
+</p>
+                        <p>Shutter: Open</p>
+                        <p>Isothermal for 2 min
+</p>
+                        <p>Shutter: Closed</p>
+                        <p>Isothermal for 0.5 min
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Step</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span>Step </span>segment causes the temperature to jump a specified number of degrees at a specified time interval until a final temperature is reached. This segment automatically turns on data collection, except when preceded by a <span>Data OFF</span> segment.
+
+</p>
+                        <p>Example: </p>
+                        <p>Step 5°C for 2 min to 200°C
+</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;"><span>Step Gas</span>
+                        <p>(Discovery TGA only)</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">
+                        <p><i>Applicable to Blending GDM instruments only:</i> The <span class="state">Step Gas</span> Blend segment causes the relative gas to step a specified percentage, at a specified time interval, until the final blend is attained.   A complementary change in the second gas being blended attends the execution of this segment.</p>
+                        <p>Example: Step Gas 3 10% for 10 min to 50.00%</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1" style="font-family: Arial;"><span>Zero Heat Flow</span>
+                    </td>
+                    <td class="BodyA-Column1-Body1" style="font-family: Arial;">
+                        <p>The <span class="boolean">Zero Heat Flow</span> segment sets the absolute value of the heat flow signal to zero at the end of a five-minute isothermal period. This ensures that the heat flow signal is accurate, which is important for obtaining accurate total heat capacity signals.</p>
+                        <p>Example: </p>
+                        <p>Zero heat flow 50°C</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

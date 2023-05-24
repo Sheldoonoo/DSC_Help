@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Discovery DSC|Calibrating the Discovery DSC" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.DSC" class="" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Calibrating Tzero</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/TableStyles/InThisTopic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><span class="MCBreadcrumbsSelf">Using the Discovery DSC</span><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="DSC Calibration Overview.htm">Calibrating the Discovery DSC</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Calibrating Tzero</span>
+        </div>
+        <h1><a name="top"></a>Calibrating Tzero</h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../Resources/TableStyles/InThisTopic.css');margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+            <caption>In this topic</caption>
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Overview" class="tablenavigationbody selected">Overview</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Collecti" class="tablenavigationbody selected">Collecting Tzero Calibration Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Analyzin" class="tablenavigationbody selected">Analyzing Tzero Calibration Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowEnd_ColEnd"><a href="#Selectin" class="tablenavigationbody selected">Selecting Tzero Calibration Results</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Overview"></a>Overview</h2>
+        <p>The DSC Tzero* calibration requires two experiments. The first experiment is done without samples or pans (baseline); the second is performed with large (approximately 95 mg) sapphire disks (without pans) on both the sample and reference positions. Both experiments use the same method beginning with  an equilibration at an initial temperature, followed by holding isothermal for 10 minutes, heating at constant rate to a final temperature and holding isothermal for 10 minutes. The range of temperatures should be at least as broad as the expected range of subsequent experiments. Tzero calibration should be done at relatively high heating rates such as 20°C/min in order to obtain the most accurate calibration of the sensor thermal capacitance and resistance values. Rates of less than 10°C/min are not recommended for Tzero calibration.
+</p>
+        <p><b>* Tzero™ describes proprietary technology invented by TA Instruments-Waters LLC and patented by TA Instruments-Waters LLC (U.S. Patent No. 6,431,747).
+</b>
+        </p>
+        <p>&#160;</p>
+        <p>Recalibration is recommended if the type of purge gas or the cooling accessory has been changed. Recalibrating periodically is also recommended, especially if quantitative performance has degraded over time.</p>
+        <p>Follow these basic instructions for Tzero calibration:</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1"><a href="#Collecti" class="selected">Collect Tzero calibration data</a>, which requires two experiments—one run without samples or pans and one run with sapphire disks on the reference and sample positions (without pans).
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2"><a href="#Analyzin" class="selected">Analyze the data</a>.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3"><a href="#Selectin" class="selected">Apply calibration results</a>.</li>
+        </ol>
+        <h2><a name="Collecti"></a>Collecting Tzero Calibration Data
+</h2>
+        <p>The Tzero calibration experimental setup can be performed by setting up the experiments manually using the Experiment view or automatically using the New Calibration Setup from the Global Calibration Set page. The New Calibration Setup method is the recommended procedure since it facilitates multiple run setup and simplifies input parameters.
+</p>
+        <p>You can collect data in one of two ways:</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">Using the <a href="#Tzero2" class="selected">Calibration Setup</a></li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Using experimental <a href="#Tzero" class="selected">procedure templates</a></li>
+        </ol>
+        <p>&#160;</p>
+        <h3 MadCap:conditions=""><a name="Tzero2"></a>Tzero Calibration Using New Calibration&#160;Setup</h3>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" MadCap:conditions="" value="1">Access the File Manager and select the <span>Calibration </span>panel. Then double-click <span class="boolean">Calibration Setup</span>. <br /><br /></li>
+            <li MadCap:conditions="" value="2">When you create a run from the Calibration Experiment Setup page, the settings are automatically saved. The next time TRIOS is started, you will be asked if you would like to use your saved settings. Click <span class="boolean">Yes</span> to populate the fields with your previously entered data, or <span class="boolean">No</span> to  receive a blank experiment setup page. <br /><br /></li>
+            <li MadCap:conditions="" value="3">The <span class="boolean">Calibration Experiment Setup</span> screen displays, allowing you to generate new calibrations. To view current calibration sets, open <span class="boolean">Calibration Data</span>. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" MadCap:conditions="" value="4">Select the <span class="boolean">Tzero</span> checkbox to open the calibration form.</li>
+        </ol>
+        <p style="margin-top: 8px;" MadCap:conditions="">
+            <img src="../image/DSC/tzero calibration.png" style="padding-left: 40px;" />
+        </p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5" MadCap:conditions="">Enter the following information.</li>
+            <li class="LetterIndent" style="margin-top: 8px;" value="1" MadCap:conditions="">Enter the <span>Name </span>of the new calibration. </li>
+            <li class="LetterIndent" style="margin-top: 8px;" MadCap:conditions="" value="2">Enter the <span>Operator </span>name.</li>
+            <li class="LetterIndent" style="margin-top: 8px;" MadCap:conditions="" value="3">Enter the <span>Project </span>name, if desired.</li>
+            <li class="LetterIndent" style="margin-top: 8px;" MadCap:conditions="" value="4">Enter <span>Sample </span>pan position for sapphire disk (applicable to second run) along with the sapphire mass.</li>
+            <li class="LetterIndent" style="margin-top: 8px;" MadCap:conditions="" value="5">Click the <span>Reference </span>field to display the drop-down table. Select the pan position for sapphire disk (applicable to second run) along with the sapphire mass. If the pan position and sapphire mass are not in the table, click <span>Edit </span>at the bottom of the table to enter applicable values.</li>
+            <li class="LetterIndent" style="margin-top: 8px;" MadCap:conditions="" value="6">Enter any comments or <span>Notes</span>, if desired.
+</li>
+            <li class="LetterIndent" style="margin-top: 8px;" MadCap:conditions="" value="7">Modify method parameters, if required.
+</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent2" style="margin-top: 8px;" MadCap:conditions="" value="1">Enter the <span class="boolean">Ramp rate</span>, <span class="boolean">Lower temperature</span> and <span class="boolean">Upper temperature</span> limits, and <span class="boolean">Isothermal</span>limit. The range of temperatures should be at least as broad as the desired experimental range of subsequent DSC&#160;experiments.
+</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;" MadCap:conditions="" value="2">Tzero calibration should be done at relatively high heating rates such as 20°C/min in order to obtain the most accurate calibration of the sensor thermal capacitance and resistance values. Rates of less than 10°C/min are not recommended for Tzero calibration.
+</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;" MadCap:conditions="" value="3">Select <span class="boolean">Verification</span> to perform a baseline verification experiment after the Tzero calibration is applied. Note that there is no verification criteria associated with this experiment and that it is for manual inspection only.</li>
+        </ul>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="6" MadCap:conditions="">When complete, select from one of the following options:
+</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" style="margin-top: 8px;" MadCap:conditions="" value="1"><span>Run All</span>: Sends the two calibration experiments to the Running Queue and execute run sequence.
+</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" MadCap:conditions="" value="2"><span>Queue All</span>: Sends the two calibration experiments to the Running Queue for execution.
+</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" MadCap:conditions="" value="3"><span>Schedule All</span>:  Schedules the calibration to run at a later specified date. Allows you to select how often the calibration should be run, the time, and the begin and end date.</li>
+        </ul>
+        <p MadCap:conditions="">Refer to <a href="DSC Calibration Overview.htm">DSC Calibration Overview</a> for information on setting up auto calibrations and scheduling runs.</p>
+        <h3 MadCap:conditions=""><a name="Tzero"></a>Tzero Calibration Setup Using the Template</h3>
+        <p MadCap:conditions="">This calibration requires two experiments—one experiment without samples or pans and one experiment with sapphire disks on the reference and sample positions (without pans). The basic procedure for Tzero calibration is displayed below. The experimental setup follows the same general instructions as a standard experiment; (see <a href="Defining DSC Experimental Parameters.htm">Defining DSC Experimental Parameters</a>). </p>
+        <p MadCap:conditions="">To set up a Tzero calibration:</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" MadCap:conditions="" value="1">Access the Design View and add a run.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" MadCap:conditions="" value="2">Click on the associated run form.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" MadCap:conditions="" value="3">Click on the <span>Sample </span>bar. Enter the required test parameters for the first Tzero experiment.
+</li>
+            <li class="LetterIndent" value="1" style="margin-top: 8px;" MadCap:conditions="">Enter zero for both the sample and reference pans as well as for the associated sample sizes.</li>
+            <li class="LetterIndent" style="margin-top: 8px;" MadCap:conditions="" value="2">Note that the <span>Name </span>field varies based on the procedure mode/test type selected below. For Tzero calibration, this field is not programmed.</li>
+            <li class="NumberedIndent" value="4" style="margin-top: 8px;" MadCap:conditions="">Click on the <span>Procedure </span>bar. Enter the test parameters.</li>
+        </ol>
+        <ul>
+            <li class="LetterIndent" style="margin-top: 8px;" MadCap:conditions="" value="1">Select <span>Calibration </span>as the <span>Mode</span>.
+</li>
+            <li class="LetterIndent" style="margin-top: 8px;" MadCap:conditions="" value="2">Select the <span>Test </span>type <span>Tzero</span>. The associated procedure template displays. Enter the requested information. Select the <span>Segments </span>tab to view the associated method in segment form.
+</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;" MadCap:conditions="" value="3"><span class="boolean">Lower Temperature</span> &amp; <span class="boolean">Upper Temperature</span>: Calibration should be performed using the same atmosphere and cooling accessory that will be used in subsequent experiments. The selected lower and upper temperatures for calibration must be within the operating range of the selected cooling accessory and the temperature range for calibration should be as broad as the range that will be used on your samples in subsequent experiments. Typical temperature ranges are: <a href="DSC RCS Intro.htm">–90 to 550°C for the RCS90</a>, <a href="DSC RCS Intro.htm">–40 to 400°C for the RCS40</a>, and <a href="DSC FACS Intro.htm">50 to 400°C for the FACS</a>. Note that the Quench Cooler cannot be used for Tzero calibration and experimentation.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;" MadCap:conditions="" value="4"><span>Ramp</span>: A ramp rate of 20°C/min is recommended.</li>
+            <li class="NumberedIndent" value="5" style="margin-top: 8px;" MadCap:conditions="">Right-click within the Design View and select <span>Append Run</span>.
+The appended run highlights.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" MadCap:conditions="" value="6">Click on the <span>Sample </span>bar. Enter the requested test parameters for the second Tzero experiment (the run appended in the previous step).</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" MadCap:conditions="" value="7">Enter the <span>Sample </span>position # and sample sapphire weight.
+</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" MadCap:conditions="" value="8">Enter the <span>Reference </span>position # and reference sapphire weight.
+</li>
+            <li class="NumberedIndent" value="7" style="margin-top: 8px;" MadCap:conditions="">Click on the <span>Procedure </span>bar. Verify that the procedure information matches the first Tzero run.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" MadCap:conditions="" value="8">Once the two experiments are setup, copy the experiments in the&#160;Design View to the Running Queue and select <span>Start </span>to begin the calibration runs.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" MadCap:conditions="" value="9">Once both runs are complete, analyze the data. See <a href="#Analyzin" class="selected">Analyzing DSC Tzero Calibration Data</a>.</li>
+        </ul>
+        <p MadCap:conditions=""><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Analyzin"></a>Analyzing Tzero Calibration Data
+</h2>
+        <p>Once the calibration experiments complete, analyze the data using the instructions below.
+</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">Open the two calibration files in TRIOS.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Select the two files in the File Manager <span>Results </span>pane.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Select <span>Calibrate </span>&gt; <span>Tzero </span>from the <span>Instrument </span>menu options. Alternatively, you can select this option from the File Manager right-click pop-up menu.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">When you select <span>Calibrate </span>&gt; <span>Tzero</span>, a new document is created that contains the associated calibration results.</li>
+        </ol>
+        <p>
+            <img src="../image/DSC/DSC_tzero cal_results.png" style="padding-left: 40px;" />
+        </p>
+        <p class="IndentedParagraph">Several views are available within this document.</p>
+        <ul>
+            <li class="SubBulletIndent2" style="margin-top: 8pt;" value="1">Spreadsheet: A table view of the associated calibration results (<span>Capacitance </span>and <span>Resistance </span>values)
+</li>
+            <li class="SubBulletIndent2" style="margin-top: 8pt;" value="2">Graph: A graphical view of the associated calibration results.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8pt;" value="3">Results: A summary of the calibration parameters.</li>
+        </ul>
+        <ol>
+            <li class="NumberedIndent" value="5">Before saving the results, view the calibration graph. The profile is unique to each cell, but the graph should have the following general characteristics. If the profile doesn’t meet the criteria below, repeat the experiments. If problem persists, contact TA&#160;Instruments Service.
+</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" value="1">X-shaped profile with capacitance values decreasing and resistance values increasing
+</li>
+            <li class="SubBulletIndent" value="2">Smooth curve shape with no spikes</li>
+        </ul>
+        <p>
+            <img src="../image/DSC/DSC_tzero cal_graph.png" style="padding-left: 80px;" />
+        </p>
+        <ol>
+            <li class="NumberedIndent" value="6">On the <span>Results </span>view, select from one of the following options:
+</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" value="1"><span>Save</span>: Sends the results to the calibration database, but does not enable or apply the results.</li>
+            <li class="SubBulletIndent" value="2"><span>Save and Apply</span>: Sends the results to the calibration database and enables the calibration and then applies the results. </li>
+            <li class="NoteIndent" value="3">NOTE: This calibration document will automatically be saved to the following folder: <b>C:\ProgramData\TA Instruments\TRIOS\Discovery DSC\CalibrationDocs</b> in Windows 7 or 8, or <b>C:\Documents and Setings\All Users\TA Instruments\TRIOS\Discovery DSC\CalibrationDocs</b> in Windows XP. </li>
+        </ul>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Selectin"></a>Selecting Tzero Calibration Results
+</h2>
+        <p>The Discovery DSC stores all the calibration results in a database internal to the instrument. This allows you to access and set calibrations accordingly to correspond to the specific parameters of any experiment. Selection of the calibration set is made on the <a href="Cal Global Calibration Screen.htm">Calibration Data</a> page.
+After analyzing and saving the results, you can apply the results so they are used in future experiments.
+Access the <span>Calibration </span>&gt; <span>Calibration Data</span>window from the File Manager to access the Calibration Data page.
+Verify the desired calibration set is selected after applying the new calibration result.</p>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

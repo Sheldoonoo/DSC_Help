@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" conditions="Primary.DSC" MadCap:conditions="Primary.Thermal General" MadCap:ignoredWords="4°C;20°C;5°C" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Thermal Kinetics - Isothermal </title>
+        <link href="../../Resources/TableStyles/InThisTopic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="../../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="top"></a>Isothermal Kinetics</h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../../Resources/TableStyles/InThisTopic.css');margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+            <caption>In this topic</caption>
+            <col style="width: 235px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Overview" class="selected">Overview</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Experimental" class="selected">Experimental</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Analysis" class="selected">Analysis</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Sestak" class="selected">Sestak Berggren Isothermal Kinetics</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Kamal" class="selected">Kamal Equation</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Avrami" class="selected">Avrami Equation</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowEnd_ColEnd"><a href="#Malkin" class="selected">Malkin</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Overview"></a>Overview</h2>
+        <p>The isothermal kinetics approach can be applied theoretically to both nth order and autocatalyzed exothermic systems. (Autocatalyzed systems are characterized by the formation of some intermediate species which markedly accelerates the reaction. Epoxy systems used in industry, for example are autocatalyzed systems).  It should be noted, however, that this approach is generally not used to model either endothermic reactions or crystallization kinetics.</p>
+        <p>An nth order reaction will follow equation (1),</p>
+        <p>
+            <img src="../../image/math/kinetics_iso_eq1_156x35.png" style="width: 156;height: 35;" />
+        </p>
+        <p>Where:</p>
+        <p>dα/dt = reaction rate (1/sec)</p>
+        <p>α = fractional conversion</p>
+        <p>k(T) = specific rate constant at temperature T</p>
+        <p>n = reaction order</p>
+        <p>whereas an autocatalyzed reaction will follow the empirical relationship:</p>
+        <p>
+            <img src="../../image/math/kinetics_iso_eq2_169x59.png" style="width: 169;height: 59;" />
+        </p>
+        <p>Where:</p>
+        <p>dα/dt = reaction rate (1/sec)</p>
+        <p><i>k</i> = rate constant (1/sec)</p>
+        <p>α = fractional conversion</p>
+        <p>m, n = reaction orders</p>
+        <p>This approach requires three or more isothermal experiments to generate the kinetic parameters (E<span style="vertical-align: sub; font-weight: normal; color: #000000;">α</span>, Z, n, m, and <i>k</i>). First, the heat flow (dH/dt) and the partial heats (<img src="../../image/math/delta symbol.png" />H<span style="vertical-align: sub; font-size: 8pt; font-weight: normal; color: #000000;">T</span>) are determined from the DSC isothermal exotherm as shown in the figure below. These data values are then converted to a fractional conversion, α, and reaction rate, dα/dt, using a reference theoretical heat of reaction, <img src="../../image/math/delta symbol.png" />H<span style="vertical-align: sub; font-size: 8pt; font-weight: normal; color: #000000;">O</span>. The calculated values of α and dα/dt are subsequently entered into the appropriate kinetics model (either nth order or autocatalyzed) and the best fit kinetic parameters determined.</p>
+        <h2><a name="Experimental"></a>Experimental</h2>
+        <p>The experimental details to perform an isothermal kinetics analysis are very straightforward. To select the proper temperatures for the required isothermal experiments, the sample is first analyzed at 5°C/minute, usually resulting in a broad exothermic peak. An isothermal temperature is chosen that lies between a temperature 10–20°C below the onset of reaction and a temperature midway to the peak maximum. When performing the actual isothermal experiments, the DSC cell is heated to the desired isothermal temperature using an “initial temperature” program segment. The cell is then rapidly opened, the sample loaded, and the cell re-closes. When the displayed temperature is within 4°C of the desired isothermal temperature, data collection is initiated. Isothermal kinetics can also be applied to reactions which are initiated through the introduction of UV light, as is typical when using the Photocalorimeter Accessory (PCA).</p>
+        <p>
+            <img src="../../image/Other/Isothermal Kinetics.png" />
+        </p>
+        <h2><a name="Analysis"></a>Analysis</h2>
+        <p>The instructions vary slightly depending on whether you are analyzing a single file or a set of files.</p>
+        <ul>
+            <li class="NoteIndent" value="1">NOTE: Contact TA Instruments Sales to acquire the Kinetics key.</li>
+        </ul>
+        <h3>Single File Analysis</h3>
+        <p>Once the data is plotted, it is necessary to analyze the data using DSC Conversion Calculation prior to generating the kinetics:</p>
+        <ol>
+            <li style="margin-top: 8px;" value="1">From the <span class="boolean">Graph</span> &gt; <span class="boolean">Analysis</span> menu, select <span class="boolean">DSC conversion calculation</span> from the Function toolbar.</li>
+            <li style="margin-top: 8px;" value="2">Select the peak integration limits, and then click <span class="boolean">Analyze</span>. A new document tab is generated with the conversion data.</li>
+            <li style="margin-top: 8px;" value="3">With the conversion plot displayed, select the desired Isothermal Kinetics equation from the Analysis list:<ul><li style="margin-top: 8px;" value="1"><a href="#Sestak" class="selected">Sestak-Berggren isothermal kinetics</a></li><li style="margin-top: 8px;" value="2"><a href="#Kamal" class="selected">Kamal isothermal kinetics</a></li><li style="margin-top: 8px;" value="3"><a href="#Avrami" class="selected">Avrami isothermal kinetics</a></li><li style="margin-top: 8px;" value="4"><a href="#Malkin" class="selected">Malkin isothermal kinetics</a></li></ul></li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li style="margin-top: 8px;" value="4">Click <span class="boolean">Analyze</span>, and then click <span class="boolean">Edit Analysis</span> to verify the analysis settings:<ul><li style="margin-top: 8px;" value="1"><a href="#SBSettings" class="selected">Sestak-Berggren analysis settings</a></li><li style="margin-top: 8px;" value="2"><a href="#KamalSettings" class="selected">Kamal analysis settings</a></li><li style="margin-top: 8px;" value="3"><a href="#AvramiSettings" class="selected">Avrami analysis settings</a></li><li style="margin-top: 8px;" value="4"><a href="#MalkinSettings" class="selected">Malkin analysis settings</a></li></ul></li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li style="margin-top: 8px;" value="5">Click <span class="boolean">Accept</span>.</li>
+        </ol>
+        <h3>Multiple File Sets</h3>
+        <p>The Sestak Berggren Isothermal Kinetics Analysis also includes the option to analyze data from multiple experiments at different temperatures.</p>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Analyze each of the files using <span class="boolean">DSC Conversion Calculation</span>.</li>
+            <li style="margin-top: 8px;" value="2">Select the associated analyzed files from the File Manager, then, from the right-click pop-up menu, select <span class="boolean">Transformations...</span> &gt; <span class="boolean">Isothermal Kinetics Set...</span></li>
+            <li style="margin-top: 8px;" value="3">The Isothermal Kinetics Analysis Set dialog displays:</li>
+        </ol>
+        <p style="margin-top: 8px;">
+            <img src="../../image/Other/kinetics_iso analysis set.png" style="padding-left: 40px;" />
+        </p>
+        <ol MadCap:continue="true">
+            <li style="margin-top: 8px;" value="4">Select the desired options:<ol style="list-style-type: lower-alpha;"><li style="margin-top: 8px;" value="1"><span class="boolean">Model</span>: Select between the various isothermal models<ul><li style="margin-top: 8px;" value="1"><span class="boolean">Sestak Berggren</span> – AutoCatyzed, Nth Order, First Order, Second Order or Third Order</li><li style="margin-top: 8px;" value="2"><span class="boolean">Avrami</span></li><li style="margin-top: 8px;" value="3"><span class="boolean">Kamal</span></li><li style="margin-top: 8px;" value="4"><span class="boolean">Malkin</span></li></ul></li></ol><ol style="list-style-type: lower-alpha;" MadCap:continue="true"><li style="margin-top: 8px;" value="2"><span class="boolean">Solution Type</span> – select between:<ul><li style="margin-top: 8px;" value="1"><span class="boolean">Independent</span> – Fits each set of data independently (separate parameters)</li><li style="margin-top: 8px;" value="2"><span class="boolean">Coupled</span> – Fits all sets of data to the same parameters</li></ul></li></ol><ol style="list-style-type: lower-alpha;" MadCap:continue="true"><li style="margin-top: 8px;" value="3"><span class="boolean">Parameters</span> - Click on the button next to each parameter to toggle between the available options (<span class="boolean">Free</span>, <span class="boolean">Guess</span>, and <span class="boolean">Locked</span>). If you select <span class="boolean">Guess</span> or <span class="boolean">Locked</span>, enter the associated value.<ul MadCap:continue="true"><li style="margin-top: 8px;" value="1"><span class="boolean">Free</span>: The software automatically calculates the optimum parameter.</li><li style="margin-top: 8px;" value="2"><span class="boolean">Guess</span>: Similar to <span class="boolean">Free</span>, but with a user-supplied starting point.</li><li style="margin-top: 8px;" value="3"><span class="boolean">Locked</span>: The parameter value is fixed at the user-supplied value.</li></ul></li></ol></li>
+        </ol>
+        <ul>
+            <li class="NoteIndent" value="1">NOTE: The model displayed and parameters shown will vary based on selected model.</li>
+        </ul>
+        <ol MadCap:continue="true">
+            <li value="5">In this case, each of the files is analyzed in a fashion described above. The resultant fit will be displayed within the original data file. The Iso Kinetics Set document displays a summary of the data results.</li>
+        </ol>
+        <h3>Additional Plots</h3>
+        <p>Two predictive curves are obtained from the Sestak Berggren Isothermal Kinetics modeling: isothermal plots and isoconversion plots. Isothermal plots provide time conditions and degree of conversion information for specific isothermal temperatures. Isoconversion plots provide time and temperature conditions for a specific conversion level. Both predictive plots are useful in the development and control of reaction conditions in order to achieve the desired final product.</p>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Display conversion plot.</li>
+            <li style="margin-top: 8px;" value="2">From the File Manager, select the conversion plot and then right-click and select <span class="boolean">Transformations...</span> &gt; <span class="boolean">Kinetics Conversion...</span></li>
+        </ol>
+        <p>
+            <img src="../../image/Other/transformations_kinetics conversion.png" style="padding-left: 40px;" />
+        </p>
+        <ol MadCap:continue="true">
+            <li style="margin-top: 8px;" value="3">A Kinetics Conversion dialog to define the desired conversion plot as well as the parameters of that plot displays.</li>
+        </ol>
+        <p style="margin-top: 8px;">
+            <img src="../../image/Other/kinetics conversion dialog.png" style="padding-left: 40px;" />
+        </p>
+        <ol MadCap:continue="true">
+            <li style="margin-top: 8px;" value="4">A new document is created for this plot.</li>
+        </ol>
+        <p>The following additional plots can be generated (available from the <span class="boolean">Transformations</span> menu):</p>
+        <ul>
+            <li style="margin-top: 8px;" value="1">Half Life (vs. Temperature)</li>
+            <li style="margin-top: 8px;" value="2">Conversion Time (vs. Temperature)</li>
+            <li style="margin-top: 8px;" value="3">Percent Conversion (vs. Time)</li>
+        </ul>
+        <h2><a name="Sestak"></a>Sestak Berggren Isothermal Kinetics</h2>
+        <p>The Sestak Berggren Isothermal Kinetics approach can be applied theoretically to both nth order and autocatalyzed exothermic systems. (Autocatalyzed systems are characterized by the formation of some intermediate species which markedly accelerates the reaction. Epoxy systems used in industry, for example are autocatalyzed systems). It should be noted, however, that this approach is generally not used to model endothermic reactions.</p>
+        <p>An nth order reaction will follow equation (1),</p>
+        <p>
+            <img src="../../image/math/kinetics_Iso_sestak_1.png" />
+        </p>
+        <p>Where:</p>
+        <p>dα /dt = reaction rate (1/sec)</p>
+        <p>α = fraction remaining to react</p>
+        <p>k(T) = specific rate constant at temperature T</p>
+        <p>n = reaction order.</p>
+        <p>whereas an autocatalyzed reaction will follow the empirical relationship:</p>
+        <p>
+            <img src="../../image/math/kinetics_iso_sestak_2.png" />
+        </p>
+        <p>Where:</p>
+        <p>dα/dt = reaction rate (1/sec)</p>
+        <p>k = rate constant (1/sec)</p>
+        <p>α = fraction remaining to react</p>
+        <p>m,n = reaction orders</p>
+        <p>E<span style="vertical-align: sub; font-weight: normal; color: #000000;">α</span> = activation energy (J/mol)</p>
+        <p>Z = pre-exponential factor (1/sec)</p>
+        <p>T = absolute temperature (K)</p>
+        <p>R = gas constant (8.314 J/(mol K)</p>
+        <p>This approach requires three or more isothermal experiments to generate the kinetic parameters (E<span style="vertical-align: sub; font-weight: normal; color: #000000;">α</span>, Z, n, m, and <i>k</i>). First, the heat flow (dH/dt) and the partial heats (<img src="../../image/math/delta symbol.png" />H<span style="vertical-align: sub;"><span style="color: #000000; font-weight: normal; font-size: 8pt;">T</span></span>) are determined from the DSC isothermal exotherm as shown in the figure below. These data values are then converted to a fractional conversion, α  , and reaction rate, dα /dt, using a reference theoretical heat of reaction,  <img src="../../image/math/delta symbol.png" />H<span style="vertical-align: sub; font-weight: normal; color: #000000; font-size: 8pt;">O</span> or by integration of the experimental curve. The calculated values of  α and dα /dt are subsequently entered into the appropriate kinetics model selected by the operator (either nth order or autocatalyzed) and the best fit kinetic parameters determined.</p>
+        <p>TRIOS analysis also includes variations to Standard Isothermal Kinetic method; these include:</p>
+        <ul>
+            <li style="margin-top: 8px;" value="1"><a href="#Kamal" class="selected">Kamal</a>
+            </li>
+            <li style="margin-top: 8px;" value="2"><a href="#Avrami" class="selected">Avrami</a>
+            </li>
+            <li style="margin-top: 8px;" value="3"><a href="#Malkin" class="selected">Malkin</a>
+            </li>
+        </ul>
+        <h3><a name="SBSettings"></a>Analysis Settings</h3>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Select the desired model type– <span class="boolean">1st order</span>, <span class="boolean">2nd order</span>, <span class="boolean">3rd order</span>, <span class="boolean">nth order</span> or <span class="boolean">Autocatalytic</span>. </li>
+            <li style="margin-top: 8px;" value="2">Select the desired conversion range – the minimum and maximum range of conversion data used for analysis.<ul><li style="margin-top: 8px;" value="1"><span class="boolean">All Data</span> – uses complete data range</li><li style="margin-top: 8px;" value="2"><span class="boolean">Selected Data</span> – uses selected data range on graph</li><li style="margin-top: 8px;" value="3"><span class="boolean">Explicit Range</span> – uses entered values</li></ul></li>
+            <li style="margin-top: 8px;" value="3"><span class="boolean">Parameters</span> - Click on the button next to each parameter to toggle between the available options (<span class="boolean">Free</span>, <span class="boolean">Guess</span>, and <span class="boolean">Locked</span>). If you select <span class="boolean">Guess</span> or <span class="boolean">Locked</span>, enter the associated value.<ul MadCap:continue="true"><li style="margin-top: 8px;" value="1"><span class="boolean">Free</span>: The software automatically calculates the optimum parameter.</li><li style="margin-top: 8px;" value="2"><span class="boolean">Guess</span>: Similar to Free, but with a user-supplied starting point.</li><li style="margin-top: 8px;" value="3"><span class="boolean">Locked</span>: The parameter value is fixed at the user-supplied value.</li></ul></li>
+        </ol>
+        <ul>
+            <li class="NoteIndent" value="1">NOTE: Depending on the model selected the options will vary.</li>
+        </ul>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Kamal"></a>Kamal Equation</h2>
+        <p>The following equation showing curing rate is known as the Kamal Equation:</p>
+        <p>
+            <img src="../../image/math/kinetics_iso_kamal_1.png" />
+        </p>
+        <p>Where:</p>
+        <p>
+            <img src="../../image/math/kinetics_iso_kamal_2.png" />
+        </p>
+        <p>i = 1,2</p>
+        <p>dα/dt = reaction rate (1/sec)</p>
+        <p>m,n = reaction orders</p>
+        <p>k<span style="vertical-align: sub; font-weight: normal; color: #000000;">i</span> = reaction rate constants</p>
+        <p>A<span style="vertical-align: sub; font-weight: normal; color: #000000;">i</span> = pre-exponential factors</p>
+        <p>Z<span style="vertical-align: sub; font-weight: normal; color: #000000;">i</span> = activation energies</p>
+        <p>R = gas constant (8.314 J/(mol K))</p>
+        <p>T = absolute temperature (K)</p>
+        <h3><a name="KamalSettings"></a>Analysis Settings</h3>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Select the desired conversion range – the minimum and maximum range of conversion data used for analysis.<ul><li style="margin-top: 8px;" value="1"><span class="boolean">All Data</span> – uses complete data range</li><li style="margin-top: 8px;" value="2"><span class="boolean">Selected Data</span> – uses selected data range on graph</li><li style="margin-top: 8px;" value="3"><span class="boolean">Explicit Range</span> – uses entered values</li></ul></li>
+            <li style="margin-top: 8px;" value="2"><span class="boolean">Parameters</span> - Click on the button next to each parameter to toggle between the available options (<span class="boolean">Free</span>, <span class="boolean">Guess</span>, and <span class="boolean">Locked</span>). If you select <span class="boolean">Guess</span> or <span class="boolean">Locked</span>, enter the associated value.<ul MadCap:continue="true"><li style="margin-top: 8px;" value="1"><span class="boolean">Free</span>: The software automatically calculates the optimum parameter.</li><li style="margin-top: 8px;" value="2"><span class="boolean">Guess</span>: Similar to Free, but with a user-supplied starting point.</li><li style="margin-top: 8px;" value="3"><span class="boolean">Locked</span>: The parameter value is fixed at the user-supplied value.</li></ul></li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Avrami"></a>Avrami Kinetics</h2>
+        <p>Many users prefer to use Avrami Kinetics applied to autocatalytic reactions such as thermoset cure and crystallization.</p>
+        <p>The governing equation under isothermal experimental conditions is:<br /></p>
+        <p>
+            <img src="../../image/math/kinetics_iso_avrami_1.png" />
+        </p>
+        <p>Where:</p>
+        <p>α = fraction remaining to react (1 to 0)</p>
+        <p>k = rate constant (1/sec)</p>
+        <p>p = Avrami reaction order (often = 4)</p>
+        <p>t = time (sec)</p>
+        <p>This equation is coupled with the logarithmic form of the Arrhenius equation to provide the effect of temperature.</p>
+        <p>
+            <img src="../../image/math/kinetics_iso_avrami_2.png" />
+        </p>
+        <p>Where:</p>
+        <p>Z = the pre-exponential factor (1/sec)</p>
+        <p>E<span style="vertical-align: sub; font-weight: normal; color: #000000;">α</span>  = activation energy (J/mol)</p>
+        <p>R = gas constant (8.314 J/(mol K))</p>
+        <p>T = absolute temperature (K)</p>
+        <p>From data from a single isothermal test (gather in the same manner as other isothermal tests), the fraction-remaining-to-react (α), and elapsed time (t) at a constant temperature (T) are recorded. A plot of <i>ln</i>[<i>-ln</i>(1-α)] versus <i>ln</i>[<i>t</i>] is prepared for a series of ≈20 points across the reaction exotherm. A best fit straight line is fit to the data. The slope of the line equals reaction order p and the intercept is <i>ln</i>[<i>k</i>].</p>
+        <p>In a similar manner, values for <i>ln</i>[<i>k</i>] are obtained over a range of temperatures (≈10 K). A second plot is prepared of <i>ln</i>[<i>k</i>] versus 1/T for this series of experiments and the data fit to a straight line. The slope equals –E<span style="vertical-align: sub; font-weight: normal; color: #000000;">α</span> /R (from which  may be calculated) and the intercept is <i>ln</i>[Z].</p>
+        <h3><a name="AvramiSettings"></a>Analysis Settings</h3>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Select the desired conversion range – the minimum and maximum range of conversion data used for analysis.<ul><li style="margin-top: 8px;" value="1"><span class="boolean">All Data</span> – uses complete data range</li><li style="margin-top: 8px;" value="2"><span class="boolean">Selected Data</span> – uses selected data range on graph</li><li style="margin-top: 8px;" value="3"><span class="boolean">Explicit Range</span> – uses entered values</li></ul></li>
+            <li style="margin-top: 8px;" value="2"><span class="boolean">Parameters</span> - Click on the button next to each parameter to toggle between the available options (<span class="boolean">Free</span>, <span class="boolean">Guess</span>, and <span class="boolean">Locked</span>). If you select <span class="boolean">Guess</span> or <span class="boolean">Locked</span>, enter the associated value.<ul MadCap:continue="true"><li style="margin-top: 8px;" value="1"><span class="boolean">Free</span>: The software automatically calculates the optimum parameter.</li><li style="margin-top: 8px;" value="2"><span class="boolean">Guess</span>: Similar to Free, but with a user-supplied starting point.</li><li style="margin-top: 8px;" value="3"><span class="boolean">Locked</span>: The parameter value is fixed at the user-supplied value.</li></ul></li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Malkin"></a>Malkin</h2>
+        <p>Malkin et. al. proposed a different macrokinetic equation based on the principal that the overall crystallization rate is a summation of the variation in crystallinity due to the emergence of primary nuclei and the rate of variation in crystallinity due to crystal growth.</p>
+        <p>
+            <img src="../../image/math/kinetics_iso_malkin_1.png" />
+        </p>
+        <p>Where:</p>
+        <p>X(t) is the degree of conversion</p>
+        <p>C<span style="vertical-align: sub; font-weight: normal; color: #000000; font-size: 8pt;">0</span> is proportional to the ratio of linear growth rate to the nucleation rate or specifically C<span style="vertical-align: sub; font-weight: normal; color: #000000; font-size: 8pt;">0</span> <img src="../../image/math/proportion to symbol.png" />G/I (in Lauritzen and Hoffman terms)</p>
+        <p>C<span style="vertical-align: sub; font-weight: normal; color: #000000; font-size: 8pt;">1</span> is directly related to the overall crystallization rate or C<span style="vertical-align: sub; font-weight: normal; color: #000000; font-size: 8pt;">1</span> = <i>a</i>I + <i>b</i>G where <i>a</i> and <i>b</i> are constants [1,2].</p>
+        <p>The Malkin equation is related to the Avrami equation by the following:</p>
+        <p>
+            <img src="../../image/math/kinetics_iso_malkin_2.png" />
+        </p>
+        <p>
+            <img src="../../image/math/kinetics_iso_malkin_3.png" />
+        </p>
+        <p>Where k and n are the Avrami parameters.</p>
+        <h3><a name="MalkinSettings"></a>Analysis Settings</h3>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Select the desired conversion range – the minimum and maximum range of conversion data used for analysis.<ul><li style="margin-top: 8px;" value="1"><span class="boolean">All Data</span> – uses complete data range</li><li style="margin-top: 8px;" value="2"><span class="boolean">Selected Data</span> – uses selected data range on graph</li><li style="margin-top: 8px;" value="3"><span class="boolean">Explicit Range</span> – uses entered values</li></ul></li>
+            <li style="margin-top: 8px;" value="2"><span class="boolean">Parameters</span> - Click on the button next to each parameter to toggle between the available options (<span class="boolean">Free</span>, <span class="boolean">Guess</span>, and <span class="boolean">Locked</span>). If you select <span class="boolean">Guess</span> or <span class="boolean">Locked</span>, enter the associated value.<ul MadCap:continue="true"><li style="margin-top: 8px;" value="1"><span class="boolean">Free</span>: The software automatically calculates the optimum parameter.</li><li style="margin-top: 8px;" value="2"><span class="boolean">Guess</span>: Similar to Free, but with a user-supplied starting point.</li><li style="margin-top: 8px;" value="3"><span class="boolean">Locked</span>: The parameter value is fixed at the user-supplied value.</li></ul></li>
+        </ol>
+        <h3>References</h3>
+        <p>[1] Supaphol, P. And Spruiell, J.;  J. MACROMOL. SCI.—PHYS., B39(2), 257–277 (2000)</p>
+        <p>[2] Supaphol and Spruiell, Polymer 42(2001) 699-715</p>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <p>&#160;</p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

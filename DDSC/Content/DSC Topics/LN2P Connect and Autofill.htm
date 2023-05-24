@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Discovery DSC|Discovery DSC Cooling Options" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.DSC" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Connecting and Autofilling the LN2P</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/TableStyles/InThisTopic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><span class="MCBreadcrumbsSelf">Using the Discovery DSC</span><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="Menu Cooling Options DSC.htm">Discovery DSC Cooling Options</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Connecting and Autofilling the LN2P</span>
+        </div>
+        <h1><a name="top"></a>Discovery DSC:&#160;Connecting and Autofilling the LN2P</h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../Resources/TableStyles/InThisTopic.css');margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+            <caption>In this topic</caption>
+            <col style="width: 182px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Overview" class="tablenavigationbody selected">Overview</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Connecti" class="tablenavigationbody selected">Connecting the LN2P to a Low-Pressure Bulk Source</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Initial" class="tablenavigationbody selected">Initial Autofilling</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Programm" class="tablenavigationbody selected">Programmed Autofilling</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowEnd_ColEnd"><a href="#Fill" class="tablenavigationbody selected">Fill Method Segment</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Overview</h2>
+        <ul>
+            <li class="CautionIndent" value="1">CAUTION: Do not use other lines to fill the LN2P, as lower flow resistance will increase Dewar pressure.</li>
+        </ul>
+        <p>To use the local filling capability, connect the cooling accessory to a low pressure bulk source of liquid nitrogen, then fill the Dewar.</p>
+        <p>There are several ways to autofill the Dewar. These autofill methods are described in detail in the sections below.</p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;" value="1">Using the Common Cabinet User Interface, if available. Select <span class="boolean">LN2P Controls</span> from the <span class="boolean">Set View</span> options list, then press <span class="boolean">Fill Tank</span>.</li>
+            <li class="bullet" style="margin-top: 8px;" value="2">Using TRIOS software :</li>
+        </ul>
+        <ul>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="1">Within the <span>General </span>Control panel, click on the <span>Toggle Fill <img src="../image/DSC/icon toggle fill.png" class="imgInline" /></span> icon to fill the Dewar at any time. Note that LNP&#160;Cooler needs to be selected in order for this icon to be available. Refer to <a href="Configuring the Instrument_DSC.htm#Setting2">Setting Up DSC Cooler Options</a> for more information.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="2">Within the <span>Options&#160;</span>&gt;&#160;<span>Discovery DSC</span> &gt; <span>Cooler </span>options, enable the autofill function and set a % level; the Dewar automatically fills whenever the liquid nitrogen level reaches the user-set % level (regardless of whether or not a run is in progress). Refer to <a href="Configuring the Instrument_DSC.htm#Setting2">Setting Up DSC Cooler Options</a> for more information.</li>
+            <li class="SubBulletIndent2" style="margin-top: 8px;margin-bottom: 6px;" value="3">Within the procedure, add one of two <span>Fill Cooler </span>segments. One Fill segment waits for the fill process to complete before moving on to the next method segment, while the other initiates a fill and moves on to the next segment while still filling the Dewar.</li>
+        </ul>
+        <h2><a name="Connecti"></a>Connecting the LN2P to a Low-Pressure Bulk Source</h2>
+        <p>Follow the instructions below to connect the LN2P to a source of liquid nitrogen:</p>
+        <ol>
+            <li value="1">
+                <p style="margin-top: 8px;">Arrange the low pressure liquid nitrogen (172 kPa [25 psig] max) bulk storage source physically close enough (within 1.8 m [6 ft]) to the LN2P so that the autofill transfer tube can be easily connected between the source and the LN2P. Likewise, the LN2P and the instrument need to be in close proximity to allow connection of the 1.8-m (6-ft) coolant delivery line.</p>
+            </li>
+            <li value="2">
+                <p style="margin-top: 8px;">Connect the LN2P for automatic filling as follows:</p>
+            </li>
+            <li class="LetterIndent" value="1" style="margin-top: 8px;">Attach the transfer tube to the LN2 FILL VALVE located on the motor housing (shown in the figure below).</li>
+        </ol>
+        <p style="margin-top: 8px;">
+            <img src="../image/DSC/fill valve_321x226.jpg" class="imgIndent" style="width: 321;height: 226;" />
+        </p>
+        <ol>
+            <li class="LetterIndent" value="2" style="margin-top: 8px;">Attach the other end of the transfer tube to the bulk storage container using the union and adapter fitting (provided in the accessory kit).</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Install the cooling head on the DSC as directed in the <a href="../Resources/PDF Files/DiscoveryLN2P_GettingStarted.pdf">Liquid Nitrogen Pump (LN2P)&#160;Getting Started Guide</a> if it is not already installed. The cooling head must be in place on the cell and the cell must be operational before filling the LN2P.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Plug the LN2P power cord into an outlet, and connect the USB cable between the instrument and the LN2P.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5">Follow the directions in the sections below to fill the Dewar with liquid nitrogen before beginning an experiment.</li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Initial"></a>Initial Autofilling </h2>
+        <p>The LN2P must be filled before cooling experiments can be performed on the Discovery DSC. Follow the instructions in this section to fill the LN2P.</p>
+        <p>&#160;</p>
+        <h3>Autofilling using TRIOS&#160;Software</h3>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">Using TRIOS software, connect to the desired instrument.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">From the TRIOS&#160;Control panel, select <span>General </span>&gt; <span>LN2P </span>&gt; <span>Toggle Fill </span><img src="../image/DSC/icon toggle fill.png" class="imgInline" />. The LN2P fills automatically.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">The autofill shuts off when the Dewar is full or the bulk storage tank is empty. Once the Dewar has been filled initially, you can set up programmed autofilling as described in <a href="#Programm" class="selected">Programmed Autofilling</a> below.</li>
+        </ol>
+        <p>
+            <br />
+        </p>
+        <h3>Autofilling using the Common Cabinet User Interface</h3>
+        <ol>
+            <li style="margin-top: 8px;" value="1">From the Common Cabinet User Interface, select <span class="boolean">LN2P Controls</span> from the <span class="boolean">Set View</span> options list.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Press <span class="boolean">Fill Tank</span>.</li>
+        </ol>
+        <p>
+            <img src="../image/DSC/LN2BP_355x473.bmp" style="width: 355;height: 473;" class="imgIndent" />
+        </p>
+        <ol>
+            <li value="3">The autofill shuts off when the Dewar is full or the bulk storage tank is empty.</li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Programm"></a>Programmed Autofilling</h2>
+        <p>Autofilling also refers to the automatic refilling of the LN2P from the bulk storage tank between runs. This section explains how to set up the LN2P and the connected instrument to allow autofilling. Refer to <a href="Configuring the Instrument_DSC.htm#Setting2">Setting Up DSC Cooler Options</a> for additional information.</p>
+        <p>The DSC automatically controls the LN2P, which supplies liquid nitrogen to the cooling head.</p>
+        <p>To automatically refill the LN2P with liquid nitrogen at any point:</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">In TRIOS software, access TRIOS <span>Options </span>&gt; <span>Discovery DSC</span> &gt; <span>Cooler </span>page.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Select <span>Autofill LNP if below</span>, then enter the desired liquid level percentage.</li>
+            <li class="NoteIndent" value="3">NOTE: The LN2P is normally filled from a bulk tank located near the unit. If you need to fill your LN2P Dewar with liquid nitrogen from a remote source (i.e., source not located near your unit), refer to the <a href="../Resources/PDF Files/DiscoveryLN2P_GettingStarted.pdf">Liquid Nitrogen Pump (LN2P) Getting Started&#160;Guide</a> for instructions on remote filling of the Dewar.</li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Fill"></a>Fill Method Segment</h2>
+        <p>There may be instances in which it is optimal or necessary to fill the LN2P between runs during an experiment. For example, this would be useful if, prior to starting a long experiment, you know that the LN2P will run out of liquid nitrogen before a particular run completes. In such cases, use the <span>Fill Cooler</span> method segment to fill the LN2P at a point of your choosing.</p>
+        <p>Refer to <a href="../First Gen DSC and TGA/Creating Custom Methods.htm">Creating Custom&#160;Methods</a> and the <a href="../Thermal Common Topics/Available Method Segments.htm">Available Method&#160;Segment</a> list for information on using the Fill Cooler method segments.</p>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

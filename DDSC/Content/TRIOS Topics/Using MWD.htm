@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Evaluating Data|Molecular Weight Distribution" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.TRIOS" class="" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Using&#160;Molecular Weight Distribution</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/TableStyles/InThisTopic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="Menu Data Representation.htm">Evaluating Data</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Molecular Weight Distribution</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Using Molecular Weight Distribution (MWD)</span>
+        </div>
+        <h1><a name="top"></a>Using&#160;Molecular Weight Distribution (MWD)</h1>
+        <p>&#160;</p>
+        <table class="TableStyle_InThisTopic" style="border-collapse: separate;caption-side: top;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/InThisTopic.css');" cellspacing="0">
+            <caption><span style="color: #000080;font-size: 8pt;font-weight: bold;font-family: Verdana;">In this topic</span>
+            </caption>
+            <col style="width: 169px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Overview" target="_self" class="tablenavigationbody selected">Overview</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Suggeste" target="_self" class="tablenavigationbody selected">Suggested Use of MWD</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Using" class="tablenavigationbody selected">Using the MWD</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Running" class="tablenavigationbody selected">Running the Optimizer Algorithm</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Options" class="tablenavigationbody selected">Viewing the Results</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Material" class="tablenavigationbody selected">Material Database</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Notes" class="tablenavigationbody selected">Notes on&#160;Calculation of MWD</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowEnd_ColEnd"><a href="#Referenc" class="tablenavigationbody selected">References</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Overview"></a>Overview</h2>
+        <p>This function is designed to calculate the Molecular Weight (M<sub>w</sub>) and Molecular Weight Distribution (MWD) of a material from dynamic mechanical frequency sweep data (G'[<span style="font-family: Symbol;color: #000000;font-weight: normal;">w</span>] and G"[<span style="font-family: Symbol;color: #000000;font-weight: normal;">w]) </span>by synthesizing a distribution based on material properties and an estimate for M<sub>w</sub> and MWD. Dynamic data are then calculated from this distribution and overlaid with the experimental data to determine how closely the two sets of data agree with one other. The synthetic distribution can consist of between 1 and 10 separate components of the same material, each with its own Mw and MWD value. This allows for very complicated, asymmetric distributions to be synthesized, to better model the chemistry of real-world materials.</p>
+        <p>Iterative refinements to the estimated values of M<sub>w</sub> and MWD may then be made either by the operator manually adjusting these parameters and looking for better agreement, or through the use of an automatic optimization function that adjusts these parameters by minimizing the numerical difference between the two data sets.
+</p>
+        <p>This function can also be used to calculate dynamic frequency sweep data, without starting from a reference set of data, and based only on a given M<sub>w</sub>, MWD, and material parameters. 
+See the section <a href="#Notes" class="selected">Notes on the Calculation of MWD</a> f<span></span>or additional information on the calculations by this method.
+</p>
+        <ol>
+            <li class="NoteIndent" value="1">NOTE: The MWD function can only be used if the appropriate license key is installed (see <a href="Setting TRIOS Options.htm">Setting TRIOS&#160;Options</a> for additional information). Additionally, ensure that the appropriate Orchestrator files are installed (check the <span>Orchestrator </span>box during the TRIOS installation). </li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Suggeste"></a>Suggested Use of MWD
+</h2>
+        <p>The MWD function is designed to determine the molecular weight distribution of polymeric materials from the dynamic mechanical properties G'(<span style="font-family: Symbol;font-weight: normal;color: #000000;">w</span>) and G"(<span style="font-family: Symbol;font-weight: normal;color: #000000;">w</span>). The approach is based on a molecular model, the double reputation mixing rule, to calculate the MWD from the viscoelastic relaxation time spectrum. 
+</p>
+        <p>The experimental frequency sweep data should contain data covering at least three decades of frequency, measured between the terminal region and rubbery plateau region for the polymer melt. 
+One advantage to this approach is that it works with "incomplete" sets of data. Typically, the methods used to calculate MWD from rheology data require that a master curve be used that covers the range of viscoelasticity from the rubbery region all the way down into the terminal region. Since this function works by comparing sets of dynamic data over the same frequency range, it is possible to get accurate distribution information over a more narrow range of frequencies, though obviously having a wider range of frequencies (and therefore relaxation times) is always preferable.
+</p>
+        <p>This model used here is suitable only for homopolymers with either unimodal or bi (N-)modal distributions. In order for realistic values to be calculated, all of the rheological data must have been made in the region of linear viscoelasticity. The presence of additives in the sample may also affect the results. In general, any additive or morphological change that affects the rheological behavior will invalidate the results. Examples of types of additives causing problems include the presence of solvent molecules, plasticizers, fillers, and processing aids. Long-chain branching and residual crystallinity can also affect the results, as can the presence of ionic charges on the polymer.
+</p>
+        <p>Additives such as stabilizers and antioxidents should generally not cause a problem, because typically the concentration of these materials is not high enough to significantly change the rheology of the melt.
+The determination of the MWD from rheology is, in contrast to SEC, very sensitive to the high molecular contributions and, as such, a complementary and not a competitive technique.
+</p>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Using"></a>Using the MWD
+</h2>
+        <p>The MWD function is available if a set of dynamic data is active (i.e. the current page contains G', G", and frequency data). To use MWD:</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1"><a href="Opening a Data File.htm">Open</a> an appropriate data file and ensure that the oscillation frequency sweep data page is active. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">If necessary, enter the applicable key file (see <a href="Setting TRIOS Options.htm">Setting TRIOS&#160;Options</a> for additional information).</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Click the <span>MWD </span>tab.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">If the <span>Start </span>button is not active, click <span>Match </span>to display G’ or G” versus frequency.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5">Click <span>Start </span>to activate the MWD function and to open the MWD user interface.
+</li>
+        </ol>
+        <p>The user interface for calculating the MWD shows  a plot on the right side with the experimental G’ and G” data, as well as the calculated data, based on the current default values. The format of the plot can be switched between the rheological data (G’, G”) and the molecular data, either the w(M<sub>w&#160;</sub>) or the w(M<sub>w</sub>)*M<sub>w</sub>.
+</p>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h3>Material 
+</h3>
+        <p>The first step in using the MWD function is to select the <span>Polymer Type</span> to be used in the model. This designates a set of constants to be used for the calculation of the rheological properties based on the synthesized molecular weight distribution. TRIOS provides a built-in database of these parameters for some common commercial polymers. These constants can be viewed and edited. New materials can also be added to the database (see <a href="#Material" class="selected">Material Database</a> below).
+</p>
+        <p>The<span> DataTemperature</span> field is used to view or set the reference temperature for the calculation. In the case where data are being generated to match an existing data set, this value should correspond to the average temperature at which the data were run. This value is then used along with the material activation energy to shift the front factor used for mapping molecular weights to relaxation times.
+</p>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h3>Molecular Weight and Distribution
+</h3>
+        <p>This section is used to specify the parameters used for building the synthetic molecular weight distribution. The values specified are:
+</p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;" value="1"><span>Distribution Type</span>: Model used for creating the distribution, either Log-Normal or Schultz.</li>
+        </ul>
+        <p class="IndentedParagraph" style="margin-top: 8px;">Log-normal (Wesslau) distribution is typical of addition and Ziegler-Natta catalyzed systems. The Schultz distribution is used with polymers produced via condensation reactions or with metallocene catalysts. 
+These values can be changed by the user to create a desired distribution, or automatically updated by the MWD optimization engine to attempt to match the selected frequency sweep data.</p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;" value="1"><span>Weight Average Mw</span>: The molecular weight to be used.</li>
+            <li class="bullet" style="margin-top: 8px;" value="2"><span>Mw/Mn</span>: The polydispersity, or breath, of the distribution.</li>
+        </ul>
+        <p style="margin-top: 8px;">Three different systems of distributions can be built:</p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;" value="1"><span>Unimodal</span>, where a single <span>Mw</span>, <span>Mw/Mn</span>, and <span>Distribution Type</span> are used to build the MWD curve.</li>
+            <li class="bullet" style="margin-top: 8px;" value="2"><span>Bimodal</span>, where two separate sets of parameters are used to create a single distribution curve, and a slider control is used to adjust the relative fraction of each component.
+</li>
+            <li class="bullet" style="margin-top: 8px;" value="3"><span>N-Modal</span>, where between 3 and 10 separate components are used to model the overall distribution, with each component having a given fraction. The number of modes to use is set by the <span>Modes </span>field, which uses spin buttons to increase or decrease the number of modes to use.
+</li>
+        </ul>
+        <p>Edit fields and spin buttons are used to change the values in both Unimodal and Bimodal distributions. N-Modal distributions are presented in the form of a table, and double-clicking on the parameter to modify can change the individual values. This brings up an edit field, allowing the parameter to be modified. Note that since the fractions in any multicomponent system must sum to 1.0, the value for the fraction of the last component is automatically set to enforce this rule.
+</p>
+        <p>The <span>Copy </span>and <span>Paste </span>functions in this section are used to store and retrieve a custom starting point for solutions. This allows users to always start the optimization calculations from the same set of parameters, which can produce more consistent results.
+</p>
+        <p>Prior to starting the calculation, a reasonable guess should be made for the Mw and MWD. If a bimodal model is used, then initial values should be provided for each component, as well as a value for the ratio of the two components. Providing reasonable estimates for these parameters allows the calculation to converge faster and decreases the possibility of the function falling into a local, non-optimal minima instead of the desired global minima that best fits the data.
+</p>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h3>Advanced Options
+</h3>
+        <p>The kernel used to model the rheological data based on the synthesized distribution can be adjusted by the settings in the <span>Advanced Options</span> section.
+</p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;" value="1"><span>Mixing Rule</span>: Used to determine which method is used to model the effect of polydispersity of the polymer on the rheological data, the <span>Double Reptation</span> or an empirical <span>Wt Average</span> mixing rule. 
+</li>
+            <li class="bullet" style="margin-top: 8px;" value="2"><span>Add Rouse motions</span>: Used to enable modeling the effect of Rouse motions on the dynamic data. This provides for a better fit to the data at and above the plateau region by taking into account motions of smaller molecular segments, which can affect the data near the rubbery region. 
+</li>
+            <li class="bullet" style="margin-top: 8px;" value="3"><span>Doi-Edwards terms</span>: Number of terms in the model used to model the rheology.
+</li>
+        </ul>
+        <p>The <span>Double Reptation</span> model assumes that the stress relaxation modulus (G[t]) depends on the square root of the monodispersed relaxation function F<sup>1/2</sup>(M<sub>w</sub>,t), whereas the <span>Wt Average</span> method assumes that this dependence is to the first power F(M<sub>w</sub>,t). 
+</p>
+        <p>Click <span>Settings </span>to display a dialog box containing additional advanced settings for MWD calculations. These include:</p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;" value="1"><span>Maximum Iterations</span>: The maximum number of optimization iterations allowed during a solution.</li>
+            <li class="bullet" style="margin-top: 8px;" value="2"><span>Convergence Tolerance</span>: The criteria used to determine when a solution has been reached. When the relative improvement of a solution [(old error - new error) / new error] falls below this value, then the solution is deemed to have converged.</li>
+            <li class="bullet" style="margin-top: 8px;" value="3"><span>"Annealing" Temperature</span>: Enables "Simulated Annealing" optimization algorithm. If non-zero, then this is the value related to the probability that a non-optimal trial solution is taken in an effort to find an overall global minima as opposed to a local minima. A value of zero for this field disables the simulated annealing step in the optimizer.</li>
+            <li class="bullet" style="margin-top: 8px;" value="4"><span>Verbose Results</span>: Adds material constants and information on the components of the distribution to the results stamp.
+</li>
+        </ul>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h3>Calculation Results</h3>
+        <p>The section displays the results of the calculation, including the various moments of the distribution (<span>Mn</span>, <span>Mw</span>, <span>Mz</span>, <span>Mz+1</span>, and <span>Mw/Mn</span>), as well as an <span>Error </span>metric, which indicates how closely the generated data matches the experimental data. A value of <span>NAN </span>(a non-number) is displayed if there are no experimental data to match. This is a least-squares measurement of the agreement between the experimental data and the calculated G' and G" results. This can be used to guide the user in determining the optimum Mw and MWD values, since the smaller the value, the better the fit between the data sets.</p>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Running"></a>Running the&#160;Optimizer Algorithm</h2>
+        <p>Once the correct material database is selected and the initial values of the MWD to synthesize have been selected, start the optimization  by clicking <span>Optimize</span>.</p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;" value="1"><span>Optimize</span>: Find the best set of parameters by automatically adjusting them to minimize the difference between the experimental data and the calculated data. This button is converted to an <span>Abort </span>button while the optimizer is running. Clicking <span>Abort </span>signals the system to terminate the optimization now and display the current best set of parameters. </li>
+            <li class="bullet" style="margin-top: 8px;" value="2"><span>Calculate</span>: Generate a new solution given the current set of parameters. This function does only a single iteration step. Use this function to manually optimize the solution.
+</li>
+            <li class="bullet" style="margin-top: 8px;" value="3"><span>Auto Solution Update</span>: When checked, this causes a new solution to be automatically generated when a parameter is changed by the user. This is useful for manually finding a good fit of the data.</li>
+            <li class="bullet" style="margin-top: 8px;" value="4"><span>Exit</span>: Exits the MWD user interface.
+</li>
+        </ul>
+        <h2>Viewing the Results</h2>
+        <p>By closing the MWD user interface, the model curve for the storage and loss modulus are plotted on the active plot and the results stamped on the plot. </p>
+        <ul>
+            <li class="bullet" value="1"><span>Create File</span>: Extracts the molecular weight distribution. A new data file is generated with the molecular weight distribution information (<span>Mw</span>, <span>w(M)</span>, <span>w(M)*Mw)</span>. <span>Mn</span>, <span>Mw</span>, and <span>Mz </span>are saved as scalars in the spreadsheet.
+Use the delete buttons to delete the active model or all models on the active plot
+</li>
+        </ul>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Material"></a>Material Database</h2>
+        <p style="margin-top: 8px;">Click <span>Edit </span>in the <span>Material </span>section to open the material database. For each material type, the following model parameters are needed in order to obtain a correct molecular weight distribution.
+</p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;" value="1"><span>Material Type</span>: Enter here the reference name of the material type.</li>
+            <li class="bullet" style="margin-top: 8px;" value="2"><span>Test Desc.</span>: This is a description field for additional information.</li>
+            <li class="bullet" style="margin-top: 8px;" value="3"><span>Test Temperature</span>: This is the reference temperature for the model parameters.</li>
+            <li class="bullet" style="margin-top: 8px;" value="4"><span>Relax. Time Exponent</span>: This is typically in the range of 3.3 to 3.6 for most polymers.</li>
+            <li class="bullet" style="margin-top: 8px;" value="5"><span>Plateau Modulus</span>: The plateau modulus is the value of G’ at the frequency where G” has a minimum in the rubbery region and is characteristic for a polymer type. The plateau modulus is a critical parameter and needs to be accurately determined in order to obtain good results. </li>
+            <li class="bullet" style="margin-top: 8px;" value="6"><span>Activation Energy</span>: The activation energy is important when the data temperature of the active data file is different from the data base test temperature. If the experimental data represent a master curve obtained using the TTS function (Rheology only), use the activation energy obtained by fitting the shift factor using the <span>Activation Energy</span> model.</li>
+            <li class="bullet" style="margin-top: 8px;" value="7"><span>Front Factor</span>: The front factor is a sort of calibration parameter and relates a given chain reputation time to the molecular weight. Among all database parameters, this is most sensitive to temperature.</li>
+            <li class="bullet" style="margin-top: 8px;" value="8"><span>Monomer Mw</span>: This is the mol mass of the monomer.</li>
+            <li class="bullet" style="margin-top: 8px;" value="9"><span>Entanglement Mw</span>: This is the average molecular weight Me between entanglements.</li>
+            <li class="bullet" style="margin-top: 8px;" value="10"><span>Reptation Mw</span>: This molecular weight is characteristic for the reputation process and is typically twice the entanglement molecular weight.
+</li>
+        </ul>
+        <p>Material parameters can be edited and saved when the form is closed normally (clicking <span>OK</span>).  <span>Cancel </span>exits the form without saving the changes. If the database does not include the desired polymer type, a new material entry can be created and added to the material data base.</p>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;" value="1"><span>Add New Materials</span>: Clicking this button opens an instruction message: <span>Please enter the material details and press ‘Submit New material'.</span> Click <span>OK</span>. An empty database form opens. Fill out all the fields and click <span>Submit New Material</span>. A new material entry is created and attached to the selection list.</li>
+            <li class="bullet" style="margin-top: 8px;" value="2"><span>Default</span>: Resets the default values for an original database material.</li>
+            <li class="bullet" style="margin-top: 8px;" value="3"><span>Delete</span>: Deletes a user-defined material from the database.</li>
+        </ul>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Notes"></a>Notes on&#160;Calculation of MWD</h2>
+        <p>This function makes use of an algorithm and implementation developed by David Mead and his group at the University of Michigan, and is licensed to TA Instruments for incorporation in Orchestrator/TRIOS Software.</p>
+        <p>The quantitative relationship that relates the observed mechanical properties of a polydisperse melt and the underlying polymer structure is called a mixing rule. The mixing rule is a relatively simple mathematical approximation to a more complex molecular theory of polydispersity. The double reptation mixing rule used in the TA Orchestrator has the following mathematical structure:
+</p>
+        <p>
+            <img src="../image/math/MWDEq2.jpg" />
+        </p>
+        <p>Here, G(t) is the relaxation modulus which can be determined from various linear viscoelasticity experiments, in the present implementation from G’(<span class="SYMBOL">w</span>) and G”(<span class="SYMBOL">w</span>). The function F<sup>1/2</sup>(M,t) is the monodisperse relaxation function which represents the time dependent fractional stress relaxation of a monodisperse polymer following a small step strain. W(M) is the weight based MWD, that is w(M)dM represents the weight fraction of material with molecular weights between M and M+dM. Physically, all components of the MWD will contribute to the modulus to some extent. The magnitude of each component's contribution to the stress will depend on the details of the interaction with the other molecules in the MWD.</p>
+        <h3>Material-Dependent Input Parameters
+</h3>
+        <p>To calculate an MWD for a given material using the equation above, it will be necessary to supply material dependent information to the application. Specifically, the plateau modulus G<sub>N</sub> and the form of the monodisperse relaxation function F<sup>1/2</sup>(M,t) must be supplied. The plateau modulus is tabulated in several references. The monodisperse relaxation function can take several forms. Generally, we shall use a single exponential form:</p>
+        <p>
+            <img src="../image/math/MWDEq3.jpg" />
+        </p>
+        <p>Here,<span class="SYMBOL">l</span>(M) is the characteristic relaxation time for the monodisperse system and K(T) is a coefficient (front factor)  that depends on temperature. The exponent x is typically ~3.4 for flexible polymers. The Doi-Edwards terms are higher terms of the monodisperse relaxation function.</p>
+        <h2><a name="Referenc"></a>References
+</h2>
+        <ol>
+            <li class="NumberedIndent" value="1">Mead,D.J.Rheol. <u>38</u>,1797 (1994).
+</li>
+            <li class="NumberedIndent" value="2">TAI, "How to use the MWD Module", PN06 MWD1 (1998).
+</li>
+            <li class="NumberedIndent" value="3">TAI, "Parameters for Mw and MWD Calculation", PN07 MWD2 (1998).
+</li>
+            <li class="NumberedIndent" value="4">TAI, "Analytical Rheology: Determination of the Molecular Weight Distribution form Linear Viscoelastic Data", AAN006a.(1998).
+</li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

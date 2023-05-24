@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.Thermal General" class="" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Creating a Baseline</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <h1><a name="top"></a>Creating a Baseline</h1>
+        <p>The Baseline feature allows you to transform one open graph by adding y-coordinate values from another open graph.  Follow the steps below to either subtract or add the baseline.</p>
+        <ol>
+            <li style="margin-top: 6px;" value="1">Open the baseline reference file.</li>
+            <li style="margin-top: 6px;" value="2">Open the desired sample file and select the desired signals that will be used to perform operations with the baseline reference file.</li>
+            <li style="margin-top: 6px;" value="3">Make sure that the sample data file window is currently active. Right-click on the graph and select <span class="boolean">Baseline</span> from the menu. </li>
+        </ol>
+        <p>
+            <img src="../image/Other/Baseline_right-click menu.png" style="padding-left: 40px;" />
+        </p>
+        <ol MadCap:continue="true">
+            <li value="4">The Baseline dialog box displays. Select the desired reference file to be used as the baseline from the available list.</li>
+        </ol>
+        <p>
+            <img src="../image/Other/Baseline dialog.png" style="padding-left: 40px;" /> </p>
+        <ol MadCap:continue="true">
+            <li style="margin-top: 6px;" value="5">Check the desired signal(s) from those shown in the <span class="boolean">Variables</span> box.</li>
+            <li style="margin-top: 6px;" value="6">Click on the desired Base: <span class="boolean">Time</span> or <span class="boolean">Temperature</span>.</li>
+            <li style="margin-top: 6px;" value="7">Click on the desired operation: <span class="boolean">Add</span> or <span class="boolean">Subtract</span> the baseline file.</li>
+            <li style="margin-top: 6px;" value="8">Click on the desired signal match: <span class="boolean">Name and units</span> or <span class="boolean">Units</span> only.</li>
+            <li style="margin-top: 6px;" value="9">Select <span class="boolean">Limit data to the range of the reference</span> if the baseline file has a smaller range than the sample file, otherwise the resulting graph will be incomplete.</li>
+            <li style="margin-top: 6px;" value="10">Click <span class="boolean">OK</span>. The resulting data is displayed.</li>
+        </ol>
+        <ul>
+            <li class="NoteIndent" value="1">NOTE: A baseline signal will be added to or subtracted from each data file signal that has the same units and/or signal name. Those signals that are not compatible between the files are not used.</li>
+            <li class="NoteIndent" value="2">NOTE: The baseline addition/subtraction is only applied to y-axis signals. It is not applied to x-axis signals. If, for example, you wish to subtract the temperature signal, plot temperature on the y-axis instead of the x-axis, then perform the baseline subtraction.</li>
+        </ul>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

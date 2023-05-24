@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" conditions="Primary.ARES-G2,Primary.TRIOS,Primary.Rheology" MadCap:conditions="Primary.TRIOS" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Manually Rescaling a Graph</title>
+        <link href="../Resources/TableStyles/InThisTopic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <body>
+            <h1><a name="top"></a>Manually Rescaling a Graph</h1>
+        </body>
+        <table class="TableStyle_InThisTopic" style="border-collapse: separate;caption-side: top;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/InThisTopic.css');" cellspacing="0">
+            <caption>
+                <p><span style="color: #000080;font-size: 8pt;font-weight: bold;font-family: Verdana;">In this topic</span>
+                </p>
+            </caption>
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Accessin" target="_self" class="tablenavigationbody selected">Accessing the Manual Rescale Window</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowEnd_ColEnd"><a href="#Using" target="_self" class="tablenavigationbody selected">Using the Manual Rescale Window</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Use manual scaling options to set the plot to specifically defined limits, as well as to specify properties such as scaling type (linear, log, or absolute) and tick mark preferences.
+ In order to use the functions below, <a href="Opening a Data File.htm">open a TRIOS data file</a> and <a href="Using the Graph View.htm">select the <span>Graph </span>view</a>.</p>
+        <h2><a name="Accessin"></a>Accessing the Manual Rescale Window
+</h2>
+        <p>To access the scaling functions, use one of the following methods:</p>
+        <ul>
+            <li value="1">	Right-click on an axis and select <span style="color: #00008b;font-weight: bold;"> Scaling</span> <img src="../image/icons/Icon-ManualScale.jpg" class="imgInline" /> from the pop-up menu. </li>
+            <li value="2">Select <span>Format</span>tab &gt;&#160;<span>Scaling</span>toolbar &gt;&#160;<b style="color: #00008b;">Manual</b> <img src="../image/icons/Icon-ManualScale.jpg" class="imgInline" />.</li>
+        </ul>
+        <h2><a name="Using"></a>Using the Manual Rescale Window</h2>
+        <p>To rescale your selected axis manually:</p>
+        <ul>
+            <li class="NumberedIndent" value="1" style="margin-top: 8px;">Select the desired <b style="color: #00008b;">Scaling type: </b><span>Linear</span>,
+<span>Log base 10</span>, or
+<span>Natural log</span>.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Check the <span style="color: #00008b;font-weight: bold;">Absolute</span> (scaling) box to display all negative values as positive.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Select<span style="color: #00008b;font-weight: bold;"> Manual</span> as your scaling type.  When data is first displayed, <span>Automatic </span>scaling is used. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Enter the desired<span style="color: #00008b;font-weight: bold;"> Minimum</span> and <span style="color: #00008b;font-weight: bold;">Maximum</span> axis limits.</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="5">The minimum limit determines the signal value at which the axis begins.&#160;</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="6">The maximum limit determines the signal value at which the axis ends. </li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="7">  By default, the current values display when you switch between automatic and manual scaling options; values displayed are based on your scaling type selection. </li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="8">For log axis scaling, the limit must be at a full decade interval.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5">Enter the desired <span style="color: #00008b;font-weight: bold;">Tick mark</span> parameters.  The displayed options are based on the scaling type selection.
+</li>
+        </ul>
+        <h3>Log Scale</h3>
+        <p>
+            <img src="../image/TRIOS/graph scaling window.png" />
+        </p>
+        <ul>
+            <li class="LetterIndent" style="margin-top: 8pt;" value="1">Enter the desired <span style="color: #00008b;font-weight: bold;">Number of decades</span> per major tick interval.
+</li>
+            <li class="LetterIndent" style="margin-top: 8pt;" value="2">Select <span style="color: #00008b;font-weight: bold;">Display log sub-ticks</span> to show tick interval within a decade. </li>
+        </ul>
+        <h3>Linear Scale</h3>
+        <p>
+            <img src="../image/TRIOS/linear scale.png" />
+        </p>
+        <ul>
+            <li class="LetterIndent" style="margin-top: 8pt;" value="1">Select between <span>Use divisions</span> (total # of ticks) and <span style="color: #00008b;font-weight: bold;">Use intervals</span> (define tick interval based on signal value).  The label interval determines how often the axis is numbered. 
+</li>
+            <li class="LetterIndent" style="margin-top: 8pt;" value="2"> 
+If <span>Use divisions</span> is selected, enter the desired number of <span>Label divisions</span> and <span>Tick divisions</span> for your label marks. 
+</li>
+            <li class="LetterIndent" style="margin-top: 8pt;" value="3"> 
+If <span>Use intervals</span> is selected, enter the desired <span>Label interval</span>, <span>Tick interval</span>, and <span>Label offset</span>. 
+</li>
+            <li class="NoteIndent" value="4">NOTE: The offset is the place on the axes where you want the first label to appear. The first label offset enables you to start labeling the graph at any point you choose. For example, if the axis starts at 0.03, but you want the first label to appear at 0.05, enter 0.02 (the difference between the start limit and the point on the axis where you want the first label to appear).
+
+</li>
+            <li class="NumberedIndent" value="6">Click <span style="color: #00008b;font-weight: bold;">OK</span> when completed. The graph will be rescaled using all of the options chosen.
+</li>
+        </ul>
+        <p><a href="#top" target="_self" class="BacktoTop selected">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

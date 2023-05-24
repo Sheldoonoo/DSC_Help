@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" conditions="Primary.ARES-G2,Primary.TRIOS,Primary.Rheology" class="" MadCap:conditions="Primary.TRIOS" MadCap:tocPath="Evaluating Data|Analysis|Available Analysis Functions" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Onset Model</title>
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="top"></a>Onset/Endset Model</h1>
+        <p>The onset/endset point is defined as the intersection of an initial tangent line with a final tangent line. The tangent lines are fitted as follows:</p>
+        <p>
+            <img src="../image/math/OnsetEq.jpg" style="width: 78px;height: 46px;" /> with k=0 to n</p>
+        <p>Select <span class="boolean">Onset</span> when determining the intersection of two lines when the inflection occurs after the initial tangent (baseline).</p>
+        <p>
+            <img src="../image/TRIOS/onsetgraph1.png" />
+        </p>
+        <p>Select <span class="boolean">Endset</span> when determining the intersection of two lines then the inflection occurs before the final tangent (baseline).</p>
+        <p>
+            <img src="../image/TRIOS/onsetgraph2.png" />
+        </p>
+        <h2>Using This Model</h2>
+        <p>Use the Onset/Endset Point analysis option to determine the point at which a change in the slope of the curve occurs (i.e., the onset point of a transition). See <a href="Analyzing Data.htm#Using">Using the Analysis Settings Options</a> to select associated analysis options before beginning.</p>
+        <h3>When to use Onset vs. Endset</h3>
+        <p>In TRIOS versions up to 2.5.2, the <span class="boolean">Onset</span> model should be used when the flat asymptote is to the left of the transition region when plotted on temperature:</p>
+        <p>
+            <img src="../image/TRIOS/onsetgraph3.png" />
+        </p>
+        <p>The <span class="boolean">Endset</span> model should be used when the flat asymptote is the right of the transition region when plotted on temperature:</p>
+        <p>
+            <img src="../image/TRIOS/onsetgraph4.png" />
+        </p>
+        <p>The difference between the two becomes important when the transition region is characterized using the inflection option in the analysis settings since the inflection point is determined by identifying the point where the slope attains its maximum value either to the left or right of the region:</p>
+        <p>
+            <img src="../image/TRIOS/onsetgraph5.png" />
+        </p>
+        <p>If, on the other hand, the tangent or manual tangent setting is used for the transition region, the two models become completely equivalent since you set the inflection point manually and the models are no more than a simple intersection of two given straight lines:</p>
+        <p>
+            <img src="../image/TRIOS/onsetgraph6.png" />
+        </p>
+        <h3>Procedure</h3>
+        <ol>
+            <li class="NumberedIndent" value="1">Click on the desired Curve to analyze.
+</li>
+            <li class="NumberedIndent" value="2">Select <span>Onset point</span> from the <span>Analysis </span>&gt; <span>Functions </span>menu based on the transition as described above. </li>
+            <li class="NumberedIndent" value="3">To define the analysis region, select from one of the following options:</li>
+        </ol>
+        <blockquote>
+            <ul>
+                <li value="1">Using the mouse, select the analysis region by dragging the mouse along the curve, then proceed to <a href="#4" class="selected">step 4</a>.</li>
+                <li value="2">Select <span>Set Limits</span> <img src="../image/TRIOS/set limits.png" class="imgInline" />. Markers display on the graph. The number of markers displayed vary based on the analysis options selected.</li>
+            </ul>
+            <blockquote>
+                <ul>
+                    <li value="1">Using the mouse, position the markers in the desired location as described <a href="#position" class="selected">below</a>, OR</li>
+                </ul>
+            </blockquote>
+            <blockquote>
+                <ul>
+                    <li value="1">Manually enter the limits through the <span class="boolean">Limits</span> window within the <span class="boolean">Analysis</span> &gt; <span class="boolean">Function</span> &gt; &#160;<span class="boolean">Settings</span> option.</li>
+                </ul>
+            </blockquote>
+        </blockquote>
+        <blockquote>
+            <p><a name="position"></a>To position the markers:</p>
+        </blockquote>
+        <ul>
+            <li class="SubBulletIndent" value="1">Tangent options (2 markers): Place first marker where you want the data for the tangent line to begin. Position the second marker where you want the second tangent line to end.  
+</li>
+            <li class="SubBulletIndent" value="2">If you are using manual mode to define the tangents,  position two markers where you want the start and stop limits for each individual tangent line. </li>
+            <li class="SubBulletIndent" value="3">When the transition type is inflection, the analysis routine will locate the inflection between the analysis range so be sure to bracket this region between the two analysis (tangent) markers.</li>
+        </ul>
+        <ol>
+            <li class="NumberedIndent" value="4"><a name="4"></a>Once the markers are positioned in the desired location, click <span>Start </span><img src="../image/icons/start.png" class="imgInline" /> to execute the analysis. Alternatively, you can manually enter the limits through the <span>Analysis </span>window. Select  <span>Cancel </span><img src="../image/icons/cancel.png" /> to cancel from the analysis functions.</li>
+        </ol>
+        <h2>Onset/Endset Analysis Options
+</h2>
+        <p><span>Onset/Endset Type</span>: Select between the following options:
+</p>
+        <ul>
+            <li value="1"><span>Tangent</span>: Uses the selected point to calculate a tangent line</li>
+            <li class="bullet" value="2"><span>Manual tangent</span>: Allows  you to define the start and stop limits for the onset tangent line
+</li>
+        </ul>
+        <p><span>Transition Type</span>: Select between the following options:
+</p>
+        <ul>
+            <li class="bullet" value="1"><span>Tangent</span>: Uses the selected point to calculate a tangent line </li>
+            <li class="bullet" value="2"><span>Manual tangent</span>: Allows  you to define the start and stop limits for the inflection tangent line</li>
+            <li class="bullet" value="3"><span>Inflection</span>: Determines the inflection point between the onset and end limits  
+</li>
+        </ul>
+        <p>To delete the analysis, select the desired analysis then select <img src="../image/icons/Trash.png" class="imgInline" /> from the <span>Analysis </span>menu. Use <img src="../image/icons/Trash1.png" class="imgInline" /> to delete all analyses.</p>
+        <p>&#160;</p>
+        <p><b>See Also</b>
+        </p>
+        <p><a href="Available Analysis Functions.htm#Adjustin">Adjusting an Analysis Result</a>
+        </p>
+        <p><a href="Analyzing Data.htm">Basic Steps to Analyzing Data</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

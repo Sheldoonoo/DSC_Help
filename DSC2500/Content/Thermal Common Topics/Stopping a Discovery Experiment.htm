@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html conditions="Primary.DSC" MadCap:conditions="Primary.Thermal General" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Discovery DSC|Running Discovery DSC Experiments" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Stopping a Discovery Experiment</title>
+        <link href="../Resources/TableStyles/InThisTopic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="top"></a>Discovery Instrument: Stopping an Experiment and/or Run Sequence</h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../Resources/TableStyles/InThisTopic.css');margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+            <caption>In this topic </caption>
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Stopp" class="tablenavigationbody selected">Stopping an Experiment</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowEnd_ColEnd"><a href="#Stopping" class="tablenavigationbody selected">Stopping the Autosampler&#160;Sequence</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>When an experiment is in progress, you can stop the experiment and/or sequence.</p>
+        <h2><a name="Stopp"></a> 
+
+Stopping an&#160;Experiment</h2>
+        <p>There are several ways to halt an experiment and save the data:  </p>
+        <ul>
+            <li class="bullet" value="1">From the <span class="boolean">Experiment</span> tab (Discovery TGA shown):</li>
+        </ul>
+        <p>
+            <img src="../image/Other/Thermal Start Exp.png" style="padding-left: 40px;" />
+        </p>
+        <ul MadCap:conditions="Primary.Mercury DSC">
+            <li value="1">From the instrument user interface, press Stop <img src="../image/icons/DSC2_stop_44x44.png" style="vertical-align: baseline;width: 44;height: 44;" />.</li>
+        </ul>
+        <p>After pressing <span>Stop</span>, the End of Test conditions activate. The end of test temperature conditions are defined within the <span>Advanced </span>setting of the experiment.  The other end of test/sequence conditions are defined through the Discovery <span>Options</span>. For more information on the Discovery Options, see <a href="../DSC 25 250 2500 Topics/Configuring the Instrument_DSC2.htm"><MadCap:conditionalText MadCap:conditions="Primary.Mercury DSC">Configuring Instrument Options</MadCap:conditionalText></a>.</p>
+        <h2><a name="Stopping"></a>Stopping the Autosampler Sequence</h2>
+        <p>When an Autosampler sequence is in progress, the following stop options are available through TRIOS software only, and not through the <MadCap:conditionalText MadCap:conditions="Primary.Mercury DSC">user interface.</MadCap:conditionalText> <![CDATA[ ]]></p>
+        <p MadCap:conditions="Primary.Mercury DSC">
+            <img src="../image/DSC 25 250 2500/StopOptions.jpg" />
+        </p>
+        <ul>
+            <li class="bullet" value="1"><span>Stop Immediately</span>: Select this Autosampler stop option to immediately halt the active run or action (e.g., air cool) and terminate the sequence.</li>
+            <li class="bullet" value="2"><span>Stop After&#160;Current Run</span>: Select this Autosampler stop option to halt the sequence upon the conclusion of the current run.</li>
+            <li class="bullet" MadCap:conditions="Primary.Mercury DSC" value="3"><span class="boolean">Stop the Current Run and Continue to the Next</span>: Select this Autosampler stop option to immediately halt the active run and continue to the next run in the sequence.</li>
+        </ul>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

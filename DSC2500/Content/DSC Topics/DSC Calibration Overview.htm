@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html conditions="" class="" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Using the Discovery DSC|Calibrating the Discovery DSC" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Discovery DSC Calibration Overview</title>
+        <link href="../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/InThisTopic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1 class="Body"><a name="top"></a>Discovery DSC Calibration Overview</h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../Resources/TableStyles/InThisTopic.css');caption-side: top;margin-left: 0;margin-right: auto;" cellspacing="0">
+            <caption>In this topic</caption>
+            <col />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Discover" class="tablenavigationbody selected">Discovery DSC&#160;Cell Calibrations</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Addition" class="tablenavigationbody selected">Additional Discovery DSC&#160;Calibrations</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#When" class="tablenavigationbody selected">When to Calibrate</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowEnd_ColEnd"><a href="#Calibrat" class="tablenavigationbody selected">Calibration Summary</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Discover"></a>Discovery DSC&#160;Cell Calibrations</h2>
+        <p class="Body">To obtain the most accurate experimental results, calibrate the DSC cell upon initial installation and recalibrate periodically. These experiments are performed using TRIOS software. For details on how to perform calibrations, refer to appropriate linked topics in this section.
+</p>
+        <p class="Body">Calibration consists of several different types of procedures, which are described briefly below.</p>
+        <ul>
+            <li class="NoteIndent" value="1">NOTE: Perform calibration runs that encompass the temperature range you plan to use in your experiments. (We recommend calibration over the widest temperature range.) If your subsequent experiments cover a wider range, you may wish to recalibrate.
+</li>
+            <li class="NoteIndent" value="2">NOTE: Please make sure that you run your experiments with the same purge gas that you used to calibrate the system. For example, if you calibrate using a nitrogen purge, perform your subsequent experiments with a nitrogen purge.</li>
+        </ul>
+        <h3 class="Body">Tzero<sup>®</sup> Calibration*</h3>
+        <p class="Body" MadCap:conditions="Primary.Mercury DSC">The <a href="../DSC 25 250 2500 Topics/Cal TZero.htm">DSC Tzero calibration</a> requires two experiments. The first experiment is done without samples or pans (baseline); the second is performed with large (approximately 95 mg) sapphire disks (without pans) on both the sample and reference positions. Both experiments use the same method, beginning with an equilibration at an initial temperature, followed by holding isothermal for ten minutes, heating at constant rate to a final temperature, and holding isothermal for ten minutes. The temperature range  should be at least as broad as the expected range  of subsequent DSC experiments. Tzero calibration should be done at relatively high heating rates (such as 20°C/min) in order to obtain the most accurate calibration of the sensor thermal capacitance and resistance values. Rates of less than 10°C/min are not recommended for Tzero calibration.</p>
+        <p class="Body" style="font-weight: bold;">* Tzero<sup>®</sup> describes proprietary technology invented by TA Instruments—Waters LLC and patented by TA Instruments—Waters LLC (U.S. Patent No. 6,431,747).</p>
+        <p class="Body" style="font-weight: bold;">&#160;</p>
+        <h3>T1 Baseline Calibration (Discovery DSC2500, DSC250, and DSC25 Only)</h3>
+        <p>The <a href="../DSC 25 250 2500 Topics/Cal T1.htm">baseline slope and offset calibration</a> involves heating an empty cell through the entire temperature range expected in subsequent experiments.  The calibration program is used to calculate the slope and offset values needed to flatten the baseline and zero the heat flow signal. Baseline Slope is a calibration constant that accounts for the baseline slope of an empty cell.  The baseline slope is calculated from data gathered as an empty cell is heated through the temperature range expected in subsequent experiments. Default is 0.00. Baseline Offset is a calibration factor that shifts the curve up or down along the Y-axis to balance the heat flow at the sample and reference thermocouple positions. The baseline offset is calculated from data gathered as an empty cell is heated through the temperature range expected in subsequent experiments.</p>
+        <p class="Body" style="font-weight: bold;">&#160;</p>
+        <h3 class="Body">Enthalpy (Cell) Constant</h3>
+        <p MadCap:conditions="Primary.Mercury DSC">The <a href="../DSC 25 250 2500 Topics/Cal Cell Constant Temp.htm">Enthalpy (Cell) Constant calibration</a> is based on an experiment in which a calibration melting standard (for example, indium) is heated through its melting transition. The calculated heat of fusion is compared to the theoretical value. The cell constant is the ratio between these two values. The onset slope, or thermal resistance, is a measure of the suppression of temperature rise that occurs in a melting sample in relation to the measuring thermocouple. Theoretically, a standard sample should melt at a constant temperature. As it melts and draws more heat, a temperature difference develops between the sample and the sample thermocouple. The thermal resistance between these two points is calculated as the onset slope of the heat flow versus temperature curve on the front of the melting peak. The onset value is used for kinetic and purity calculations to correct for this thermal resistance.</p>
+        <p>The prerequisite for Enthalpy Cell Constant calibration is Tzero calibration.</p>
+        <p>&#160;</p>
+        <h3>Temperature</h3>
+        <p MadCap:conditions="Primary.Mercury DSC"><a href="../DSC 25 250 2500 Topics/Cal Cell Constant Temp.htm">Temperature calibration</a> is based on an experiment in which a temperature standard (for example, indium) is heated through its melting transition. The extrapolated onset of the recorded melting point of this standard is compared to the known melting point, and the difference is recorded for temperature calibration. The same file used for the cell constant calibration can be used for this calibration.
+</p>
+        <p>In addition, you can use up to four other standards to calibrate temperature. If you use three or more standards, the temperature correction is modeled by a cubic spline fit. The multiple-point temperature calibration is more accurate than the one-point calibration if absolute temperature measurements are required over a broad (&gt;300°C) temperature range. If multipoint temperature calibration is used, it is recommended that you choose standards that will bracket the desired measurement temperature range. This will ensure optimal calibration and performance.
+</p>
+        <p>The prerequisite for Temperature calibration is Tzero calibration.</p>
+        <ul>
+            <li class="CautionIndent" value="1">Use caution when using reference materials other than Indium, as several of these materials alloy with aluminum pans or have less certain known values for the onset temperature.</li>
+        </ul>
+        <h3 class="Body">Standard Heat Capacity</h3>
+        <p class="Body" MadCap:conditions="Primary.Mercury DSC"> <a href="../DSC 25 250 2500 Topics/Cal Direct Heat Cap.htm">Standard Heat Capacity calibration</a> can be obtained in a single experiment with the Discovery DSC. Heat capacity calibration is required  to measure an accurate value of the sample’s heat capacity. The calibration uses a standard material with a known heat capacity over a specific temperature range of interest. Reference data is available for sapphire and polystyrene. You can also generate your own reference tables for other materials. Calibration should be done at a heating or cooling rate of 10 to 20°C/min.
+</p>
+        <p class="Body">The heat capacity calibration curve is calculated by dividing the theoretical value of heat capacity by the measured value over a specific temperature range. The resultant calibration data, as a function of temperature, is programmed in the instrument.
+</p>
+        <p class="Body">The prerequisites for Standard Heat Capacity calibration are Tzero, Cell Constant, and Temperature calibrations.</p>
+        <p class="Body">&#160;</p>
+        <h3 class="Body">MDSC Heat Capacity</h3>
+        <p MadCap:conditions="Primary.Mercury DSC"><a href="../DSC 25 250 2500 Topics/Reversing Heat Calibration.htm">MDSC Heat Capacity calibration</a> is only required to measure the accurate value of the sample’s heat capacity or when using periods less than or equal to 40 seconds. The calibration uses a standard sapphire material with a known heat capacity over a specific temperature range of interest. Reference data is available for sapphire and polystyrene. You can also generate your own reference tables for other materials. The calibration experiment should be run under similar conditions (pan type, modulation amplitude, period, and heating rate) to those that will be used for subsequent MDSC samples. The heating rate can be set to the same as subsequent experiments or a nominal value of 5°C/min can be used.</p>
+        <p>The Reversing Heat Capacity calibration curve is calculated by dividing the theoretical value of heat capacity, as a function of temperature, by the measured value. The resultant calibration data, as a function of temperature, is programmed in the instrument.</p>
+        <p>The prerequisites for MDSC Heat Capacity calibration are Tzero, Cell Constant, and Temperature calibrations.</p>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2 class="Body"><a name="Addition"></a>Additional Discovery DSC&#160;Calibrations</h2>
+        <p>&#160;</p>
+        <table class="TableStyle-Basic" style="margin-left: 0;margin-right: auto;caption-side: top;mc-table-style: url('../Resources/TableStyles/Basic.css');" cellspacing="0">
+            <caption>Calibration Tasks and Recommended Intervals</caption>
+            <col style="width: 270px;" class="Column-Column1" />
+            <col style="width: 243px;" class="Column-Column1" />
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: left;padding-left: 4px;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;"><span style="color: #00008b; font-weight: bold; font-family: Arial; font-size: 11pt;">Calibration Task</span>
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: left;padding-left: 4px;border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: #000000;"><span style="color: #00008b; font-weight: bold; font-family: Arial; font-size: 11pt;">Calibration Interval</span>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1"><a href="Setting Up Calibration Standard.htm">Setting Up Calibration&#160;Standards</a>
+                    </td>
+                    <td class="BodyD-Column1-Body1">As needed</td>
+                </tr>
+                <tr class="Body-Body1" MadCap:conditions="Primary.Mercury DSC">
+                    <td class="BodyB-Column1-Body1"><a href="../DSC 25 250 2500 Topics/Calibrating the Autosampler.htm">Calibrating the Discovery DSC Autosampler</a>
+                    </td>
+                    <td class="BodyA-Column1-Body1">
+                        <p>As needed</p>
+                        <p>Mandatory after replacement of cell</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="When"></a>When to Calibrate
+</h2>
+        <ul>
+            <li style="margin-top: 8px;" value="1">For optimum experimental results,  perform all <a href="#Discover" class="selected">DSC cell calibrations</a> whenever you change one of the following parameters:
+</li>
+        </ul>
+        <ul>
+            <li class="SubBulletIndent2" style="margin-bottom: 6px;margin-left: 45px;margin-top: 8px;" value="1">First use of a new cell</li>
+            <li class="SubBulletIndent2" style="margin-bottom: 6px;margin-left: 45px;margin-top: 8px;" value="2">Installation of new lid
+</li>
+            <li class="SubBulletIndent2" style="margin-bottom: 6px;margin-left: 45px;margin-top: 8px;" value="3">Purge gas change</li>
+            <li class="SubBulletIndent2" style="margin-bottom: 6px;margin-left: 45px;margin-top: 8px;" value="4">Cooling device or accessory (FACS, RCS, or Quench Cooler) change</li>
+        </ul>
+        <ul>
+            <li class="bullet" style="margin-top: 8px;" value="1">Perform the <a href="#Addition" class="selected">additional Discovery DSC calibrations</a> in intervals specified in the table.</li>
+        </ul>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <p>&#160;</p>
+        <h3>Basic Calibration Steps
+</h3>
+        <p>Some calibrations are dependent upon other calibration results; therefore, calibration is performed in a hierarchical order as described below.
+</p>
+        <ol>
+            <li style="margin-top: 8px;" MadCap:conditions="Primary.Mercury DSC" value="1"><a href="../DSC 25 250 2500 Topics/Cal TZero.htm">Tzero Calibration</a>
+            </li>
+            <li class="LetterIndent" style="margin-top: 8px;" value="1">Set up and run Tzero calibration experiments.</li>
+            <li class="LetterIndent" style="margin-top: 8px;" value="2">Analyze and apply Tzero calibration results.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2"><a href="../DSC 25 250 2500 Topics/Cal T1.htm">T1 Calibration (Discovery DSC2500, DSC250, and DSC25 only)</a>
+            </li>
+            <li class="LetterIndent" value="1">Set up and run T1 calibration experiments.</li>
+            <li class="LetterIndent" value="2">Analyze and apply T1 calibration results.</li>
+        </ol>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" MadCap:conditions="Primary.Mercury DSC" value="3"><a href="../DSC 25 250 2500 Topics/Cal Cell Constant Temp.htm">Cell Constant and Temperature</a>
+            </li>
+            <li class="LetterIndent" style="margin-top: 8px;" value="1">Set up and run Cell Constant and Temperature calibration experiments.</li>
+            <li class="LetterIndent" style="margin-top: 8px;" value="2">Analyze and apply Cell Constant and Temperature calibration results.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Heat Capacity (optional)</li>
+            <li class="LetterIndent" style="margin-top: 8px;" value="1" MadCap:conditions="Primary.Mercury DSC">Set up and run <a href="../DSC 25 250 2500 Topics/Cal Direct Heat Cap.htm">Standard Heat Capacity</a> calibration experiment (if desired).</li>
+            <li class="LetterIndent" style="margin-top: 8px;" value="2" MadCap:conditions="Primary.Mercury DSC">Set up and run <a href="../DSC 25 250 2500 Topics/Reversing Heat Calibration.htm">MDSC Heat Capacity</a> calibration experiment (if desired).</li>
+            <li class="LetterIndent" style="margin-top: 8px;" value="3">Analyze and apply standard heat capacity calibration results.</li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h3>Auto Calibration and Scheduling Runs</h3>
+        <p>You can schedule your calibrations to run automatically  by accessing Calibration Setup. Calibrations can be run immediately, sent to a queue, or scheduled to be run at a later date.</p>
+        <p>TRIOS must be connected to the instrument, open, and running, for the scheduled experiments to run. If TRIOS is opened after the time a run was scheduled for, then the next experiment or sequence in the schedule list will run at its scheduled time.</p>
+        <h4>Setting Up Auto Calibration</h4>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Select the <span class="boolean">Calibration</span> tab from the File Manager.</li>
+            <li style="margin-top: 8px;" value="2">Click <span class="boolean">Calibration Setup</span>. <br /><br /><img src="../image/TRIOS/File Manager_Calibration Setup.png" /><br /></li>
+            <li style="margin-top: 8px;" value="3">The Calibration Setup tab opens. Select the calibration type(s) you wish to perform by selecting the applicable boxes. Additionally, select <span class="boolean">Cell Conditioning</span> and/or <span class="boolean">Baseline Conditioning</span> , if required. For more details on creating an auto calibration or schedule for a specific calibration, refer to the links below.<ul><li style="margin-top: 8px;" value="1"><span class="boolean">Tzero</span> <![CDATA[ ]]></li><li style="margin-top: 8px;" value="2"><span class="boolean">Cell Constant/Temperature</span> – both Cell Constant and Temperature calibrations are performed. Select <span class="boolean">Temperature</span> to run a Temperature-only calibration.</li><li style="margin-top: 8px;" value="3"><span class="boolean">Temperature </span></li><li style="margin-top: 8px;" value="4"><span class="boolean">Heat Capacity</span></li><li style="margin-top: 8px;" value="5"><span class="boolean">Reversing Heat Capacity</span><br /></li></ul><br />Each calibration opens in a new tab, in the order in which the calibration should be performed. </li>
+        </ol>
+        <p class="NoteIndent">
+            <br />
+            <img src="../image/TRIOS/Calibration Setup tab_888x418.png" style="padding-left: 40px;width: 888;height: 418;" />
+        </p>
+        <ol MadCap:continue="true">
+            <li value="4">Set your calibration experiment preferences in each calibration tab.<ul><li style="margin-top: 8px;" value="1">Click <span class="boolean">Add Experiment</span> to add as many experiments as needed (only applicable to Temperature calibration and verification experiments). Use the drop-down menu on the Reference to change the reference type. Once an experiment is added, the <span class="boolean">Remove Experiment</span> button becomes available. <br /><br /></li><li style="margin-top: 8px;" value="2">Select <span class="boolean">Calibration</span> to perform a calibration experiment. Select <span class="boolean">Perform verification after calibration</span> to run a verification experiment after the calibration is generated and applied to the instrument.</li><li style="margin-top: 8px;" value="3">Select <span class="boolean">Verification</span> to perform a verification experiment. Select <span class="state">Perform calibration if verification fails</span> to run a calibration experiment if the verification run fails to meet set criteria. If the calibration fails, a warning message displays and the sequence will continue with the next item in the Running Queue. </li></ul></li>
+            <li style="margin-top: 8px;" value="5">Verify the file path. Specify a new file path if the calibration files are to be saved in a location other than the default location. </li>
+            <li style="margin-top: 8px;" value="6">Select <span class="boolean">Run All</span>, <span class="boolean">Queue All</span>, or <span class="boolean">Schedule All</span>.<ul><li style="margin-top: 8px;" value="1"><span class="boolean">Run All</span>–Sends the calibration experiment to the Running Queue and executes the sequence.
+</li><li style="margin-top: 8px;" value="2"><span class="boolean">Queue All</span>–Sends the calibrations to the Running Queue, where they can be viewed before running. If there are already runs listed in the queue, the added calibrations are appended to the bottom of the list. Calibrations in the queue can be run by clicking <span class="boolean">Start</span> on the Ribbon or will automatically run in the order in which they are listed in the queue when the instrument is in an active state. <br /><img src="../image/TRIOS/Running Queue.png" /></li><li style="margin-top: 8px;" value="3"><span class="boolean">Schedule All</span>– Schedules the calibration to run at a later specified date. The Add New Schedule dialog box allows you to select how often the calibration should be run, the time, and the begin and end date.<br /><img src="../image/Other/Add New Schedule_265x318.png" style="width: 265;height: 318;" /></li></ul></li>
+        </ol>
+        <h4>Scheduling</h4>
+        <p>Once you have added a new schedule (by clicking <span class="boolean">Schedule All</span> in Calibration Experiment Setup), access the <span class="boolean">Experiments</span> tab in the File Manager &gt; <span class="boolean">Schedule</span> tab to view and make changes to scheduled runs. A log of the scheduled run actions appears at the bottom of the page. </p>
+        <p>&#160;</p>
+        <ul>
+            <li class="NoteIndent" value="1">NOTE: For the calibration to run, the <span class="boolean">Enabled</span> box must be checked, the instrument active, and TRIOS running . </li>
+        </ul>
+        <p>
+            <img src="../image/Other/scheduling_745x417.png" style="width: 745;height: 417;" />
+        </p>
+        <p><span class="boolean">Editing a Scheduled Run</span>
+        </p>
+        <ul>
+            <li style="margin-top: 8px;" value="1">Use the drop-down boxes to change the <span class="boolean">Frequency</span> (<span class="state">Once</span>, <span class="boolean">Daily</span>, <span class="boolean">Weekly</span>, or <span class="boolean">Monthly</span>), <span class="state">Time</span>, <span class="boolean">Begin Date</span>, <span class="boolean">End Date</span>.</li>
+            <li style="margin-top: 8px;" value="2">To delete a scheduled run,  highlight the row by clicking in one of the cells. The Delete button becomes enabled. </li>
+        </ul>
+        <h2><a name="Calibrat"></a>Calibration Summary
+</h2>
+        <p MadCap:conditions="Primary.Mercury DSC">A summary of the current calibration can be accessed on the <a href="../DSC 25 250 2500 Topics/Cal Global Calibration Screen.htm">Calibration Data</a> window in&#160;TRIOS&#160;software.</p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

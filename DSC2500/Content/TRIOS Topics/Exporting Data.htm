@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:conditions="Primary.TRIOS" class="" conditions="Primary.TRIOS" MadCap:tocPath="Using TRIOS Software|Using TRIOS File Operations" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" /><title>Importing/Exporting Data</title>
+        <link href="../Resources/TableStyles/InThisTopic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="top"></a>Importing and Exporting Data</h1>
+        <table class="TableStyle_InThisTopic" style="border-collapse: separate;caption-side: top;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/InThisTopic.css');" cellspacing="0">
+            <caption><span style="color: #000080;font-size: 8pt;font-weight: bold;font-family: Verdana;">In this topic</span>
+            </caption>
+            <col style="width: 132px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Importing" target="_self" class="tablenavigationbody selected">Importing Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowEnd_ColEnd"><a href="#Exporting" class="tablenavigationbody selected">Exporting Data</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Importing"></a>Importing Data</h2>
+        <p>TRIOS allows you to easily import .txt, .csv, and .prn files via the Text Import Wizard. The data import functionality has the ability to import a data file even when the instrument is offline, and only is available to the currently connected instrument.<br /> Only one step tests are currently supported.</p>
+        <ol>
+            <li value="1"><a href="Opening a Data File.htm">Open</a> the desired data file in a document. The Text Import Wizard displays. </li>
+        </ol>
+        <ul>
+            <li class="NoteIndent" value="1">NOTE:&#160;Changes made in the Wizard are displayed in the Data Preview section. Text files can include any type of data (such as rich text), but only numerical data will be imported.</li>
+        </ul>
+        <p>
+            <img src="../image/TRIOS/txt file sample_350x354.png" style="vertical-align: text-top;width: 350;height: 354;" /> <img src="../image/math/txt import wizard_374x353.png" style="padding-left: 40px;vertical-align: text-top;width: 374;height: 353;" /></p>
+        <ol MadCap:continue="true">
+            <li value="2">Select the Original Data Type:<ul><li style="margin-bottom: 6px;margin-top: 8px;" value="1"><span class="boolean">Delimited</span>: The data values within the file contain embedded delimiters (characters that separate the words, phrases, or numbers). Specify the character type: <span class="boolean">Tab</span>, <span class="boolean">Semicolon</span>, <span class="boolean">Comma</span>, or <span class="boolean">Space</span>.</li><li style="margin-bottom: 6px;margin-top: 8px;" value="2"><span class="boolean">Fixed Width</span>: The data values contain no embedded delimiters so that each column has a fixed width (up to 10 characters).</li></ul></li>
+            <li style="margin-bottom: 6px;margin-top: 8px;" value="3">Select the row at which the data import should start.</li>
+            <li style="margin-bottom: 6px;margin-top: 8px;" value="4">Select the column variables. Any column with unspecified variables will not be imported. </li>
+            <li style="margin-bottom: 6px;margin-top: 8px;" value="5">Select <span class="boolean">Save Import Settings</span> to have your import settings remembered, or deselect this option to specify your preferences with each import.</li>
+            <li style="margin-bottom: 6px; margin-top: 8px;" value="6">Click <span class="boolean">Finish</span> to start the import.</li>
+        </ol>
+        <h2><a name="Exporting"></a>Exporting Data</h2>
+        <p>TRIOS allows easy export of images (graph) and data tables (spreadsheet) to the clipboard or to a file from the document view. Multiple file export can be performed directly from the File Manager using various formats without opening the files in a document view. Consult the information below.</p>
+        <ol>
+            <li class="NoteIndent" value="1">NOTE:&#160;See Using the Camera for instructions on how to export camera images from TRIOS data files (Rheology only).</li>
+        </ol>
+        <h3>Copying a Graph to the Clipboard</h3>
+        <p>Graphs can be copied to the clipboard by the following method:</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="1"><a href="Opening a Data File.htm">Open</a> the desired file.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="2">	Display the desired graph document.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="3">Copy the graph image by right-clicking on the plot and selecting <span>Copy</span>.</li>
+        </ol>
+        <h3>Copying Spreadsheet Data to the Clipboard</h3>
+        <p>Any range of data can be copied to the clipboard from the spreadsheet and pasted into another application. Follow the instructions below:</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="1"><a href="Opening a Data File.htm">Open</a> the desired file.</li>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="2">	Display the desired spreadsheet document and select the desired data, following the instructions in the table below.
+</li>
+        </ol>
+        <table class="TableStyle-Basic" style="mc-table-style: url('../Resources/TableStyles/Basic.css');margin-left: 0;margin-right: auto;caption-side: top;" cellspacing="0">
+            <caption>Copy Actions</caption>
+            <col style="width: 200px;" class="Column-Column1" />
+            <col style="width: 344px;" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1" style="text-align: center;">Function</th>
+                    <th class="HeadD-Column1-Header1" style="text-align: center;">Action Needed</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Copying an entry</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">Select the entry. Right-click and select <span>Copy </span>from the pop-up menu.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="font-family: Arial;">Copying a column or row</td>
+                    <td class="BodyD-Column1-Body1" style="font-family: Arial;">Click in the header above a column to select the column, or click in the numbered column to select the row. Right-click and select <span>Copy </span>from the pop-up menu.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1" style="font-family: Arial;">Copying multiple cells</td>
+                    <td class="BodyA-Column1-Body1" style="font-family: Arial;">Select multiple cells in a column or row as explained above. Right-click and select <span>Copy </span>from the pop-up menu.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h3>Exporting&#160;Data to a File</h3>
+        <p>To export a single TRIOS&#160;data file from the document view, follow the instructions below:</p>
+        <ul start="1">
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="1"><a href="Opening a Data File.htm">Open</a> the desired data file in a document. </li>
+            <li class="NumberedIndent" style="margin-bottom: 6px;margin-top: 8px;" value="2">Select the desired tab or view (<a href="Using the Graph View.htm">graph</a>, <a href="Understanding the Spreadsheet View.htm">spreadsheet</a>, etc.). Note that the export options available depend upon the currently-viewed step.</li>
+            <li class="NumberedIndent" value="3">Click the <span style="color: #000080;font-weight: bold;">TRIOS</span> button <img src="../image/icons/Jelly.png" style="vertical-align: middle;" /> in the upper left corner of the main window. A drop-down menu displays.</li>
+        </ul>
+        <ul MadCap:continue="true">
+            <li class="NumberedIndent" value="4">Select <span>Export</span> and choose one of the following options:</li>
+        </ul>
+        <p class="NumberedIndent">
+            <img src="../image/TRIOS/exporting.png" style="padding-left: 40px;" />
+        </p>
+        <ul>
+            <li class="SubBulletIndent" style="margin-bottom: 6pt;" value="1"><span><a href="#Plain" class="selected">Plain Text</a></span>: Exports the data to a view data to a plain text file for use in other applications. </li>
+            <li class="SubBulletIndent" style="margin-bottom: 6pt;" value="2"><span><a href="#Plain" class="selected"><span>Comma-separated Values</span></a></span>: Exports the view data to a comma-separated value file for use in applications such as&#160;Microsoft Word.</li>
+            <li class="SubBulletIndent" style="margin-bottom: 6pt;" value="3"><span><a href="#Excel" class="selected">Excel</a></span>: Export the view data to an Excel worksheet. Note that the Excel export function does not work with Excel Starter Edition.</li>
+            <li class="SubBulletIndent" style="margin-bottom: 6pt;" value="4"><span><a href="#XML" class="selected">XML</a></span>: Exports the view data into an XML&#160;file (see below for more details)</li>
+            <li class="SubBulletIndent" style="margin-bottom: 6pt;" value="5"><span>Image</span>: Exports the view to an image file (.png, .jpg, .tiff, .bmp)</li>
+            <li class="SubBulletIndent" style="margin-bottom: 6pt;" value="6"><span class="boolean"><a href="#parameters" class="selected">Parameter</a></span>: Exports the parameters of the active document to a text file.</li>
+        </ul>
+        <p style="margin-bottom: 6pt;">
+            <img src="../image/TRIOS/parameter export_379x317.png" style="padding-left: 80px;width: 379;height: 317;" />
+        </p>
+        <ol>
+            <li value="5">Make the desired selections in the export and execute. For more information regarding the selections to make in the dialog box, continue to the section <a href="#DialogSelection" class="selected">Export Dialog Selection</a>.</li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h3>Export Dialog Selection</h3>
+        <p>	The export dialog box that displays depends on the type of export selected: <span class="boolean">Plain Text</span>, <span class="boolean">Comma-separated values</span>, <span class="boolean">Excel</span>, and <span class="boolean">XML</span>. Note that when <span class="boolean">Images</span> is selected, no dialog box displays.</p>
+        <h4><a name="Plain"></a>Plain Text and Comma-separated Values</h4>
+        <p>
+            <img src="../image/TRIOS/export to text_440x468.png" style="width: 440;height: 468;" /> </p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="1">In the <span class="boolean">Column separator</span> drop-down list, select  <span class="boolean">Comma</span> for comma-separated values or <span class="boolean">Tab </span>for plain text.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="2">In the <span>Details</span> drop-down list, select the additional details to be included in the file. Choose between <span class="boolean">None</span>,&#160;<span class="boolean">Headings only</span>, or <span class="boolean">Heading and notes</span>. Click <img src="../image/icons/icon-export.jpg" class="imgInline" />to apply the selection to all files in list. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="3">Select the <span class="boolean">Include hidden points in output</span> checkbox, if needed.</li>
+            <li style="margin-top: 8px;margin-bottom: 6px;" value="4">The <span>Files</span>window lists all potential files for exporting. Click a filename to configure the export options to be applied to that file. </li>
+            <li style="margin-top: 8px;margin-bottom: 6px;" value="5"><span>Export to file’s directory</span>: Select this checkbox to export each file to the same directory where the original data file is located (default selection).  Deselect the checkbox to specify a directory to which to export. Click           <img src="../image/TRIOS/export_ellipsis.png" style="vertical-align: middle;" />to browse for a directory. </li>
+            <li style="margin-top: 8px;margin-bottom: 6px;" value="6"><span>Include only file spreadsheet views</span>: Select this checkbox to export only those steps that currently appear in spreadsheet views for the file. Deselect to choose which steps to export. Select   <img src="../image/icons/icon-export.jpg" class="imgInline" /> to have selection apply to all files in list.</li>
+        </ol>
+        <blockquote>
+            <ul>
+                <li style="margin-top: 8px;margin-bottom: 6px;" value="1">Click            <img src="../image/TRIOS/export_select all.png" style="vertical-align: middle;" />to select all steps.</li>
+                <li style="margin-top: 8px;margin-bottom: 6px;" value="2">Click <img src="../image/TRIOS/export_X.png" />to deselect all steps. </li>
+                <li style="margin-top: 8px;margin-bottom: 6px;" value="3">Hold down the <span class="boolean">Ctrl</span> key to select multiple steps.</li>
+            </ul>
+        </blockquote>
+        <ol MadCap:continue="true">
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="7">Repeat each step as necessary for each file.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="8">Click <span>OK </span>to finish.
+</li>
+        </ol>
+        <p class="pBacktoTop"><a href="#top" class="selected"><span style="font-weight: normal;">Back to top</span></a>
+        </p>
+        <h4><a name="XML"></a>XML</h4>
+        <p>
+            <img src="../image/TRIOS/export to xml_441x446.png" style="width: 441;height: 446;" /> </p>
+        <p>The exchange of data between software products and test instruments suffers from a non-standardized file format. Due to different specification requirements, data types, and test methods, a fixed row- and column-based table format is not appropriate. The XML (eXtensible Markup Language) format offers far more flexibility. XML has an essential benefit; it is system and software independent.
+</p>
+        <p>The XML format is a tree-like structure with freely defined keywords, which can be perfectly adapted to the structure of the test data. Usually the XML file content is presented in a viewer-friendly way based on a so-called Schema Definition (XSD-File). The structure is flexible and can be extended by introducing new elements without making old data files invalid. 
+</p>
+        <p>The two Structure files available are the RheoML and the TA schema. The RheoML structure is designed for rotational rheometer and capillary data. The TA structure file exports the data of all TAI instruments including Rheology and Thermal Analysis instruments.
+</p>
+        <ol>
+            <li class="NoteIndent" value="1">NOTE:&#160;TA Instrument supplies XML stylesheet files for easy viewing of TRIOS-generated XML exported files.  These files are located at  <b>C:\ProgramData\TA Instruments\Trios\Xml Schema</b> (For Vista or Windows 7 and up).  The associated schema file needs to be located to the same directory as the XML file you are trying to view.  For Thermal results files, copy the file <b>IUPAC2html.xsl</b> for the IUPAC schema or <b>TAThermal1html.xsl</b> for the TA schema. For Rheology results files, copy the file <b>RheoML2html.xsl</b> for the IUPAC schema or <b>TARheology1html.xsl</b> for the TA schema. </li>
+        </ol>
+        <ol>
+            <li style="margin-top: 8px;margin-bottom: 6px;" value="1"> Select the structure of the exported XML file: <span class="boolean">IUPAC or RheoML schema</span> or <span class="boolean">TA schema</span>.</li>
+            <li style="margin-top: 8px;margin-bottom: 6px;" value="2">Select the <span class="boolean">Include hidden points in output</span> checkbox, if needed.</li>
+            <li value="3">
+                <p style="margin-top: 8px;margin-bottom: 6px;">The <span>Files</span>window lists all potential files for exporting. Click a filename to configure the export options to be applied to that file. </p>
+            </li>
+            <li style="margin-top: 8px;margin-bottom: 6px;" value="4"><span>Export to file’s directory</span>: Select this checkbox to export each file to the same directory where the original data file is located (default selection).  Deselect the checkbox to specify a directory to which to export. Click <img src="../image/TRIOS/export_ellipsis.png" style="vertical-align: middle;" />to browse for a directory. </li>
+            <li style="margin-top: 8px;margin-bottom: 6px;" value="5"><span>Include only file spreadsheet views</span>:Check this option to export only those steps that currently appear in spreadsheets within the document. Steps that are not on a current spreadsheet will not be exported. The variables included for each step will match the spreadsheet on which it appears. Uncheck this option to export all steps within the document. The variables included for each step will match the current user default spreadsheet variables for the step’s test type.</li>
+        </ol>
+        <blockquote>
+            <ul>
+                <li style="margin-top: 8px;margin-bottom: 6px;" value="1">Select   <img src="../image/icons/icon-export.jpg" class="imgInline" /> to have selection apply to all files in list.</li>
+            </ul>
+        </blockquote>
+        <blockquote>
+            <ul>
+                <li style="margin-top: 8px;margin-bottom: 6px;" value="1">Click  <img src="../image/TRIOS/export_select all.png" style="vertical-align: middle;" />to select all steps.</li>
+                <li style="margin-top: 8px;margin-bottom: 6px;" value="2">Click <img src="../image/TRIOS/export_X.png" />to deselect all steps. </li>
+                <li style="margin-top: 8px;margin-bottom: 6px;" value="3">Hold down the <span class="boolean">Ctrl</span> key to select multiple steps.</li>
+            </ul>
+        </blockquote>
+        <ol MadCap:continue="true">
+            <li value="6">
+                <p style="margin-top: 8px;margin-bottom: 6px;">Repeat each step as necessary for each file.</p>
+            </li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="7">Click <span>OK </span>to finish.
+</li>
+        </ol>
+        <p class="pBacktoTop"><a href="#top" class="selected">Back to top</a>
+        </p>
+        <h4><a name="Excel"></a>Excel</h4>
+        <p>
+            <img src="../image/TRIOS/export to excel_445x471.png" style="width: 445;height: 471;">
+            </img>
+        </p>
+        <ol>
+            <li style="margin-top: 8px;margin-bottom: 6px;" value="1"> Select whether steps are separated into individual worksheets or not.</li>
+            <li value="2">
+                <p style="margin-top: 8px;margin-bottom: 6px;">In the <span>Details</span> drop-down list, select the additional details to be included in the file. Choose between <span class="boolean">None</span>,&#160;<span class="boolean">Headings only</span>, or <span class="boolean">Heading and notes</span>. Click <img src="../image/icons/icon-export.jpg" class="imgInline" />to apply the selection to all files in list. </p>
+            </li>
+            <li style="margin-top: 8px;margin-bottom: 6px;" value="3"><span>Export to file’s directory</span>: Select this checkbox to export each file to the same directory where the original data file is located (default selection).  Deselect the checkbox to specify a directory to which to export. Click <img src="../image/TRIOS/export_ellipsis.png" style="vertical-align: middle;" />to browse for a directory. </li>
+            <li style="margin-top: 8px;margin-bottom: 6px;" value="4">The <span>Files</span>window lists all potential files for exporting. Click a filename to configure the export options to be applied to that file. </li>
+            <li style="margin-top: 8px;margin-bottom: 6px;" value="5">Select the <span class="boolean">Include hidden points in output</span> checkbox, if needed.</li>
+            <li style="margin-top: 8px;margin-bottom: 6px;" value="6"><span>Include only file spreadsheet views</span>: Select this checkbox to export only those steps that currently appear in spreadsheet views for the file. Deselect to choose which steps to export. Select   <img src="../image/icons/icon-export.jpg" class="imgInline" /> to have selection apply to all files in list.</li>
+        </ol>
+        <blockquote>
+            <ul>
+                <li style="margin-top: 8px;margin-bottom: 6px;" value="1">Click  <img src="../image/TRIOS/export_select all.png" style="vertical-align: middle;" />to select all steps.</li>
+                <li style="margin-top: 8px;margin-bottom: 6px;" value="2">Click <img src="../image/TRIOS/export_X.png" />to deselect all steps. </li>
+                <li style="margin-top: 8px;margin-bottom: 6px;" value="3">Hold down the <span class="boolean">Ctrl</span> key to select multiple steps.</li>
+            </ul>
+        </blockquote>
+        <ol MadCap:continue="true">
+            <li value="7">
+                <p style="margin-top: 8px;margin-bottom: 6px;">Repeat each step as necessary for each file.</p>
+            </li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="8">Click <span>OK </span>to finish.
+</li>
+        </ol>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h3><a name="multiplesteps"></a>Exporting Spreadsheet Data for Multiple Files/Steps</h3>
+        <p>To export the spreadsheet data for multiple files or steps, follow the instructions below:</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="1">Display the <a href="Using the File Manager_Results.htm">File Manager</a> &gt; <span>Results </span>view.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="2">Select the desired file(s) within the <span>Results </span>pane (this can be individual steps or files).</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="3">Right-click the selected files and select <span>Export…</span> from the menu options.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="4">Select the desired options: <span>Plain text</span>, <span>Excel</span>, <span>XML</span>, <span>All images</span>.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;margin-bottom: 6px;" value="5">Make the selections in the <span>Export </span>form depending on the selected option as follows:
+</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" style="margin-top: 8px;margin-bottom: 6px;" value="1"><span>Plain text</span>: Choose column separators (comma, tab).</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;margin-bottom: 6px;" value="2"><span>Excel</span>: Select this checkbox to add a new worksheet for each step in the results. Deselect the checkbox to place all steps in a single worksheet. Note that Microsoft Office 2003 or Office 2007 must be installed to use this feature. The Excel export function does not work with Excel Starter Edition.</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;margin-bottom: 6px;" value="3"><span>XML</span>: Select the RheoML or the TAI schema. </li>
+            <li class="SubBulletIndent" style="margin-top: 8px;margin-bottom: 6px;" value="4">Images can be exported in .png; .jpg; .bmp; .tiff. format. 	</li>
+            <li class="NumberedIndent" value="6" style="margin-top: 8px;margin-bottom: 6px;">Make the desired selections in the export form and execute.
+</li>
+        </ul>
+        <h3><a name="parameters"></a>Exporting Parameters</h3>
+        <h4>View Parameters</h4>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Display the <a href="Using the File Manager_Results.htm">File Manager</a> &gt; <span>Results </span>view.</li>
+            <li style="margin-top: 8px;" value="2">Select the desired file(s) within the <span>Results </span>pane (this can be individual steps or files).</li>
+            <li style="margin-top: 8px;" value="3">Right-click the selected files and select <span class="boolean">Show Parameters</span>.</li>
+            <li style="margin-top: 8px;" value="4">The parameters display. Click the + next to each parameter type to view the parameter details for that experiment.</li>
+        </ol>
+        <p style="margin-top: 8px;">
+            <img src="../image/TRIOS/show parameters_977x302.png" style="padding-left: 40px;width: 977;height: 302;" />
+        </p>
+        <h4>Export Parameters</h4>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Display the <a href="Using the File Manager_Results.htm">File Manager</a> &gt; <span>Results </span>view.</li>
+            <li style="margin-top: 8px;" value="2">Select the desired file(s) within the <span>Results </span>pane (this can be individual steps or files).</li>
+            <li style="margin-top: 8px;" value="3">Right-click the selected files and hover on <span>Export…</span> and then click <span class="boolean">Parameters...</span>The Parameters Export dialog box displays.</li>
+        </ol>
+        <p>
+            <img src="../image/TRIOS/parameter export dialog_365x304.png" style="padding-left: 40px;width: 365;height: 304;" />
+        </p>
+        <ul>
+            <li class="NoteIndent" value="1">NOTE: ALL parameters for the selected experiment(s) will be exported. </li>
+        </ul>
+        <ol MadCap:continue="true">
+            <li style="margin-bottom: 6px;margin-top: 8px;" value="4"> The data values within the text file that will be generated contains embedded delimiters (characters that separate the words, phrases, or numbers). Specify the character type: <span class="boolean">Tab</span>, <span class="boolean">Semicolon</span>, <span class="boolean">Comma</span>, or <span class="boolean">Space</span> from the Column separator drop-down menu.</li>
+            <li style="margin-bottom: 6px; margin-top: 8px;" value="5">Select <span class="boolean">Export to file's directory</span> to save the generated file in the same directory as the TRIOS file. Deselect this option to browse to a different location.</li>
+            <li style="margin-bottom: 6px; margin-top: 8px;" value="6">Click <span class="boolean">OK</span> to complete the export. </li>
+        </ol>
+        <ul>
+            <li class="NoteIndent" value="1">The exported file is saved with the same name as the TRIOS file. </li>
+        </ul>
+        <p class="pBacktoTop"><a href="#top" class="selected">Back to top</a>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

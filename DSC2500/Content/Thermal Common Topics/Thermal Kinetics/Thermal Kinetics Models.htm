@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" conditions="Primary.ARES-G2,Primary.TRIOS,Primary.Rheology" class="" MadCap:conditions="Primary.Thermal General" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="Default.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" type="text/css" MadCap:generated="True" />
+        <link href="../../Resources/TableStyles/Basic.css" rel="stylesheet" MadCap:stylesheetType="table" /><title>Thermal Kinetics Analysis Models</title>
+        <link href="../../Resources/TableStyles/InThisTopic.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" type="text/css" />
+        <script src="../../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <h1><a name="top"></a>Thermal Kinetics Models</h1>
+        <table class="TableStyle_InThisTopic" style="border-collapse: separate;caption-side: top;margin-left: 0;margin-right: auto;mc-table-style: url('../../Resources/TableStyles/InThisTopic.css');" cellspacing="0">
+            <caption><span style="color: #000080;font-size: 8pt;font-weight: bold;font-family: Verdana;">In this topic</span>
+            </caption>
+            <col style="width: 182px;" />
+            <tbody>
+                <tr>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Overview" class="tablenavigationbody selected">Overview</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowEnd_ColEnd"><a href="#Availabl" class="tablenavigationbody selected">Available Analysis Functions</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Overview"></a>Overview</h2>
+        <p>To understand the different analyses available in this program, refer to the following table for applicable information:</p>
+        <p>&#160;</p>
+        <table style="width: 100%;border-spacing: 2px 6px;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;margin-left: 0;margin-right: auto;caption-side: top;mc-table-style: url('../../Resources/TableStyles/Basic.css');" class="TableStyle-Basic" cellspacing="0">
+            <col style="width: 229px;" class="Column-Column1" />
+            <col style="width: 322px;" class="Column-Column1" />
+            <col style="width: 318px;" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th style="font-family: Arial;" class="HeadE-Column1-Header1">Kinetics Model</th>
+                    <th style="font-family: Arial;" class="HeadE-Column1-Header1">File Input</th>
+                    <th style="font-family: Arial;" class="HeadD-Column1-Header1">Output Plots</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td style="font-family: Arial;" class="BodyE-Column1-Body1"><a href="Borchardt and Daniels.htm">Borchardt &amp; Daniels</a>
+                    </td>
+                    <td style="font-family: Arial;" class="BodyE-Column1-Body1">1  DSC file (dynamic)</td>
+                    <td class="BodyD-Column1-Body1">
+                        <ul>
+                            <li value="1">Rate Constant</li>
+                            <li value="2">Conversion </li>
+                            <li value="3">Conversion Time
+</li>
+                            <li value="4">	Half Life</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-family: Arial;" class="BodyE-Column1-Body1"><a href="Isothermal.htm#Sestak">Sestak Berggren Isothermal Kinetics</a>
+                    </td>
+                    <td style="font-family: Arial;" class="BodyE-Column1-Body1">1 or more DSC files (isothermal)</td>
+                    <td class="BodyD-Column1-Body1">
+                        <ul>
+                            <li value="1">Rate Constant (single run analysis)</li>
+                            <li value="2">Rate Constant (multi-run analysis)
+</li>
+                            <li value="3">Conversion % (multi-run analysis)</li>
+                            <li value="4">	Conversion Time (multi-run analysis)
+</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-family: Arial;" class="BodyE-Column1-Body1"><a href="Isothermal.htm#Avrami">Avrami Isothermal Kinetics</a>
+                    </td>
+                    <td style="font-family: Arial;" class="BodyE-Column1-Body1">1 or more DSC files (isothermal)</td>
+                    <td class="BodyD-Column1-Body1">
+                        <ul>
+                            <li value="1">Rate Constant (single run analysis)</li>
+                            <li value="2">Rate Constant (multi-run analysis)</li>
+                            <li value="3">Conversion % (multi-run analysis)</li>
+                            <li value="4">Conversion Time (multi-run analysis)
+</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-family: Arial;" class="BodyE-Column1-Body1"><a href="Isothermal.htm#Malkin">Malkin Isothermal Kinetics</a>
+                    </td>
+                    <td style="font-family: Arial;" class="BodyE-Column1-Body1">1 or more DSC files (isothermal)</td>
+                    <td class="BodyD-Column1-Body1">
+                        <ul>
+                            <li value="1">Rate Constant (single run analysis)</li>
+                            <li value="2">Rate Constant (multi-run analysis)</li>
+                            <li value="3">Conversion % (multi-run analysis)</li>
+                            <li value="4">	Conversion Time (multi-run analysis)
+</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-family: Arial;" class="BodyE-Column1-Body1"><a href="Isothermal.htm#Kamal">Kamal Isothermal Kinetics</a>
+                    </td>
+                    <td style="font-family: Arial;" class="BodyE-Column1-Body1">1 or more DSC files (isothermal)</td>
+                    <td class="BodyD-Column1-Body1">
+                        <ul>
+                            <li value="1">Rate Constant (single run analysis)</li>
+                            <li value="2">Rate Constant (multi-run analysis)</li>
+                            <li value="3">Conversion % (multi-run analysis)</li>
+                            <li value="4">Conversion Time (multi-run analysis)
+</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-family: Arial;" class="BodyE-Column1-Body1"><a href="ASTM E698.htm">ASTM E698 (Flynn/Wall/Ozawa Method)</a>
+                    </td>
+                    <td style="font-family: Arial;" class="BodyE-Column1-Body1">3 or more DSC files (dynamic)</td>
+                    <td class="BodyD-Column1-Body1">
+                        <ul>
+                            <li value="1">Heating Rate vs. 1/Peak Temp</li>
+                            <li value="2">Rate Constant</li>
+                            <li value="3">	Isothermal Conversion</li>
+                            <li value="4">Conversion </li>
+                            <li value="5">Half Life
+</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-family: Arial;" class="BodyE-Column1-Body1"><a href="ASTM 1641.htm">ASTM E1641 (Flynn Wall Method)</a>
+                    </td>
+                    <td style="font-family: Arial;" class="BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                        <p>3 or more TGA files (dynamic)</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <ul>
+                            <li value="1">Conversion Heating Rate vs. 1/Conversion Temp</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td style="font-family: Arial;" class="BodyB-Column1-Body1"><a href="Model Free.htm">Model-Free Kinetics</a>
+                    </td>
+                    <td style="font-family: Arial;" class="BodyB-Column1-Body1">3 or more DSC files (dynamic)</td>
+                    <td class="BodyA-Column1-Body1">
+                        <ul>
+                            <li value="1">Activation Energy vs. Conversion</li>
+                            <li value="2">Conversion
+</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Availabl"></a>Available Analysis Functions</h2>
+        <p>For a complete description of the analysis functions available in TRIOS&#160;software, see the <a href="../../TRIOS Topics/Available Analysis Functions.htm">Available Analysis Functions</a> Help topic.</p>
+        <p>
+        </p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

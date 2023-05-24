@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Evaluating Data|Analysis" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.TRIOS" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Using Analysis Tools</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/TableStyles/InThisTopic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="Menu Data Representation.htm">Evaluating Data</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Analysis</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Using Analysis Tools</span>
+        </div>
+        <h1><a name="top"></a>Using Analysis Tools</h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../Resources/TableStyles/InThisTopic.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+            <caption>In this topic</caption>
+            <col style="width: 164px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Ignore" class="tablenavigationbody selected">Ignore Breaks In Data</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Smooth" class="tablenavigationbody selected">Smooth and Smooth / Adjust</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Shift" class="tablenavigationbody selected">Shift / Rotate</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowEnd_ColEnd"><a href="#Transfor" class="tablenavigationbody selected">Transform</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>TRIOS software contains a variety of analysis functions that are specific to the selected data.  For information regarding accessing and using these functions, follow the general instructions found in <a href="Analyzing Data.htm">Analyzing Data</a>.</p>
+        <p>In addition to the analysis described in the <a href="Analyzing Data.htm">Analyzing Data</a> Help topic, use the following <span>Analysis Tools</span> (toolbar shown below) to further customize your data analysis.</p>
+        <p>
+            <img src="../image/TRIOS/analysis tools.png" />
+        </p>
+        <h2><a name="Ignore"></a>Ignore Breaks In Data</h2>
+        <p>Use <span class="boolean">Ignore Breaks in Data</span> to analyze data across multiple steps. The data from all steps is combined into a new Merged step.</p>
+        <ol>
+            <li style="margin-top: 8px;" value="1">Select the desired steps and plot them on the graph.</li>
+            <li style="margin-top: 8px;" value="2">Click <span class="boolean">Ignore Breaks in Data</span>. <img src="../image/TRIOS/Ignore Breaks button.png" /></li>
+            <li style="margin-top: 8px;" value="3">The selected steps are now displayed as a single step called "Merged." </li>
+        </ol>
+        <p>
+            <img src="../image/TRIOS/post merge_730x454.png" style="padding-left: 40px;width: 730;height: 454;" />
+        </p>
+        <h2><a name="Smooth"></a>Smooth&#160;and Smooth / Adjust</h2>
+        <p>The smoothing tool operates on full curves. Several smoothing techniques are available in TRIOS (<span>Polynomial</span>, <span>FFT</span>, and <span>Least-squares</span>). Set your desired default option within the TRIOS <span>Options </span>&gt; <span>Analysis </span>page.  The extent of the smoothing is determined by the window size.</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">Verify your selection of the desired smoothing technique from the <a href="Setting TRIOS Options.htm">TRIOS <span>Options </span>&gt;&#160;<span>Analysis</span></a> page.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Select the curve to smooth.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3"> 
+Access the <span>Analysis </span>menu and choose one of the following options:
+</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="1"><span>Smooth</span>: Smooths the curve using the default smoothing level.
+</li>
+            <li class="SubBulletIndent" style="margin-top: 8px;" value="2"><span>Smooth/Adjust</span>: Displays a smoothing adjustment window that allows you to adjust the smoothing to the desired level by either 1) moving the slider bar, or 2) entering a value while simultaneously viewing the smoothed signal and comparing it to the original data.  When satisfied, select <span>OK</span>.  Click the <span>Save </span>icon to set this value as the smoothing window default.</li>
+        </ul>
+        <p style="margin-top: 8px;">
+            <img src="../image/TRIOS/Analysis Smoothing Window.png" class="imgIndent" style="padding-left: 40px;" />
+        </p>
+        <ol>
+            <li class="NumberedIndent" value="4" style="margin-top: 8px;">A preliminary curve displays. Click <span>Accept </span>or <span>Reject</span>. 
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5">If you click <span>Accept</span>, the smoothed data replaces the original data in the spreadsheet and on the plot. Note that all dependent parameters are recalculated based on the modified parameter values. However, variables representing the original measured data (torque, displacement, velocity) remain unchanged. All cells in the spreadsheet with modified data points are marked with a small red triangle. 
+To recover the original data, click <span>Undo</span>. For experimental data, you can also access the <a href="Understanding the Spreadsheet View.htm">Spreadsheet view</a> and select the <span>Format </span>tab &gt;&#160;<span>Reload Data</span>.</li>
+        </ol>
+        <p><a href="#top" target="_self" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Shift"></a>Shift / Rotate</h2>
+        <p>The process of curve shifting and curve rotation causes a linear change to a curve's baseline.  Curve shifting moves all of the data points on a curve up or down by a fixed value.  Curve rotation moves the data points on a curve up or down by a linearly changing value.
+</p>
+        <h3>Curve Shifting
+</h3>
+        <p>Curves are shifted by adding a fixed offset to the Y-value of each data point on the curve.  When curve shifting is done manually (as described below), the offset is the difference between the cursor Y-position and the interpolated curve value at the cursor X-position.  Or, stated differently, the point on the curve at the vertical cursor is moved to the cursor position, and all other points on the curve are moved up or down by this same amount.
+</p>
+        <p>To shift the curve, follow these steps:</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">If more than one curve is displayed, select the desired curve by clicking on the curve.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Click <span>Analysis </span>&gt; <span>Shift/Rotate</span> in TRIOS&#160;software.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Two cursors display on the curve.
+</li>
+            <li class="LetterIndent" value="1" style="margin-top: 8px;">The <img src="../image/TRIOS/Analyzing Data Shift icon 2.png" class="imgInline" /> icon is used to pivot the curve at the selected point in the curve vertically.  The pivot point is based on second cursor location .</li>
+            <li class="LetterIndent" style="margin-top: 8px;" value="2">The <img src="../image/TRIOS/Analyzing Data Shift icon.png" class="imgInline" />icon is used to move the curve up or down to the position of the horizontal bar of this marker location.
+</li>
+            <li class="NumberedIndent" value="4" style="margin-top: 8px;">Click the <img src="../image/TRIOS/Analyzing Data Shift icon.png" class="imgInline" /> marker and move it horizontally to the desired location on the curve.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5">Move the cursor vertically to shift the curve in the Y direction.  The resultant curve is shown along with the original data.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="6">Click <span>Accept </span>to save adjusted curve (and replace the original) or <span>Reject </span>to remove.
+</li>
+            <li class="NoteIndent" value="7">NOTE: After performing a Shift/Rotate operation, you can remove changes by accessing the spreadsheet view and selecting <span class="boolean">Reload Data</span>.</li>
+        </ol>
+        <h3>Curve Rotation
+</h3>
+        <p>Curves are rotated by adding a computed offset to the Y-value of each data point on the curve.  The offset for each data point is computed to be the difference between the Y-value of the data point and the Y-value of a straight line evaluated at the X-value of the data point.  When curve rotation is done manually, the straight line is defined by the X- and Y-coordinates of the two cursor positions.  The slope and offset of this line is used to compute the offset at each data point.  Or, stated differently, the two points on the curve at the vertical cursors are moved to the cursor positions, and all other points on the curve are moved by a proportional amount.
+
+</p>
+        <ol>
+            <li class="NoteIndent" value="1">NOTE:  Curve rotation is a skewing process that makes a linear change to a curve's baseline.  It is not a rotation in two dimensions because the X-values of the curve are not changed.
+
+</li>
+            <li class="NoteIndent" value="2">NOTE:  Clicking on a curve in a normal plot and dragging the curve to a new position changes the axis scaling, but not the curve data.  Clicking on a curve in an overlay plot and dragging the curve to a new position changes the curve's Y-offset, but not the curve data.   Shifting and rotating curves modifies the curve data.
+</li>
+        </ol>
+        <p>Use the <span>Rotate </span>option to take the curve and rotate it around the points chosen.
+Follow these steps to use this function:
+</p>
+        <ol>
+            <li style="margin-top: 8px;" value="1">If more than one curve is displayed, select the desired curve by clicking on the curve.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Select&#160;<span>Analysis&#160;</span>&gt; <span>Shift/Rotate</span> in TRIOS&#160;software.
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Two cursors display on the curve.
+</li>
+            <li class="LetterIndent" value="1" style="margin-top: 8px;">The <img src="../image/TRIOS/Analyzing Data Shift icon 2.png" class="imgInline" /> icon is used to pivot the curve at the selected point in the curve vertically.  The pivot point is based on the second cursor location.</li>
+            <li class="LetterIndent" style="margin-top: 8px;" value="2">The <img src="../image/TRIOS/Analyzing Data Shift icon.png" class="imgInline" />icon is used to move the curve up or down to the position of the horizontal bar of this marker location .</li>
+            <li class="NumberedIndent" value="4" style="margin-top: 8px;">Click the    <img src="../image/TRIOS/Analyzing Data Shift icon 2.png" class="imgInline" /> marker and move it <b>horizontally </b>to the desired location on the curve. This point serves as the pivot point.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5">Click   the <img src="../image/TRIOS/Analyzing Data Shift icon 2.png" class="imgInline" /> marker and move <b>vertically </b>to the desired location, pivoting off the second cursor point.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="6">Click <span>Accept </span>to save adjusted curve (and replace the original) or <span>Reject </span>to remove.</li>
+            <li class="NoteIndent" value="7">NOTE:  The curve can be shifted and/or rotated multiple times. To remove shifting/rotating, select <span>Reject </span>from the <span>Analysis </span>menu.
+</li>
+            <li class="NoteIndent" value="8">NOTE: After performing a Shift/Rotate operation, you can remove changes by accessing the spreadsheet view and selecting <span class="boolean">Reload Data</span>.</li>
+        </ol>
+        <p>When rotating a curve that will subsequently be integrated, be sure to rotate the curve using the same x-axis domain as that of the integration (typically Time). </p>
+        <p> 
+Rotating a curve in the Temperature domain and then integrating the curve with respect to Time (for example, via Peak Integration analysis) can result in incorrect integration values, because typically Time and Temperature are not linearly related.
+	</p>
+        <p>In general, you should never rotate a curve in the Temperature domain if you plan to integrate it. The best approach is to rotate the curve with Time selected on the X-axis, and then use <span>Graph </span>&gt;&#160;<span>X Axis</span> &gt; <span>Temperature </span>to change back to the temperature domain. Now the rotated peak integration will give the same result as the non-rotated integration. </p>
+        <p><a href="#top" target="_self" class="BacktoTop selected">Back to top</a> <![CDATA[ ]]></p>
+        <h2><a name="Transfor"></a>Transform</h2>
+        <p>Typically, transformations are performed on complete data sets from the File Manager (refer to <a href="Transforming Data.htm">Transforming Data</a>). Certain transformations can also be performed on a selected number of data points in an active document using the <span>Transform </span>menu. </p>
+        <p>Follow the procedure below to perform a transformation on a single step of a data file selected in the document view using the <span>Transform </span>menu:</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">In the document view, select the data file step you desire to transform. 
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">If you wish to perform a partial transform, select the curve section by clicking the first data point and dragging the mouse pointer along the curve. The selected curve segment is highlighted. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Select the <span>Analysis </span>tab &gt; <span>Transform </span>drop-down menu. A list of possible transformations appears. Only the transformations possible for the selected data file are shown. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Click the desired transformation to perform the operation. A new data file with the same name extended by the name of the transformation is created and added to the file list. The new file is opens and gives focus if <span>Load view settings</span> is checked in the user options. 
+</li>
+        </ol>
+        <p><a href="#top" target="_self" class="BacktoTop selected">Back to top</a>
+        </p>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

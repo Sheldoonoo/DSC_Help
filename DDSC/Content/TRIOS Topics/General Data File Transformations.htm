@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Evaluating Data|Data Evaluation Utilities" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.TRIOS" class="" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>General Data File Transformations</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/TableStyles/InThisTopic.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="Menu Data Representation.htm">Evaluating Data</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Data Evaluation Utilities</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">General Data File Transformations</span>
+        </div>
+        <h1><a name="top"></a>General Data File Transformations</h1>
+        <table class="TableStyle_InThisTopic" style="border-collapse: separate;caption-side: top;margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/InThisTopic.css');" cellspacing="0">
+            <caption><span style="color: #000080;font-size: 8pt;font-weight: bold;font-family: Verdana;">In this topic</span>
+            </caption>
+            <col style="width: 252px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Introduc" class="tablenavigationbody selected">Introduction</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowSep_ColEnd"><a href="#Splittin" class="tablenavigationbody selected">Splitting Files</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Merging" class="tablenavigationbody selected">Merging Steps</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowEnd_ColEnd"><a href="#Splittin2" class="tablenavigationbody selected">Splitting Data File into Frequency or Temperatures Sweeps</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="Introduc"></a>Introduction</h2>
+        <p>The general data file transformation includes:
+</p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">Splitting data files
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Merging steps within data files
+</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Splitting data file into frequency, i.e. temperatures sweeps
+</li>
+        </ol>
+        <p>Splitting files and merging steps can only be done on multiple step experiments. Splitting a file in either temperature or frequency sweeps is typically used to organize the data for TTS evaluation (Rheology only).</p>
+        <p><a href="Transforming Data.htm">Transformation</a> options can be selected  using the File Manager, or using the <span>Transform </span>menu.</p>
+        <h2><a name="Splittin"></a>Splitting Files</h2>
+        <p>Splitting a file is equivalent to extracting one or more data sets (steps) and exporting them into a new file. When the menu item <span>Split </span>is selected, following window displays:</p>
+        <p>
+            <img src="../image/TRIOS/split results.png" />
+        </p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">All steps of the data file are listed. Select the steps you desire to export into a new file. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2">Click <span>All </span>to select all of the steps. Choose the target, which can be either one file for all the selected steps or a new file for each of the selected steps. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">Click <span>OK </span>to perform the operation. The results are saved in a new file using the same file name with the extension <span>– split</span>.</li>
+        </ol>
+        <h2><a name="Merging"></a>Merging Steps</h2>
+        <p>This operation merges steps within a data file or across multiple data files. To merge steps within a file, select the steps from the File Manager (by simultaneously clicking the <span class="boolean">Ctrl</span> key and selecting the steps with the mouse). To merge steps across files, select the data files from the File Manager (by simultaneously pressing the <span class="boolean">Ctrl</span> key and selecting the files with the mouse). Merging steps should be done only on data sets of the same type (oscillation, transient or flow). If steps of different data type are merged, the data type of the first step on the list overrides the other data types and only copies the variables compatible with this data type. Data can be merged so that a new file is created that has all the data points from each merged step , or data can be merged so that a new file is created where the data points from each step are averaged.</p>
+        <p>Once the steps or files are selected in the File Manager, right-click and select <span class="boolean">Choose Transformations...</span> &gt; <span class="boolean">Merge...</span>. The following window displays:
+</p>
+        <p>
+            <img src="../image/TRIOS/MergeSteps_483x285.png" style="width: 483;height: 285;" />
+        </p>
+        <ol>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="1">All steps of the data file(s) are listed. Select the steps you wish to merge into one step.</li>
+        </ol>
+        <ol MadCap:continue="true">
+            <li class="NumberedIndent" style="margin-top: 8px;" value="2"> Click <span>All </span>to select all the steps. </li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="3">From the <span class="boolean">Into</span> drop-down menu, select the name of the file that the data will be merged into.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="4">Check <span>Sort by</span>  to sort the data in the merged file by the selected variable. If a graph is displayed, the default variable for Sort by will be the x-axis variable. If no graph is displayed, the default variable is the TRIOS default x-axis variable for this type of data set.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="5">Check <span class="boolean">Average by</span> to average data of the selected steps by the selected variable into one file.
+If a graph is displayed, the Average by default is the variable on the x-axis. If no graph is displayed, the default is the TRIOS default x-axis value for this type of data set. Choose to <span class="boolean">Average when within fixed tolerance</span> or <span class="boolean">Average when within fixed percentage</span> and then enter the desired value in the field. This is used to correct for data points that don't quite line up along the Average by variable. If average by is selected, the data is averaged or reduced into the new merged file. If Average by is not selected, all data points will be included in the new merged file.</li>
+            <li class="NumberedIndent" style="margin-top: 8px;" value="6">Click <span>OK </span>to perform the operation. The results are saved in a new file using the Into file name with the extension <span>– merge</span>.
+</li>
+        </ol>
+        <h2><a name="Splittin2"></a>Splitting Data File into Frequency or Temperatures Sweeps
+</h2>
+        <p>This operation splits a data file  such as temperature sweeps or multiwave tests into either temperature sweeps at constant frequency or frequency tests at constant temperature.
+</p>
+        <ul>
+            <li class="bullet" value="1">The <span>Split as Frequency Sweeps</span> separates the data into individual frequency sweeps at constant temperature in a new experiment file, with the original file name with the extension split cycles.</li>
+            <li class="bullet" value="2">The <span>Split as Temperature Sweeps</span> separates the data into individual temperature sweeps at constant frequency in a new experiment file, with the original file name with the extension split cycles.</li>
+        </ul>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

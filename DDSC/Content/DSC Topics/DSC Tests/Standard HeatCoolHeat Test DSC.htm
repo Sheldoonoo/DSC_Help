@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:medium="pdf" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-US" xml:lang="en-US" MadCap:conditions="Primary.DSC,Primary.Mercury DSC" class="" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="TRIOS_Help_DSC.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Setting Up a DSC Standard Heat/Cool/Heat Procedure</title>
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/InThisTopic.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/TAG2Stylesheet.css" rel="stylesheet" />
+        <script src="../../SkinSupport/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js" type="text/javascript">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js" type="text/javascript">
+        </script>
+    </head>
+    <map id="map1" name="map1">
+        <area shape="rectangle" coords="4,2,91,19" title="Click" alt="Click" target="_popup" />
+    </map>
+    <map id="map2" name="map2">
+        <area shape="rectangle" coords="2,1,92,18" title="Click here" alt="Click here" target="_popup" />
+    </map>
+    <body>
+        <p>
+        </p>
+        <h1 style="text-align: left;"><a name="top"></a>Setting Up a DSC Standard Heat/Cool/Heat Procedure</h1>
+        <table class="TableStyle_InThisTopic" style="mc-table-style: url('../../Resources/TableStyles/InThisTopic.css');margin-left: 0;margin-right: auto;" cellspacing="0">
+            <caption>In this topic</caption>
+            <col style="width: 98px;" />
+            <tbody>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_0_0_RowSep_ColEnd"><a href="#Test" class="tablenavigationbody selected">Test setup</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TableStyle_InThisTopic_Body_1_0_RowEnd_ColEnd"><a href="#Advanced" class="tablenavigationbody selected">Advanced</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>DSC heat/cool/heat experiments are designed to erase previous thermal history by heating the material above a transition (for example, glass transition or melting), where relaxation or molecular rearrangement can occur, then cooling at a known rate before heating again.  The first heating curve provides the “as received” information. The cooling imparts a known thermal history.  Therefore, any differences observed between similar materials in the second heating curve are related to real internal differences in the materials (molecular weight), rather than previous thermal history effects.
+
+</p>
+        <h2><a name="Test"></a>Test Setup</h2>
+        <p MadCap:conditions="Primary.DSC">To select this test, click <span class="boolean">Experiments</span> &gt; <span class="boolean">Design View</span> in the File Manager. In the <span class="boolean">Procedure</span> window, select <span class="boolean">Standard</span> from the <span class="boolean">Mode</span> drop-down list (shown below).</p>
+        <p>Choose the following parameters after selecting the Standard&#160;Heat/Cool/Heat procedure:</p>
+        <ol>
+            <li value="1"><span>Start </span><span>temperature</span>:  The actual start and final temperatures chosen for a specific experiment must be within the usable temperature range of the DSC cell/cooling accessory combination that you are using. These temperatures should bracket the region where sample transitions are expected to occur and they should be far enough below or above the transitions to establish a stable baseline. Be sure to stay below the decomposition temperature of the sample. (Note that the decomposition temperature depends on the heating rate).</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" value="1"><span>Use current</span>:&#160;Check this box to use the temperature of the DSC cell at the current moment (usually ambient temperature, 30 to 35°C). In this case, the ramped heating begins immediately on starting the experiment.
+</li>
+            <li class="SubBulletIndent" value="2">Unselect <span>Use current</span> to choose the specific temperature desired. In this case, the system equilibrates at the chosen temperature before ramped heating begins.
+</li>
+            <li class="SubBulletIndent" value="3">The full temperature range of analysis for the DSC cell is –180 to 725°C, but may be attenuated depending on the type of sample pan, lid type, and cooling accessory used. (NOTE: Only inert gases such as nitrogen can be used above 600°C.) To evaluate materials below room temperature or to run controlled-cooling experiments, the DSC cell requires an active cooling source. Typically, this is provided by<MadCap:conditionalText MadCap:conditions="Primary.DSC"> a liquid nitrogen cooling system, <a href="../LN2P Intro.htm">LN2P</a> (usable from –150 to 550°C; not yet available for Discovery DSC models 25/250/2500), or</MadCap:conditionalText> a refrigerated cooling accessory, <a href="../DSC RCS Intro.htm">RCS</a> (usable from –120 to 550°C). In addition, there are multiple types of DSC pans available. All of them are acceptable for use to 725°C except for aluminum pans, which should only be used to 600°C.</li>
+            <li class="NumberedIndent" value="2"><span>Heating rate </span>and <span>Cooling rate</span>:  The acceptable range of heating/cooling rates for conventional DSC is 0.01 to 200°C/minute.  This range depends on a number of variables including the temperature range covered and the presence of a cooling accessory.  Faster heating/cooling rates generally increase sensitivity, particularly for thermal events such as the glass transition.  They also obviously shorten the time of analysis.  Slower heating/cooling rates generally provide better resolution (separation of closely spaced thermal events).  Heating rates of 10 to 20°C/minute and cooling rates of 5 to 10°C/minute are a good starting point for most materials.</li>
+            <li class="NumberedIndent" value="3"><span>Upper temperature</span>:  To obtain the intended benefits from a heat/cool/heat experiment, the chosen upper temperature should be higher than the transition that "erases" previous thermal history.  This is typically 10 to 15°C above the glass transition or melting peak.  However, the upper temperature should also be low enough to prevent the onset of decomposition. 
+
+</li>
+            <li class="NumberedIndent" value="4"><span>Lower temperature</span>:  The lowest temperature achieved during the cooling portion of the experiment should be below any transitions of interest. 
+
+</li>
+        </ul>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <h2><a name="Advanced"></a>Advanced</h2>
+        <p>The <span>Advanced </span>menu contains additional experimental conditions that can be modified to optimize testing for specific situations. For most experiments, the system default values shown are recommended.</p>
+        <p>
+            <img src="../../image/DSC/advanced menu.png" />
+        </p>
+        <ol>
+            <li class="NumberedIndent" value="1"><span>Load Window</span> (applicable for Autosampler instruments only): This parameter is used to specify temperature range used to load the sample for the specified run.  The experiment will not start until this condition is met.
+Select between the following options:
+</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" value="1">Check the <span>Use Standby Temperature</span> option to use the standby temperature (as defined on the <a href="../Setting the Temperature.htm"><span>General </span>Control panel</a>).</li>
+            <li class="SubBulletIndent" value="2">Uncheck this option to define a specific temperature range for load.
+</li>
+        </ul>
+        <ol>
+            <li class="NumberedIndent" value="2"><span>End of Test</span> options:</li>
+        </ol>
+        <ul>
+            <li class="SubBulletIndent" value="1">	For DSC Autosamplers:  Check <span>Discard pan in waste bin at end of test</span> to have the Autosampler arm place the pan in the waste bin at the end of the run. If this is not selected, the arm will return the pan to its previous position on the sample tray at the end of the run.
+</li>
+            <li class="SubBulletIndent" value="2"><span>Use Standby Temperature</span>: This parameter is used to specify the temperature used to load the sample for the specified run. </li>
+            <li class="SubBulletIndent2" value="3">Check this option to use the standby temperature (as defined on the <a href="../Setting the Temperature.htm"><span>General </span>Control panel</a>). </li>
+            <li class="SubBulletIndent2" value="4">Uncheck this option to define a specific temperature range for unload.
+
+If desired, enter the delay time that the instrument will delay after reaching the unload temperature range before unloading the sample. A delay time of 2 minutes should be used when an experiment ends with the cell at subambient temperature. This allows time for the cell lids and cover to warm in order to prevent moisture from condensing on cold components.</li>
+        </ul>
+        <p><a href="#top" class="BacktoTop selected">Back to top</a>
+        </p>
+        <hr class="" width="100%" size="0" align="center" />
+        <p class="FooterText">
+            <img src="../../image/TRIOS/Splash_100x70.png" style="width: 100;height: 70;" />
+        </p>
+        <p class="FooterText"><span style="font-family: Arial; color: #000000; font-weight: normal; font-size: 7pt;">© 2016 TA Instruments–Waters LLC | 159 Lukens Drive | New Castle, DE 19720</span>
+        </p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>
